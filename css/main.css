@@ -1,0 +1,186 @@
+html{
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  display: block;
+  height: 100%;
+	font-family: sans-serif;
+  background-color: #f9f9f9;
+  transform-style: preserve-3d;
+  perspective: 2px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+
+
+/*------ TOPBAR / NAV ------ */
+
+.home-topbar {
+  display: flex;
+  flex-flow: row wrap;
+  color: #fff;
+}
+
+nav {
+  width: 50%;
+}
+
+.signin {
+  width: 50%;
+}
+
+.navlist {
+  list-style-type: none;
+  margin: 0;
+  padding: 5px;
+}
+
+.navlist li {
+}
+
+
+
+/* ------ PARALLAX HEADER ------ */
+
+header {
+  box-sizing: border-box;
+  min-height: 100vh;
+  position: relative;
+  transform-style: inherit;
+  width: 100vw;
+}
+
+header::before{
+  bottom: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  background-image: url(../images/cloudbackground.jpg);
+  background-size: cover;
+  transform-origin: center center 0;
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+  min-height: 100vh;
+}
+
+.stslogo-container {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+}
+
+.stslogo {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  max-height: 30vh;
+}
+
+
+/* ARROWS */
+
+.arrows {
+  width: 60px;
+  height: 72px;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  bottom: 5%;
+}
+
+.arrows path {
+  stroke: #f9f9f9;
+  fill: transparent;
+  stroke-width: 2px;  
+  animation: arrow 2s infinite;
+}
+
+@keyframes arrow {
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+  animation-delay:-1s;
+}
+
+.arrows path.a2 {
+  animation-delay:-0.5s;
+}
+
+.arrows path.a3 {
+  animation-delay:0s;
+}
+
+
+
+/* ------ CONTENT AREA ------ */
+
+main {
+  box-sizing: border-box;
+  width: 100vw;
+  min-height: calc(100vh - (45vh + (72px + 40px)));
+  padding: 1em 0.5em;
+}
+
+.box-container {
+  width: 100%;
+}
+
+.box {
+  width: 100%;
+  height: auto;
+  float: left;
+}
+
+.box img {
+  width: 100%;
+  height: auto;
+}
+
+/*CLEARFIX*/
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+/* ------ FOOTER ------ */
+
+footer {
+  display: block;
+  width: 100%;
+  height: 40px;
+  background-color: #efefef;
+  z-index: 4;
+}
+
+footer p {
+  color: #999999;
+  margin: 0;
+}
+
+
+.whitebg {
+  background-color: #f9f9f9;
+}
