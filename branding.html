@@ -3,17 +3,18 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>stesse | home</title>
+    <title>stesse | products</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link href="css/main.css" rel="stylesheet">
+    <link href="css/template.css" rel="stylesheet">
+    <link href="#" rel="stylesheet">
     <script src="js/main.js"></script>
   </head>
   <body>
-    <div id="wrapper"> <!--wrapper div-->
+    <div class="wrapper"> <!--wrapper div-->
       <div> <!-- wraps header -->
-        <header>
-          <div id="navOverlay"></div>
+        <div id="navOverlay"></div>
+        <header class="canClear">
           <div class="home-topbar">
             <div class="signin canFade" role="button">
               <a class="sign-in-link" href="#">
@@ -49,38 +50,18 @@
               </div>
             </nav>
           </div>
-            <div class="stslogo-container">
-              <img class="stslogo canFade" src="images/stslogo.svg" alt="sts logo">
-            </div>
-            <div class="arrow-container">
-              <svg class="arrow canFade">
-                <path class="a3" d="M0 40 L30 72 L60 40"></path>
-              </svg>
-            </div>
         </header>
       </div> <!-- end header -->
 
-      <main id="main" class="whitebg">
-        <div class="box-container">
-          <div class="box">
-            <img src="https://picsum.photos/300/200" alt="placeholder">
-            <p>Lorem ipsum dolor.</p>
-          </div>
-          <div class="box">
-            <img src="https://picsum.photos/300/200" alt="placeholder">
-            <p>Lorem ipsum dolor.</p>
-          </div>
-          <div class="box">
-            <img src="https://picsum.photos/300/200" alt="placeholder">
-            <p>Lorem ipsum dolor.</p>
-          </div>
-        </div>
+      <main class="whitebg">
+        <div class="main-spacer"></div>
+        <h1>Branding</h1>
       </main>
-      <div>
-        <footer>
-          <p>Woo</p>
-        </footer>
-      </div>
+        <div>
+          <footer class="canFade">
+            <p>Woo</p>
+          </footer>
+        </div>
     </div> <!--closes wrapper div-->
   </body>
 </html>

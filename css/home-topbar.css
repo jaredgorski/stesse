@@ -1,0 +1,177 @@
+/* ------ TOPBAR ------ */
+.home-topbar {
+  display: flex;
+  flex-flow: row wrap;
+  color: #fff;
+}
+
+
+/* NAVIGATION */
+
+nav {
+  width: 50%;
+}
+
+.burgerMenu {
+  list-style-type: none;
+  margin: 0;
+  padding: 5px;
+}
+
+.burgerMenu a {
+  text-decoration: none;
+  color: #333333;
+  transition: color 0.3s ease;
+}
+
+.burgerMenu a:hover {
+  color: pink;
+}
+
+.burgerMenu-toggle {
+  display: block;
+  position: relative;
+  float: right;
+  top: 2em;
+  right: 2em;
+  z-index: 1;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.burgerMenu-toggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  -webkit-touch-callout: none;
+}
+
+.burgerMenu-toggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #f9f9f9;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+              background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+              opacity 0.55s ease;
+}
+
+.burgerMenu-toggle span:first-child {
+  transform-origin: 0 0;
+}
+
+.burgerMenu-toggle span:nth-last-child(2) {
+  transform-origin: 0 100%;
+}
+
+.burgerMenu-toggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #333333;
+}
+
+.burgerMenu-toggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.burgerMenu-toggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+.burgerMenu {
+  position: absolute;
+  right: -50px;
+  width: 200px;
+  height: 100vh;
+  margin: -100px 0 0 0px;
+  padding: 50px;
+  padding-top: 125px;
+  background: #f9f9f9;
+  box-shadow: -5px 0 12px rgba(8, 41, 71, 0.12);
+  list-style-type: none;
+
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0%);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+.burgerMenu li {
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+.burgerMenu-toggle input:checked ~ ul {
+  transform: none;
+}
+
+.burgerMenu-toggle input:checked {
+  /*scroll-behavior: none;*/
+}
+
+#wrapper {
+  transition: 0.5s;
+}
+
+.navOpenOverlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .7);
+}
+
+.noScroll {
+  overflow: hidden;
+  position: fixed;
+}
+
+.fadeOut {
+  opacity: 0;
+}
+
+.navOpenOverlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .7);
+}
+
+.navOpenMainFade {
+  opacity: 0;
+}
+
+
+/* SIGN IN */
+.signin {
+  width: 50%;
+  transition: 0.3s;
+}
+
+.signin .sign-in-link {
+  display: inline-flex;
+  text-decoration: none;
+  color: #fff;
+  margin: 1.5em;
+}
+
+.signin .sign-in-icon {
+  height: 34px;
+  width: 34px;
+  margin: 0;
+}
+
+.signin .sign-in-btntext {
+  margin: auto 0 auto 0.5em;
+}

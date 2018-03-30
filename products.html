@@ -6,33 +6,63 @@
     <title>stesse | products</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="css/template.css" rel="stylesheet">
     <link href="css/products.css" rel="stylesheet">
+    <script src="js/main.js"></script>
   </head>
   <body>
     <div class="wrapper"> <!--wrapper div-->
       <div> <!-- wraps header -->
-        <header class="whitebg">
-          <div class="topbar">
-            <div class="signin">
-              <p>Sign in</p>
+        <div id="navOverlay"></div>
+        <header class="canClear">
+          <div class="home-topbar">
+            <div class="signin canFade" role="button">
+              <a class="sign-in-link" href="#">
+                <img class="sign-in-icon" src="images/sign-in-t.png" alt="sign-in">
+                <span class="sign-in-btntext">login</span>
+              </a>
             </div>
             <nav>
-              <ul class="navlist">
-                <li>item1</li>
-                <li>item2</li>
-                <li>item3</li>
-                <li>item4</li>
-              </ul>
+              <div class="dropdown">
+                <span>menu</span>
+                <div class="dropdown-content">
+                  <ul class="">
+                    <a href="file:///Users/jaredgorski/Projects/stesse/index.html"><li>home</li></a>
+                    <a href="file:///Users/jaredgorski/Projects/stesse/blog.html"><li>blog</li></a>
+                    <a href="file:///Users/jaredgorski/Projects/stesse/products.html"><li>products</li></a>
+                    <a href="file:///Users/jaredgorski/Projects/stesse/branding.html"><li>branding</li></a>
+                    <a href="file:///Users/jaredgorski/Projects/stesse/contact.html"><li>contact</li></a>
+                  </ul>
+                </div>
+              </div>
+              <div class="burgerMenu-toggle">
+                <input id="burgerTog" type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul class="burgerMenu">
+                  <a href="file:///Users/jaredgorski/Projects/stesse/index.html"><li>home</li></a>
+                  <a href="file:///Users/jaredgorski/Projects/stesse/blog.html"><li>blog</li></a>
+                  <a href="file:///Users/jaredgorski/Projects/stesse/products.html"><li>products</li></a>
+                  <a href="file:///Users/jaredgorski/Projects/stesse/branding.html"><li>branding</li></a>
+                  <a href="file:///Users/jaredgorski/Projects/stesse/contact.html"><li>contact</li></a>
+                </ul>
+              </div>
             </nav>
           </div>
         </header>
       </div> <!-- end header -->
 
       <main class="whitebg">
-        
+        <div class="main-spacer"></div>
+        <h1>Products</h1>
+        <div class="content-container">
+          <div class="grid-container">
+          </div>
+        </div>
       </main>
         <div>
-          <footer>
+          <footer class="canFade">
             <p>Woo</p>
           </footer>
         </div>
