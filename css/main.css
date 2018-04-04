@@ -16,8 +16,6 @@ body {
   perspective: 2px;
   overflow-x: hidden;
   overflow-y: scroll;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
 }
 
 
