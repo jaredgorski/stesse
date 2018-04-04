@@ -12,12 +12,12 @@ body {
   height: 100%;
 	font-family: sans-serif;
   background-color: #f9f9f9;
+  transform-style: preserve-3d;
+  perspective: 2px;
   overflow-x: hidden;
   overflow-y: scroll;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-  transform-style: preserve-3d;
-  perspective: 2px;
 }
 
 
