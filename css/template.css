@@ -296,12 +296,12 @@ footer p {
     display: none;
   }
 
-/*  .noScroll {
+  .noScroll {
     overflow: auto;
-  }*/
+  }
 
   .fadeOut {
-    opacity: 100;
+    opacity: 100%;
   }
 
   .clearOut {
