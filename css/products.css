@@ -72,7 +72,6 @@
 
 @media (min-width: 800px) {
   .grid-product-container {
-    grid-template-columns: repeat(5, 1fr);
     max-width: 800px;
   }
   .filters {
