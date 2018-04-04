@@ -178,6 +178,7 @@ nav {
 
 .noScroll {
   overflow: hidden;
+  position: fixed;
 }
 
 .fadeOut {
