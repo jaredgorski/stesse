@@ -34,19 +34,19 @@ nav {
   width: 50%;
 }
 
-.burgerMenu .dropdown-content {
+.burgerMenu {
   margin: 0;
   padding: 5px;
   z-index: 50;
 }
 
-.burgerMenu a, .dropdown-content a {
+.burgerMenu a {
   text-decoration: none;
   color: #333333;
   transition: color 0.3s ease;
 }
 
-.burgerMenu a:hover, .dropdown-content a:hover {
+.burgerMenu a:hover {
   color: pink;
 }
 
@@ -72,6 +72,17 @@ nav {
   opacity: 0;
   z-index: 52;
   -webkit-touch-callout: none;
+}
+
+.burgerMenu-toggle label {
+  display: none;
+  position: relative;
+  z-index: 51;
+  transition: 0.3s;
+}
+
+.burgerMenu-toggle input:checked ~ label {
+  color: #333333;
 }
 
 .burgerMenu-toggle span {
@@ -130,7 +141,7 @@ nav {
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
-.burgerMenu li, .dropdown-content li {
+.burgerMenu li {
   padding: 10px 0;
   font-size: 22px;
   list-style-type: none;
@@ -169,37 +180,6 @@ nav {
 .clearOut {
   background: transparent;
   box-shadow: 0 5px 12px rgba(8, 41, 71, 0);
-}
-
-
-
-
-.dropdown {
-  display: none;
-  position: absolute;
-  float: right;
-  top: 2em;
-  right: 2em;
-  cursor: default;
-  padding: 0;
-}
-
-.dropdown-content a {
-  color: #f9f9f9;
-}
-
-.dropdown-content {
-  text-align: right;
-  display: none;
-  right: -2em;
-  z-index: 1;
-  position: absolute;
-  padding: 1.5em 2em 20px 10px;
-  background: transparent;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
 }
 
 
@@ -337,9 +317,9 @@ main {
 
 /*CLEARFIX*/
 .clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
+  content: "";
+  clear: both;
+  display: table;
 }
 
 
@@ -391,13 +371,30 @@ footer p {
 
 
 /* -- NAV MENU -- */
-@media (min-width: 600px) {
-  .burgerMenu-toggle {
+@media (min-width: 760px) {
+  .burgerMenu-toggle label {
+    display: block;
+  }
+
+  .burgerMenu-toggle span {
     display: none;
   }
 
-  .dropdown {
-    display: block;
+  .navOpenOverlay {
+    display: none;
+  }
+
+  .fadeOut {
+    opacity: 100;
+  }
+
+  .clearOut {
+    background: transparent;
+    box-shadow: 0 5px 12px rgba(8, 41, 71, 0);
+  }
+
+  .iLeave {
+    display: ;
   }
 
 }

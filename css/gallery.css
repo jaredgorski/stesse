@@ -1,0 +1,89 @@
+
+
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+
+main {
+  overflow-y: hidden;
+  overflow-x: auto;
+  scroll-snap-points-x: repeat(100%);
+  scroll-snap-type: mandatory;
+}
+
+.content-container {
+  width: 500%;
+}
+
+.gallery-content-header {
+  margin-left: calc(50vw - 54.26px);
+  position: fixed;
+}
+
+.gallery-content-header h1 {
+  transition: 0.3s;
+}
+
+.gallery-content-header-spacer {
+  height: 68px;
+  display: block;
+}
+
+
+footer {
+  display: none;
+}
+
+
+.card-gallery-grid {
+  max-height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 0;
+  grid-column-gap: 1%;
+}
+
+.grid-card-container {
+  padding: 1%;
+}
+
+.grid-card {
+  box-sizing: border-box;
+  background: #fff;
+  width: 100%;
+  height: calc(100vh - 200px);
+  margin: 0 auto;
+  padding: 1%;
+  box-shadow: 0 4px 6px rgba(8, 41, 71, 0.09), 0 -2px 6px rgba(8, 41, 71, 0.07);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-content {
+  height: calc(100% - 40px);
+}
+
+.card-bottom {
+  width: 100%;
+  height: 40px;
+  margin: -1%;
+}
+
+#gallery-card-1 {
+  background: #227093;
+}
+#gallery-card-2 {
+  background: #40407a;
+}
+#gallery-card-3 {
+  background: #218c74;
+}
+#gallery-card-4 {
+  background: #cc8e35;
+}
+#gallery-card-5 {
+  background: #ccae62;
+}

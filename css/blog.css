@@ -1,0 +1,45 @@
+.post-card {
+	display: block;
+	max-width: 500px;
+	padding: 1.5%;
+	margin: 1% auto 2% auto;
+}
+
+.post-card a {}
+
+.post-card h4 {
+	text-align: left;
+  margin: 2% 0 1% 0;
+}
+
+.post-card p {
+	text-align: left;
+  margin-top: 0;
+  margin-bottom: 3%;
+}
+
+.post-image {
+	display: block;
+	width: 100%;
+	height: auto;
+  padding-top: 66%;
+  box-shadow: 0 4px 6px rgba(8, 41, 71, 0.2);
+}
+
+#post-1 .post-image {
+	background: url("http://placeimg.com/600/400/arch");
+	background-size: contain;
+}
+
+#post-2 .post-image {
+	background: url("http://placeimg.com/600/400/arch");
+	background-size: cover;
+}
+
+#post-3 .post-image {
+	background: url("http://placeimg.com/600/400/arch");
+	background-size: cover;
+}
+
+
+@media (min-width: 760px)

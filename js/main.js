@@ -9,6 +9,7 @@ window.onload = function() {
 
       let weFade = document.getElementsByClassName("canFade");
       let weClear = document.getElementsByClassName("canClear");
+      let weLeave = document.getElementsByClassName("canLeave");
       let x;
       for (x = 0; x < weFade.length; x++) {
         weFade[x].classList.add("fadeOut");
@@ -16,12 +17,16 @@ window.onload = function() {
       for (x = 0; x < weClear.length; x++) {
         weClear[x].classList.add("clearOut");
       }
+      for (x = 0; x < weLeave.length; x++) {
+        weLeave[x].classList.add("iLeave");
+      }
     } else {
       document.body.classList.remove("noScroll");
       document.getElementById("navOverlay").classList.remove("navOpenOverlay");
 
       let weFade = document.getElementsByClassName("canFade");
       let weClear = document.getElementsByClassName("canClear");
+      let weLeave = document.getElementsByClassName("canLeave");
       let x;
       for (x = 0; x < weFade.length; x++) {
         weFade[x].classList.remove("fadeOut");
@@ -29,6 +34,11 @@ window.onload = function() {
       for (x = 0; x < weClear.length; x++) {
         weClear[x].classList.remove("clearOut");
       }
+      setTimeout(() => {
+        for (x = 0; x < weLeave.length; x++) {
+          weLeave[x].classList.remove("iLeave");
+        };
+      }, 240);
     };
   });
 };
