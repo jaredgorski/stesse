@@ -382,6 +382,48 @@ footer p {
 }
 
 
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) {
+  html {
+    height: 100%;
+    overflow: auto;
+  }
+
+  body {
+    overflow-x: hidden;
+    overflow-y: inherit;
+    transform-style: none;
+    perspective: none;
+  }
+
+  header {
+    box-sizing: border-box;
+    height: 100vh;
+    position: relative;
+    width: 100vw;
+  }
+
+  header::before {
+    bottom: 0;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    background-image: url(../images/cloudbackground.jpg);
+    background-size: calc(100vh + 10px) auto;
+    transform-origin: none;
+    transform: none;
+    z-index: -1;
+    min-height: 100vh;
+  }
+}
+
+
+
+
 /* -- TABLETS -- */
 
 /* iPad 1, 2, Mini and Air */
