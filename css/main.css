@@ -74,17 +74,6 @@ nav {
   -webkit-touch-callout: none;
 }
 
-.burgerMenu-toggle label {
-  display: none;
-  position: relative;
-  z-index: 51;
-  transition: 0.3s;
-}
-
-.burgerMenu-toggle input:checked ~ label {
-  color: #333333;
-}
-
 .burgerMenu-toggle span {
   display: block;
   width: 33px;
@@ -92,7 +81,6 @@ nav {
   margin-bottom: 5px;
   position: relative;
   background: #f9f9f9;
-  border-radius: 3px;
   z-index: 51;
   transform-origin: 4px 0px;
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
@@ -112,6 +100,7 @@ nav {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
   background: #333333;
+  border-radius: 3px;
 }
 
 .burgerMenu-toggle input:checked ~ span:nth-last-child(3) {
@@ -372,13 +361,6 @@ footer p {
 
 /* -- NAV MENU -- */
 @media (min-width: 760px) {
-  .burgerMenu-toggle label {
-    display: block;
-  }
-
-  .burgerMenu-toggle span {
-    display: none;
-  }
 
   .navOpenOverlay {
     display: none;
