@@ -264,7 +264,7 @@ header#homepage-header::before {
   left: 0;
   right: 0;
   display: block;
-  background-image: url(../images/backgroundtest.svg);
+  background-image: url(../images/backgroundtest.jpg);
   background-size: 100%;
   transform-origin: center center 0;
   transform: translateZ(-1px) scale(2);
