@@ -276,7 +276,6 @@ footer p {
 /* ------ MEDIA QUERIES ------ */
 
 @media (min-width: 760px) {
-  
   .navOpenOverlay {
     display: none;
   }
@@ -286,12 +285,7 @@ footer p {
   }
 
   .fadeOut {
-    opacity: 100%;
-  }
-
-  .clearOut {
-    background: transparent;
-    box-shadow: 0 5px 12px rgba(8, 41, 71, 0);
+    opacity: 1;
   }
 
   .iLeave {

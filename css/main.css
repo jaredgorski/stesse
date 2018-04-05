@@ -367,7 +367,7 @@ footer p {
   }
 
   .fadeOut {
-    opacity: 100%;
+    opacity: 1;
   }
 
   .clearOut {
