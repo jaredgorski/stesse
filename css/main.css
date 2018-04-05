@@ -198,11 +198,6 @@ nav {
   position: fixed;
 }
 
-.noScroll-Home {
-  overflow: hidden;
-  position: fixed;
-}
-
 .fadeOut {
   opacity: 0;
 }
@@ -582,23 +577,13 @@ footer p {
     display: none;
   }
 
-  .noScroll {
+/*  .noScroll {
     overflow: auto;
     position: absolute;
-  }
-
-  .noScroll-Home {
-    overflow: hidden;
-    position: fixed;
-  }
+  }*/
 
   .fadeOut {
     opacity: 1;
-  }
-
-  .clearOut {
-    background: transparent;
-    box-shadow: 0 5px 12px rgba(8, 41, 71, 0);
   }
 
   .iLeave {

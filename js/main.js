@@ -1,4 +1,4 @@
-// Stop scrolling when nav menu opened
+// Behavior when nav menu opened
 window.onload = function() {
   document.getElementById("burgerTog").addEventListener("click",
   function stopScroll() {
@@ -10,7 +10,6 @@ window.onload = function() {
     let x;
     if (menuTog.checked == true) {
       document.body.classList.add("noScroll");
-      document.getElementById("homepageBody").classList.add("noScroll-Home");
       document.getElementById("navOverlay").classList.add("navOpenOverlay");
 
       for (x = 0; x < weFade.length; x++) {
@@ -24,7 +23,6 @@ window.onload = function() {
       }
     } else {
       document.body.classList.remove("noScroll");
-      document.getElementById("homepageBody").classList.remove("noScroll-Home");
       document.getElementById("navOverlay").classList.remove("navOpenOverlay");
 
       for (x = 0; x < weFade.length; x++) {
