@@ -569,9 +569,8 @@ footer p {
     width: 100px;
     padding: 20px;
     padding-top: 125px;
-    background: #f3f3f3;
+    background: #fff;
     overflow: hidden;
-    box-shadow: 5px 0 12px rgba(8, 41, 71, 0.12) inset;
   }
 
   .navOpenOverlay {
