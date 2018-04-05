@@ -4,7 +4,6 @@ window.onload = function() {
   function stopScroll() {
     const menuTog = document.getElementById("burgerTog");
     if (menuTog.checked == true) {
-      document.html.classList.add("noScroll");
       document.body.classList.add("noScroll");
       document.getElementById("navOverlay").classList.add("navOpenOverlay");
 
@@ -22,7 +21,6 @@ window.onload = function() {
         weLeave[x].classList.add("iLeave");
       }
     } else {
-      document.html.classList.remove("noScroll");
       document.body.classList.remove("noScroll");
       document.getElementById("navOverlay").classList.remove("navOpenOverlay");
 
