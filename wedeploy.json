@@ -1,6 +1,6 @@
 {
   "id": "stshosting",
-  "image": "wedeploy/hosting:2.0.0"
+  "image": "wedeploy/hosting:2.0.0",
   "env": {
     "WEDEPLOY_WEB_ERROR_PATH": "error"
   }
