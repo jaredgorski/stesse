@@ -177,7 +177,7 @@ nav {
 }
 
 .burgerMenu {
-  will-change: transform;
+  /*will-change: transform;*/
   position: absolute;
   right: -50px;
   width: 200px;
@@ -305,7 +305,7 @@ nav {
 /* ARROWS */
 
 .arrow {
-  /*will-change: opacity;*/
+  will-change: opacity;
   width: 60px;
   height: 72px;
   position: absolute;
