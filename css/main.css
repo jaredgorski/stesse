@@ -51,7 +51,7 @@ header#homepage-header {
 }
 
 header#homepage-header::before {
-  will-change: scroll-position;
+  will-change: transform;
   bottom: 0;
   content: "";
   position: absolute;
@@ -305,6 +305,7 @@ nav {
 /* ARROWS */
 
 .arrow {
+  will-change: opacity;
   width: 60px;
   height: 72px;
   position: absolute;
