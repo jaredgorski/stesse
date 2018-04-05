@@ -545,11 +545,11 @@ footer p {
 
 
 /* -- LANDSCAPE DIMENSIONS -- */
-@media (orientation: portrait) {
+/*@media (orientation: portrait) {
   header#homepage-header::before {
     background-size: cover;
   }
-}
+}*/
 
 @media (min-width: 600px) {
   .box-container {
