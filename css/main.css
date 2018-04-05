@@ -264,7 +264,7 @@ header#homepage-header::before {
   left: 0;
   right: 0;
   display: block;
-  background-image: url(../images/backgroundtest.jpg);
+  background-image: url(../images/sts-bg-mobile.jpg);
   background-size: cover;
   transform-origin: center center 0;
   transform: translateZ(-1px) scale(2);
@@ -540,8 +540,24 @@ footer p {
   .filters {
     max-width: 800px;
   }
+
+  header#homepage-header::before {
+    background-image: url(../images/sts-bg-medium.jpg);
+  }
 }
 
+@media (min-width: 1200px) {
+  .grid-product-container {
+    max-width: 800px;
+  }
+  .filters {
+    max-width: 800px;
+  }
+
+  header#homepage-header::before {
+    background-image: url(../images/sts-bg-large.jpg);
+  }
+}
 
 
 /* -- LANDSCAPE DIMENSIONS -- */
