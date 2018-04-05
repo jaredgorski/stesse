@@ -387,14 +387,14 @@ and (min-device-width : 375px)
 and (max-device-width : 667px) {
   html {
     height: 100%;
-    overflow: auto;
+    overflow: scroll;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
   }
 
   body {
     overflow-x: hidden;
-    overflow-y: hidden;
+    overflow-y: auto;
     transform-style: none;
     perspective: none;
   }
