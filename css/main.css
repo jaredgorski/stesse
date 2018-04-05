@@ -401,7 +401,7 @@ and (max-device-width : 667px) {
 
   header {
     box-sizing: border-box;
-    height: 100vh;
+    height: 85vh;
     position: relative;
     width: 100vw;
   }
