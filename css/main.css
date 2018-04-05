@@ -192,6 +192,11 @@ nav {
   position: fixed;
 }
 
+.noScroll-Home {
+  overflow: hidden;
+  position: fixed;
+}
+
 .fadeOut {
   opacity: 0;
 }
@@ -559,6 +564,13 @@ footer p {
 
 /* -- NAV MENU -- */
 @media (min-width: 760px) {
+  .burgerMenu {
+    width: 100px;
+    padding: 20px;
+    padding-top: 125px;
+    background: #fff;
+    overflow: hidden;
+  }
 
   .navOpenOverlay {
     display: none;
@@ -566,6 +578,12 @@ footer p {
 
   .noScroll {
     overflow: auto;
+    position: absolute;
+  }
+
+  .noScroll-Home {
+    overflow: hidden;
+    position: fixed;
   }
 
   .fadeOut {

@@ -3,14 +3,16 @@ window.onload = function() {
   document.getElementById("burgerTog").addEventListener("click",
   function stopScroll() {
     const menuTog = document.getElementById("burgerTog");
+
+    let weFade = document.getElementsByClassName("canFade");
+    let weClear = document.getElementsByClassName("canClear");
+    let weLeave = document.getElementsByClassName("canLeave");
+    let x;
     if (menuTog.checked == true) {
       document.body.classList.add("noScroll");
+      document.getElementById("homepageBody").classList.add("noScroll-Home");
       document.getElementById("navOverlay").classList.add("navOpenOverlay");
 
-      let weFade = document.getElementsByClassName("canFade");
-      let weClear = document.getElementsByClassName("canClear");
-      let weLeave = document.getElementsByClassName("canLeave");
-      let x;
       for (x = 0; x < weFade.length; x++) {
         weFade[x].classList.add("fadeOut");
       }
@@ -22,12 +24,9 @@ window.onload = function() {
       }
     } else {
       document.body.classList.remove("noScroll");
+      document.getElementById("homepageBody").classList.remove("noScroll-Home");
       document.getElementById("navOverlay").classList.remove("navOpenOverlay");
 
-      let weFade = document.getElementsByClassName("canFade");
-      let weClear = document.getElementsByClassName("canClear");
-      let weLeave = document.getElementsByClassName("canLeave");
-      let x;
       for (x = 0; x < weFade.length; x++) {
         weFade[x].classList.remove("fadeOut");
       }
