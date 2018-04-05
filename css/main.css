@@ -51,7 +51,7 @@ header#homepage-header {
 }
 
 header#homepage-header::before {
-  will-change: scroll-position;
+  will-change: transform;
   bottom: 0;
   content: "";
   position: absolute;
@@ -132,7 +132,6 @@ nav {
 }
 
 .burgerMenu-toggle span {
-  will-change: transform;
   display: block;
   width: 33px;
   height: 4px;
