@@ -2,13 +2,19 @@
   margin: 0;
 }
 
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
 body {
   display: block;
   height: 100%;
   font-family: sans-serif;
   background-color: #f9f9f9;
-/*  overflow-x: hidden;
-  overflow-y: auto;*/
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 p {
