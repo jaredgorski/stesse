@@ -242,7 +242,7 @@ nav {
 
 header#homepage-header {
   box-sizing: border-box;
-  height: 100vh;
+  height: 90vh;
   position: relative;
   transform-style: inherit;
   width: 100vw;
@@ -598,7 +598,7 @@ and (max-device-width : 667px) {
 
   header#homepage-header {
     box-sizing: border-box;
-    height: 85vh;
+    height: 90vh;
     position: relative;
     width: 100vw;
   }
@@ -611,7 +611,7 @@ and (max-device-width : 667px) {
     left: 0;
     right: 0;
     display: block;
-    background-image: url(../images/cloudbackground.jpg);
+    background-image: url(/images/cloudbackground.jpg);
     background-size: calc(100vh + 10px) auto;
     transform-origin: none;
     transform: none;
