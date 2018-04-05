@@ -258,7 +258,7 @@ header#homepage-header::before {
   left: 0;
   right: 0;
   display: block;
-  background-image: url(/images/cloudbackground.jpg);
+  background-image: url(../images/cloudbackground.jpg);
   background-size: 100%;
   transform-origin: center center 0;
   transform: translateZ(-1px) scale(2);
@@ -611,7 +611,7 @@ and (max-device-width : 667px) {
     left: 0;
     right: 0;
     display: block;
-    background-image: url(/images/cloudbackground.jpg);
+    background-image: url(../images/cloudbackground.jpg);
     background-size: calc(100vh + 10px) auto;
     transform-origin: none;
     transform: none;
