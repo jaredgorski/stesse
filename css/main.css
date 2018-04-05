@@ -51,7 +51,7 @@ header#homepage-header {
 }
 
 header#homepage-header::before {
-  will-change: transform;
+  will-change: scroll-position;
   bottom: 0;
   content: "";
   position: absolute;
