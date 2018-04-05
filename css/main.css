@@ -388,6 +388,8 @@ and (max-device-width : 667px) {
   html {
     height: 100%;
     overflow: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
   }
 
   body {
