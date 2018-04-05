@@ -394,7 +394,7 @@ and (max-device-width : 667px) {
 
   body {
     overflow-x: hidden;
-    overflow-y: inherit;
+    overflow-y: hidden;
     transform-style: none;
     perspective: none;
   }
