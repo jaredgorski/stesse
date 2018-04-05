@@ -265,7 +265,7 @@ header#homepage-header::before {
   right: 0;
   display: block;
   background-image: url(../images/backgroundtest.jpg);
-  background-size: auto calc(100vh + 10px);
+  background-size: cover;
   transform-origin: center center 0;
   transform: translateZ(-1px) scale(2);
   z-index: -1;
