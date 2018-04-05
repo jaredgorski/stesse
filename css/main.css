@@ -178,7 +178,7 @@ nav {
 }
 
 .burgerMenu {
-  will-change: transform;
+/*  will-change: transform;*/
   position: absolute;
   right: -50px;
   width: 200px;
@@ -319,12 +319,12 @@ nav {
   stroke: #fff;
   fill: transparent;
   stroke-width: 2px;
-  animation: arrow 2s infinite;
+  animation: arrow 5s infinite;
 }
 
 @keyframes arrow {
 0% {opacity:0}
-40% {opacity:0.5}
+40% {opacity:0.3}
 80% {opacity:0}
 100% {opacity:0}
 }
@@ -499,7 +499,6 @@ footer {
   height: 140px;
   background-color: #333333;
   box-shadow: 0 -5px 12px rgba(8, 41, 71, 0.12);
-  z-index: -1;
   transition: 0.3s;
 }
 
