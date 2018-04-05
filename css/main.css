@@ -552,9 +552,9 @@ footer p {
     max-width: 800px;
   }
 
-  header#homepage-header::before {
+ /* header#homepage-header::before {
     background-image: url(../images/sts-bg-large.jpg);
-  }
+  }*/
 }
 
 
@@ -622,70 +622,4 @@ and (max-device-width : 667px) {
     transform-origin: none;
     transform: none;
   }
-}
-
-
-
-
-
-
-
-/* -- TABLETS -- */
-
-/* iPad 1, 2, Mini and Air */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-}
-
-/* iPad 3, 4 and Pro 9.7" */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-}
-
-/* iPad Pro 10.5" */
-@media only screen 
-  and (min-device-width: 834px) 
-  and (max-device-width: 1112px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-}
-
-/* iPad Pro 12.9" */
-@media only screen 
-  and (min-device-width: 1024px) 
-  and (max-device-width: 1366px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-}
-
-
-/* -- LAPTOPS -- */
-
-/* Non-Retina Screens */
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
-}
-
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
-}
-
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
-}
-
-/* Retina Screens */
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (min-resolution: 192dpi) { 
 }
