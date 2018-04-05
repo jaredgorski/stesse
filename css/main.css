@@ -266,6 +266,11 @@ header#homepage-header::before {
   min-height: 100vh;
 }
 
+
+
+
+
+
 .stslogo-container {
   position: absolute;
   margin: auto;
@@ -596,29 +601,12 @@ and (max-device-width : 667px) {
     perspective: none;
   }
 
-  header#homepage-header {
-    box-sizing: border-box;
-    height: 90vh;
-    position: relative;
-    width: 100vw;
-  }
-
   header#homepage-header::before {
-    bottom: 0;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: block;
-    background-image: url(../images/cloudbackground.jpg);
-    background-size: calc(100vh + 10px) auto;
     transform-origin: none;
     transform: none;
-    z-index: -1;
-    min-height: 100vh;
   }
 }
+
 
 
 
