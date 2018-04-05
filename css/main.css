@@ -545,7 +545,7 @@ footer p {
 
 
 /* -- LANDSCAPE DIMENSIONS -- */
-@media (orientation: landscape) {
+@media (orientation: portrait) {
   header#homepage-header::before {
     background-size: cover;
   }
