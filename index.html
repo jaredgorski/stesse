@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>stesse | home</title>
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <link href="/css/main.css" rel="stylesheet">
+    <style type="text/css">
+      html{
+        height: 100%;
+        overflow: hidden;
+      }
+
+      body {
+        transform-style: preserve-3d;
+        perspective: 2px;
+        overflow-y: scroll;
+      }
+    </style>
+    <script src="/js/main.js"></script>
+  </head>
+  <body>
+    <div id="wrapper"> <!--wrapper div-->
+      <div> <!-- wraps header -->
+        <header id="homepage-header">
+          <div id="navOverlay"></div>
+          <div class="home-topbar">
+            <div class="signin canFade" role="button">
+              <a class="sign-in-link" id="homepage-login" href="#">
+                <img class="sign-in-icon" src="/images/sign-in-t.png" alt="sign-in">
+                <span class="sign-in-btntext">login</span>
+              </a>
+            </div>
+            <nav>
+              <div class="burgerMenu-toggle" id="home-burger-toggle">
+                <input id="burgerTog" type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul class="burgerMenu">
+                  <a href="/pages/index.html"><li>home</li></a>
+                  <a href="/pages/blog.html"><li>blog</li></a>
+                  <a href="/pages/products.html"><li>products</li></a>
+                  <a href="/pages/gallery.html"><li>gallery</li></a>
+                  <a href="/pages/contact.html"><li>contact</li></a>
+                </ul>
+              </div>
+            </nav>
+          </div>
+            <div class="stslogo-container">
+              <img class="stslogo canFade" src="/images/stslogo.svg" alt="sts logo">
+            </div>
+            <div class="arrow-container">
+              <svg class="arrow canFade">
+                <path class="a3" d="M0 40 L30 72 L60 40"></path>
+              </svg>
+            </div>
+        </header>
+      </div> <!-- end header -->
+
+      <main id="home-main" class="whitebg">
+        <div class="box-container">
+          <div class="box">
+            <img src="https://picsum.photos/300/200" alt="placeholder">
+            <p>Lorem ipsum dolor.</p>
+          </div>
+          <div class="box">
+            <img src="https://picsum.photos/300/200" alt="placeholder">
+            <p>Lorem ipsum dolor.</p>
+          </div>
+          <div class="box">
+            <img src="https://picsum.photos/300/200" alt="placeholder">
+            <p>Lorem ipsum dolor.</p>
+          </div>
+        </div>
+      </main>
+      <div>
+        <footer>
+          <p>Woo</p>
+        </footer>
+      </div>
+    </div> <!--closes wrapper div-->
+  </body>
+</html>
