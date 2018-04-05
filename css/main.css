@@ -38,6 +38,34 @@ header {
   display: block;
 }
 
+/* - Parallax Header - */
+
+header#homepage-header {
+  box-sizing: border-box;
+  height: 90vh;
+  position: relative;
+  transform-style: inherit;
+  width: 100vw;
+  background: transparent;
+  box-shadow: none;
+}
+
+header#homepage-header::before {
+  bottom: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  background-image: url(../images/sts-bg-mobile.jpg);
+  background-size: cover;
+  transform-origin: center center 0;
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+  min-height: 100vh;
+}
+
 /* -- TOPBAR -- */
 .topbar {
   position: relative;
@@ -62,10 +90,20 @@ nav {
   width: 50%;
 }
 
+.burgerMenu-toggle {
+  display: block;
+  position: absolute;
+  float: right;
+  top: 2em;
+  right: 2em;
+  z-index: 51;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
 .burgerMenu {
   margin: 0;
   padding: 5px;
-  z-index: 50;
   overflow: hidden;
 }
 
@@ -77,17 +115,6 @@ nav {
 
 .burgerMenu a:hover {
   color: pink;
-}
-
-.burgerMenu-toggle {
-  display: block;
-  position: absolute;
-  float: right;
-  top: 2em;
-  right: 2em;
-  z-index: 51;
-  user-select: none;
-  -webkit-user-select: none;
 }
 
 .burgerMenu-toggle input {
@@ -182,11 +209,11 @@ nav {
 }
 
 .navOpenOverlay {
-  position: fixed;
-  top: 0;
+  position: absolute;
   height: 200vh;
   width: 100vw;
   background-color: rgba(0, 0, 0, .7);
+  z-index: 40;
 }
 
 #navOverlay {
@@ -219,6 +246,7 @@ nav {
 .signin {
   width: 50%;
   transition: 0.3s;
+  z-index: 5;
 }
 
 .signin .sign-in-link {
@@ -240,35 +268,6 @@ nav {
 
 .signin .sign-in-btntext {
   margin: auto 0 auto 0.5em;
-}
-
-
-/* ------ PARALLAX HEADER ------ */
-
-header#homepage-header {
-  box-sizing: border-box;
-  height: 90vh;
-  position: relative;
-  transform-style: inherit;
-  width: 100vw;
-  background: transparent;
-  box-shadow: none;
-}
-
-header#homepage-header::before {
-  bottom: 0;
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  display: block;
-  background-image: url(../images/sts-bg-mobile.jpg);
-  background-size: cover;
-  transform-origin: center center 0;
-  transform: translateZ(-1px) scale(2);
-  z-index: -1;
-  min-height: 100vh;
 }
 
 
