@@ -177,7 +177,6 @@ nav {
 }
 
 .burgerMenu {
-  will-change: transform;
   position: absolute;
   right: -50px;
   width: 200px;

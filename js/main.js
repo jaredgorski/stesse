@@ -59,4 +59,21 @@ window.onload = function() {
       }, 240);
     }
   });
+
+  const tog = document.getElementById('home-burger-toggle');
+  const menu = document.getElementById('burgerMenu');
+
+  // Set will-change when the element is hovered
+  tog.addEventListener('mouseenter', hintBrowser);
+  tog.addEventListener('animationEnd', removeHint);
+
+  function hintBrowser() {
+    // The optimizable properties that are going to change
+    // in the animation's keyframes block
+    menu.style.willChange = 'transform';
+  }
+
+  function removeHint() {
+    menu.style.willChange = 'auto';
+  }
 };
