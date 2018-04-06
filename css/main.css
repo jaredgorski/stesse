@@ -48,6 +48,7 @@ header#homepage-header {
   width: 100vw;
   background: transparent;
   box-shadow: none;
+  overflow: hidden;
 }
 
 header#homepage-header::before {
