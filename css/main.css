@@ -51,7 +51,9 @@ header#homepage-header {
 }
 
 header#homepage-header::before {
+  /*speeds up page-reload a bit right now, test later too*/
   will-change: transform;
+
   bottom: 0;
   content: "";
   position: absolute;
