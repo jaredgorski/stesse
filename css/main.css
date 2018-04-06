@@ -444,6 +444,10 @@ main h1 {
   margin-bottom: 2.5%;
 }
 
+.recent-post-preview h4 {
+  margin: 2% 0 1% 0;
+}
+
 .featured-post {
   box-sizing: border-box;
   width: 100%;
