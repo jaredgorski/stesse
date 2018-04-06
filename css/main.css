@@ -21,6 +21,11 @@ p {
   font-size: 14px;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* ------ HEADER ------ */
 
 header {
@@ -102,7 +107,6 @@ nav {
   right: 2em;
   z-index: 51;
   user-select: none;
-  -webkit-user-select: none;
 }
 
 .burgerMenu {
@@ -375,9 +379,19 @@ main h1 {
 .main-box-cover {
   box-sizing: border-box;
   width: 100%;
-  padding-top: 40%;
   background-image: url(../images/content-images/hiker.jpg);
   background-size: cover;
+}
+
+.main-box-cover h1 {
+  color: #fff;
+  margin: 13% 0;
+  font-size: 40px;
+}
+
+.box-container h2 {
+  width: 100%;
+  margin: 2% auto 1% auto;
 }
 
 .box {
@@ -386,9 +400,58 @@ main h1 {
   height: auto;
 }
 
+.box-1 {
+  width: 100%;
+  padding-top: 60%;
+  background-image: url(../images/content-images/backpack.jpg);
+  background-size: cover;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1),
+              -3px -3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.box-2 {
+  width: 100%;
+  padding-top: 60%;
+  background-image: url(../images/content-images/packing.jpg);
+  background-size: cover;
+  box-shadow: 5px 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.box-3 {
+  width: 100%;
+  padding-top: 60%;
+  background-image: url(../images/content-images/camera.jpg);
+  background-size: cover;
+  box-shadow: 5px 0 12px rgba(0, 0, 0, 0.1);
+}
+
 .main-box img, .box img {
   width: 100%;
   height: auto;
+}
+
+.photo-sub-banner {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 3% -8px;
+  height: auto;
+  width: 102vw;
+}
+
+.photo-sub-banner h2 {
+  position: absolute;
+  left: 12px;
+  width: 50%;
+  font-size: 40px;
+  margin: auto auto auto 2%;
+  text-align: left;
+}
+
+.photo-sub-banner img {
+  position: ;
+  right: 0;
+  margin: 2% 0 2% auto;
+  height: 200px;
 }
 
 
