@@ -48,7 +48,7 @@ header#homepage-header {
   width: 100vw;
   background: transparent;
   box-shadow: none;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 header#homepage-header::before {
@@ -343,7 +343,7 @@ main {
 
 main#home-main {
   box-sizing: border-box;
-  min-height: calc(50vh - 140px);
+  min-height: calc(100vh + 82px);
   padding: 1em 0.5em 3em 0.5em;
   box-shadow: 0 -5px 12px rgba(8, 41, 71, 0.18);
 }
@@ -361,16 +361,32 @@ main h1 {
 }
 
 .box-container {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
 }
 
-.box {
+.main-box {
+  box-sizing: border-box;
   width: 100%;
   height: auto;
 }
 
-.box img {
+.main-box-cover {
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 40%;
+  background-image: url(../images/content-images/hiker.jpg);
+  background-size: cover;
+}
+
+.box {
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+}
+
+.main-box img, .box img {
   width: 100%;
   height: auto;
 }
@@ -491,13 +507,15 @@ main h1 {
 /* ------ FOOTER ------ */
 
 footer {
-  display: block;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
   position: relative;
   bottom: 0;
   left: 0;
   right: 0;
   width: 100%;
-  height: 140px;
+  height: 110px;
   background-color: #333333;
   box-shadow: 0 -5px 12px rgba(8, 41, 71, 0.12);
   transition: 0.3s;
@@ -506,6 +524,35 @@ footer {
 footer p {
   color: #f9f9f9;
   margin: 0;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-links {
+  box-sizing: border-box;
+  width: 50%;
+  padding: 10px;
+  height: 90px;
+}
+
+.footer-email {
+  box-sizing: border-box;
+  width: 50%;
+  padding: 10px;
+  height: 90px;
+}
+
+.footer-copyright {
+  text-align: center;
+  width: 100%;
+  font-size: 12px;
 }
 
 
@@ -568,11 +615,16 @@ footer p {
 }*/
 
 @media (min-width: 600px) {
+  
   .box-container {
-    flex-direction: row;
+    flex-flow: row wrap;
   }
+
   .box {
     width: 33%;
+  }
+
+  .main-box, .box {
     padding: 0.5em;
   }
 
