@@ -348,7 +348,7 @@ main {
 main#home-main {
   box-sizing: border-box;
   min-height: calc(100vh + 82px);
-  padding: 1em 0.5em 3em 0.5em;
+  padding: 1em 0.5em 2em 0.5em;
   box-shadow: 0 -5px 12px rgba(8, 41, 71, 0.18);
 }
 
@@ -434,6 +434,51 @@ main h1 {
   height: auto;
 }
 
+.recent-post-preview {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  text-align: left;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 2.5%;
+}
+
+.featured-post {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 3% 5%;
+}
+
+.featured-post .home-post-image {
+  width: 100%;
+  padding-top: 60%;
+  background: url("../images/content-images/surfing-pic.jpg");
+  background-size: cover;
+}
+
+.secondary-post {
+  box-sizing: border-box;
+  width: 50%;
+  padding: 3% 5%;
+}
+
+.sp-1 .home-post-image {
+  width: 100%;
+  padding-top: 60%;
+  background: url("../images/content-images/analog-pic.jpg");
+  background-size: cover;
+}
+
+.sp-2 .home-post-image {
+  width: 100%;
+  padding-top: 60%;
+  background: url("../images/content-images/mechanical-pic.png");
+  background-size: cover;
+}
+
+
+
 .photo-sub-banner {
   display: flex;
   flex-flow: row wrap;
@@ -488,17 +533,17 @@ main h1 {
   box-shadow: 0 4px 6px rgba(8, 41, 71, 0.2);
 }
 
-#post-1 .post-image {
-  background: url("http://placeimg.com/600/400/arch");
-  background-size: contain;
-}
-
-#post-2 .post-image {
+.post-1 .post-image {
   background: url("http://placeimg.com/600/400/arch");
   background-size: cover;
 }
 
-#post-3 .post-image {
+.post-2 .post-image {
+  background: url("http://placeimg.com/600/400/arch");
+  background-size: cover;
+}
+
+.post-3 .post-image {
   background: url("http://placeimg.com/600/400/arch");
   background-size: cover;
 }
@@ -671,6 +716,16 @@ footer ul {
   header#homepage-header::before {
     background-image: url(../images/sts-bg-large.jpg);
   }
+
+  .photo-sub-banner h2 {
+    position: relative;
+    font-size: 60px;
+    margin: auto;
+  }
+
+  .photo-sub-banner img {
+    height: 400px;
+  }
 }
 
 
@@ -705,6 +760,10 @@ footer ul {
 
   .dimmer:hover {
     opacity: 0;
+  }
+
+  .photo-sub-banner img {
+    height: 300px;
   }
 
 }
