@@ -51,6 +51,7 @@ header#homepage-header {
 }
 
 header#homepage-header::before {
+  will-change: transform;
   bottom: 0;
   content: "";
   position: absolute;
