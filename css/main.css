@@ -586,7 +586,7 @@ img.bottomdot {
   box-sizing: border-box;
   display: flex;
   width: 96%;
-  max-width: 900px;
+  max-width: 1000px;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
@@ -835,25 +835,9 @@ footer ul {
     padding-top: 15%;
   }
 
-  header#homepage-header::before {
-    background-image: url(../images/sts-bg-medium.jpg);
-  }
-}
-
-@media (min-width: 1200px) {
-  .grid-product-container {
-    max-width: 900px;
-  }
-  .filters {
-    max-width: 900px;
-  }
-  header#homepage-header::before {
-    background-image: url(../images/sts-bg-large.jpg);
-  }
-
   .recent-post-preview {
     flex-flow: column wrap;
-    height: 700px;
+    max-height: 700px;
     max-width: 1350px;
   }
 
@@ -865,8 +849,28 @@ footer ul {
 
   .secondary-post {
     width: 30%;
-    flex-basis: 38%;
+    flex-basis: 50%;
     padding-left: 2%;
+  }
+
+  header#homepage-header::before {
+    background-image: url(../images/sts-bg-medium.jpg);
+  }
+}
+
+@media (min-width: 1200px) {
+  .image-grid {
+    max-width: 1200px;
+  }
+
+  .grid-product-container {
+    max-width: 900px;
+  }
+  .filters {
+    max-width: 900px;
+  }
+  header#homepage-header::before {
+    background-image: url(../images/sts-bg-large.jpg);
   }
 
   .photo-sub-banner h2 {
