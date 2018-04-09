@@ -45,17 +45,21 @@
         <div>
           <h1>Contact</h1>
         </div>
-        <div class="contact-form">
-          <form action="mailto:jared.gorski@liferay.com" method="post" enctype="text/plain">
-            Name:<br>
-            <input type="text" name="name"><br>
-            Email Address:<br>
-            <input type="text" name="mail"><br>
-            Body:<br>
-            <input type="text" name="body" size="20"><br><br>
-            <input type="submit" value="Send">
-            <input type="reset" value="Reset">
-          </form>
+        <div class="contact-container">
+          <div class="contact-form">
+            <form class="stscontact" action="mailto:jared.gorski@liferay.com" method="post" enctype="text/plain">
+              First Name:<br>
+              <input type="text" name="first-name" size="20" placeholder="First Name"><br><br>
+              Last Name:<br>
+              <input type="text" name="last-name" size="20" placeholder="Last Name"><br><br>
+              Email Address:<br>
+              <input type="text" name="mail" size="30" placeholder="example@website.com"><br><br>
+              Message:<br>
+              <textarea name="body" rows="6" cols="30" maxlength="1000" placeholder="What's on your mind?"></textarea><br><br>
+              <input type="submit" value="Send">
+              <input type="reset" value="Reset">
+            </form>
+          </div>
         </div>
       </main>
         <div>

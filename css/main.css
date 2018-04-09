@@ -36,6 +36,7 @@ header {
   width: 100%;
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
   transition: 0.3s;
+  z-index: 10;
 }
 
 .main-spacer {
@@ -711,17 +712,94 @@ img.bottomdot {
   max-width: 100%;
   min-width: 0;
   height: auto;
+  margin-bottom: 5%;
+  transition: 0.3s;
 }
 
-.product-img img {
-  height: auto;
-  max-width: 100%;
+.product-card:hover {
+  opacity: 0.7;
+  cursor: pointer;
 }
 
 .product-info {
   margin-top: auto;
 }
 
+.product-info h5, .product-info h6 {
+  margin: 4px;
+}
+
+.product-img {
+  width: 100%;
+  padding-top: 100%;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(8, 41, 71, 0.1);
+  margin-bottom: 12px;
+  transition: 0.3s;
+}
+
+.product-1 {
+  background-image: url(../images/content-images/products/p1.jpg);
+}
+.product-2 {
+  background-image: url(../images/content-images/products/p2.jpg);
+}
+.product-3 {
+  background-image: url(../images/content-images/products/p3.jpg);
+}
+.product-4 {
+  background-image: url(../images/content-images/products/p4.jpg);
+}
+.product-5 {
+  background-image: url(../images/content-images/products/p5.jpg);
+}
+.product-6 {
+  background-image: url(../images/content-images/products/p6.jpg);
+}
+.product-7 {
+  background-image: url(../images/content-images/products/p7.jpg);
+}
+.product-8 {
+  background-image: url(../images/content-images/products/p8.jpg);
+}
+.product-9 {
+  background-image: url(../images/content-images/products/p9.jpg);
+}
+.product-10 {
+  background-image: url(../images/content-images/products/p10.jpg);
+}
+.product-11 {
+  background-image: url(../images/content-images/products/p11.jpg);
+}
+.product-12 {
+  background-image: url(../images/content-images/products/p12.jpg);
+}
+.product-13 {
+  background-image: url(../images/content-images/products/p13.jpg);
+}
+.product-14 {
+  background-image: url(../images/content-images/products/p14.jpg);
+}
+.product-15 {
+  background-image: url(../images/content-images/products/p15.jpg);
+}
+
+
+/*contact*/
+.contact-container {
+  width: 100%;
+}
+
+.contact-form {
+  margin: 2% auto;
+}
+
+.stscontact {
+  
+}
 
 
 
