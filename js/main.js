@@ -9,6 +9,7 @@ window.onload = function() {
   document.getElementById("burgerTog").addEventListener("click",
   function navOpen() {
     if (menuTog.checked == true) {
+      document.body.classList.remove("parallax");
       document.body.classList.add("noScroll");
       document.getElementById("navOverlay").classList.add("navOpenOverlay");
 
@@ -22,6 +23,7 @@ window.onload = function() {
         weLeave[x].classList.add("iLeave");
       }
     } else {
+      document.body.classList.add("parallax");
       document.body.classList.remove("noScroll");
       document.getElementById("navOverlay").classList.remove("navOpenOverlay");
 

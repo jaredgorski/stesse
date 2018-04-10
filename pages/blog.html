@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>stesse | blog</title>
     <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
-    <link href="../css/normalize.css" rel="stylesheet">
+    <link href="../css/reset.css" rel="stylesheet">
     <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/responsive.css" rel="stylesheet">
     <script src="../js/main.js"></script>
   </head>
   <body>
     <div class="wrapper"> <!--wrapper div-->
 
       <div> <!-- wraps header -->
-        <header class="stdHeader canClear">
-          <div class="home-topbar">
+        <header class="canClear">
+          <div class="topbar">
             <div class="signin canFade" role="button">
               <a class="sign-in-link" href="#">
                 <img class="sign-in-icon" src="../images/sign-in-t.png" alt="sign-in">
@@ -42,21 +43,21 @@
       </div> <!-- end header -->
 
       <main class="whitebg">
-        <div class="main-spacer"></div>
+        <div class="fixedheader-spacer"></div>
         <h1>Blog</h1>
         <div class="content-container">
-          <div class="post-1 post-card">
-            <div class="post-image"></div>
+          <div class="post-card">
+            <div class="post-image" style="background-image:url(../images/content-images/surfing-pic.jpg);"></div>
             <h4>The Force Of Water</h4>
             <p>Surfing offers vast benefits to the creative process.</p>
           </div>
-          <div class="post-2 post-card">
-            <div class="post-image"></div>
+          <div class="post-card">
+            <div class="post-image" style="background-image:url(../images/content-images/analog-pic.jpg);"></div>
             <h4>Analog: Woodcase Pencils</h4>
             <p>How to stay grounded amidst the new analog writing trends.</p>
           </div>
-          <div class="post-3 post-card">
-            <div class="post-image"></div>
+          <div class="post-card">
+            <div class="post-image" style="background-image:url(../images/content-images/mechanical-pic.png);"></div>
             <h4>Mechanical Is Secure</h4>
             <p>Why mechanical film cameras are your best bet when all else fails.</p>
           </div>
@@ -75,7 +76,7 @@
           </div>
           <div class="footer-email">
             <p>Enter email below to subscribe to updates:</p>
-            <input type="email">
+            <input type="email" size="15">
           </div>
           <p class="footer-copyright">&copy; Jared Gorski 2018</p>
         </footer>

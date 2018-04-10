@@ -1,32 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html class="parallax">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>stesse | home</title>
     <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
-    <link href="../css/normalize.css" rel="stylesheet">
+    <link href="../css/reset.css" rel="stylesheet">
     <link href="../css/main.css" rel="stylesheet">
-    <style type="text/css">
-      html {
-        height: 100%;
-        overflow: hidden;
-      }
-
-      body {
-        transform-style: preserve-3d;
-        perspective: 2px;
-        overflow-y: scroll;
-      }
-    </style>
+    <link href="../css/parallax.css" rel="stylesheet">
+    <link href="../css/responsive.css" rel="stylesheet">
     <script src="../js/main.js"></script>
   </head>
-  <body id="homepage-body">
+  <body class="parallax">
     <div id="wrapper"> <!--wrapper div-->
       <div id="navOverlay"></div>
       <div> <!-- wraps header -->
-        <header id="homepage-header">
-          <div class="home-topbar">
+        <header class="parallax">
+          <div class="topbar">
             <div class="signin canFade" role="button">
               <a class="sign-in-link" id="homepage-login" href="#">
                 <img class="sign-in-icon" src="../images/sign-in-t.png" alt="sign-in">
@@ -34,7 +24,7 @@
               </a>
             </div>
             <nav>
-              <div class="burgerMenu-toggle" id="home-burger-toggle">
+              <div class="burgerMenu-toggle homeBurger">
                 <input id="burgerTog" type="checkbox">
                 <span></span>
                 <span></span>
@@ -61,41 +51,37 @@
       </div> <!-- end header -->
 
       <main id="home-main" class="whitebg">
-        <div class="box-container">
-          <div class="main-box">
-            <div class="main-box-cover">
-              <h1>discover stesse</h1>
-            </div>
+        <div class="boxes-container">
+          <div class="boxes-mainbox mainbox-cover1">
+            <h1>discover stesse</h1>
           </div>
-          <div class="recent-post-preview">
+          <div class="gridbox-2x2">
             <div class="featured-post">
-              <div class="home-post-image"></div>
-              <h4>The Force Of Water</h4>
-              <p>Surfing offers vast benefits to the creative process.</p>
+              <div class="article-image" style="background-image:url(../images/content-images/surfing-pic.jpg);"></div>
+              <h4>Adventure / Invention</h4>
+              <p>Outdoor activities such as surfing offer vast benefits to the creative process.</p>
             </div>
-            <div class="secondary-post sp-1">
-              <div class="home-post-image"></div>
-              <h4>Analog: Woodcase Pencils</h4>
-              <p>How to stay grounded amidst the new analog writing trends.</p>
+            <div class="side-post secondary-post">
+              <div class="article-image" style="background-image:url(../images/content-images/analog-pic.jpg);"></div>
+              <h4>Going Analog With Woodcase Pencils</h4>
             </div>
-            <div class="secondary-post sp-2">
-              <div class="home-post-image"></div>
-              <h4>Mechanical Is Secure</h4>
-              <p>Why mechanical film cameras are your best bet when all else fails.</p>
+            <div class="side-post tertiary-post">
+              <div class="article-image" style="background-image:url(../images/content-images/mechanical-pic.png);"></div>
+              <h4>Confident Shots: The Case For Mechanical Film Cameras</h4>
             </div>
           </div>
-          <box class="box-link-container">
-            <div class="box box-1">
+          <box class="linkbox-container">
+            <div class="linkbox" style="background-image:url(../images/content-images/backpack-dim.jpg);">
               <div class="dimmer">
                 <h1>blog</h1>
               </div>
             </div>
-            <div class="box box-2">
+            <div class="linkbox" style="background-image:url(../images/content-images/packing-dim.jpg);">
               <div class="dimmer">
                 <h1>gear</h1>
               </div>
             </div>
-            <div class="box box-3">
+            <div class="linkbox" style="background-image:url(../images/content-images/camera-dim.jpg);">
               <div class="dimmer">
                 <h1>photo</h1>
               </div>
@@ -119,7 +105,7 @@
           </div>
           <div class="footer-email">
             <p>Enter email below to subscribe to updates:</p>
-            <input type="email">
+            <input type="email" size="15">
           </div>
           <p class="footer-copyright">&copy; Jared Gorski 2018</p>
         </footer>
