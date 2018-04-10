@@ -3,9 +3,9 @@
 }
 
 html {
-  overflow-x: hidden;
+/*  overflow-x: hidden;
   overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch;*/
 }
 
 body {
@@ -13,12 +13,12 @@ body {
   height: 100%;
   font-family: sans-serif;
   background-color: #f9f9f9;
-  overflow-x: hidden;
-  overflow-y: scroll;
+/*  overflow-x: hidden;
+  overflow-y: scroll;*/
 }
 
 p {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 a {
@@ -32,18 +32,18 @@ header {
   background: #f5f5f5;
   position: fixed;
   top: 0;
-  height: 82px;
+  height: 5.125rem;
   width: 100%;
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
   transition: 0.3s;
 }
 
 .stdHeader {
-  .z-index: 10;
+  z-index: 10;
 }
 
 .main-spacer {
-  height: 82px;
+  height: 5.125rem;
   display: block;
 }
 
@@ -115,7 +115,7 @@ nav {
 
 .burgerMenu {
   margin: 0;
-  padding: 5px;
+  padding: 0.3125rem;
   overflow: hidden;
 }
 
@@ -273,8 +273,8 @@ nav {
 }
 
 .signin .sign-in-icon {
-  height: 34px;
-  width: 34px;
+  height: 2.125rem;
+  width: 2.125rem;
   margin: 0;
 }
 
@@ -351,7 +351,7 @@ main {
 
 main#home-main {
   box-sizing: border-box;
-  min-height: calc(100vh + 82px);
+  min-height: calc(100vh + 5.125rem);
   padding: 1em 0.5em 2em 0.5em;
   box-shadow: 0 -5px 12px rgba(8, 41, 71, 0.18);
 }
@@ -391,12 +391,12 @@ main h1 {
 .main-box-cover h1 {
   color: #fff;
   margin: 13% 4%;
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 .box-link-container {
   width: 100%;
-  max-width: 1350px;
+  max-width: 84.375rem;
   display: flex;
   flex-direction: column;
 }
@@ -408,14 +408,14 @@ main h1 {
   margin: 1% 0;
   height: auto;
   background-size: cover;
-  max-width: 450px;
+  max-width: 28.1875rem;
   align-self: center;
 }
 
 .box h1 {
   color: #fff;
   margin: 20% auto;
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 .box-1 {
@@ -510,7 +510,7 @@ main h1 {
   position: absolute;
   left: 12px;
   width: 50%;
-  font-size: 40px;
+  font-size: 2.5rem;
   margin: auto auto auto 2%;
   text-align: left;
 }
@@ -519,14 +519,14 @@ main h1 {
   position: ;
   right: 0;
   margin: 2% 0 2% auto;
-  height: 200px;
+  height: 12.5rem;
 }
 
 
 /*blog*/
 .post-card {
   display: block;
-  max-width: 700px;
+  max-width: 43.74rem;
   padding: 1.5%;
   margin: 1% auto 2% auto;
 }
@@ -540,7 +540,6 @@ main h1 {
 
 .post-card p {
   text-align: left;
-  margin-top: 0;
   margin-bottom: 3%;
 }
 
@@ -590,7 +589,7 @@ img.bottomdot {
   box-sizing: border-box;
   display: flex;
   width: 96%;
-  max-width: 1000px;
+  max-width: 62.5rem;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
@@ -686,7 +685,7 @@ img.bottomdot {
 /*products*/
 .filters {
   display: flex;
-  max-width: 600px;
+  max-width: 37.5rem;
   padding: 2%;
   margin: 0 auto;
   border-bottom: 1px rgba(150, 150, 150, 0.12) solid;
@@ -729,7 +728,7 @@ img.bottomdot {
 }
 
 .product-info h5, .product-info h6 {
-  margin: 4px;
+  margin: 0.25rem;
 }
 
 .product-img {
@@ -740,7 +739,7 @@ img.bottomdot {
   background-repeat: no-repeat;
   background-color: #fff;
   box-shadow: 0 4px 6px rgba(8, 41, 71, 0.1);
-  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
   transition: 0.3s;
 }
 
@@ -831,7 +830,7 @@ footer {
   left: 0;
   right: 0;
   width: 100%;
-  height: 110px;
+  height: 6.875;
   background-color: #333333;
   box-shadow: 0 -5px 12px rgba(8, 41, 71, 0.12);
   transition: 0.3s;
@@ -839,7 +838,6 @@ footer {
 
 footer p {
   color: #f9f9f9;
-  margin: 0;
 }
 
 footer a {
@@ -855,20 +853,20 @@ footer ul {
   box-sizing: border-box;
   width: 50%;
   padding: 10px;
-  height: 90px;
+  height: 5.625rem;
 }
 
 .footer-email {
   box-sizing: border-box;
   width: 50%;
   padding: 10px;
-  height: 90px;
+  height: 5.625rem;
 }
 
 .footer-copyright {
   text-align: center;
   width: 100%;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 
