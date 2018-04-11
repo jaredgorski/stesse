@@ -127,6 +127,11 @@ ul.burgerMenu {
   transition: 0.3s;
 }
 
+.noScroll {
+  overflow: hidden;
+  position: fixed;
+}
+
 .fadeOut {
   opacity: 0;
 }
