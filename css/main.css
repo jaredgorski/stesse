@@ -8,9 +8,15 @@ header {
   transition: 0.3s;
   z-index: 1;
 }
+
+header.nonfix-header {
+  position: relative;
+}
+
 .fixedheader-spacer {
   height: 5.125rem;
 }
+
 .topbar {
   position: relative;
   display: flex;
@@ -18,150 +24,36 @@ header {
   width: 100vw;
   color: #fff;
 }
+
 nav, .signin {
   width: 50%;
 }
-.burgerMenu-toggle {
-  display: block;
-  position: absolute;
-  float: right;
-  top: 2em;
-  right: 2em;
-  z-index: 3;
-  user-select: none;
-}
-.burgerMenu {
-  margin: 0;
-  padding: 0.3125rem;
-  overflow: hidden;
-}
-.burgerMenu a {
-  text-decoration: none;
-  color: #333333;
-  transition: color 0.3s ease;
-}
-.burgerMenu a:hover {
-  color: #70a1ff;
-}
-.burgerMenu-toggle input {
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-  cursor: pointer;
-  opacity: 0;
-  z-index: 4;
-  -webkit-touch-callout: none;
-}
-.burgerMenu-toggle span {
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-  background: #333333;
-  z-index: 3;
-  transform-origin: 4px 0px;
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-              background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-              opacity 0.55s ease;
-}
-.homeBurger span {
-  background: #f9f9f9;
-}
-.burgerMenu-toggle span:first-child {
-  transform-origin: 0 0;
-}
-.burgerMenu-toggle span:nth-last-child(2) {
-  transform-origin: 0 100%;
-}
-.burgerMenu-toggle input:checked ~ span {
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #333333;
-  border-radius: 3px;
-}
-.burgerMenu-toggle input:checked ~ span:nth-last-child(3) {
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-.burgerMenu-toggle input:checked ~ span:nth-last-child(2) {
-  transform: rotate(-45deg) translate(0, -1px);
-}
-.burgerMenu {
-  position: absolute;
-  right: -50px;
-  width: 200px;
-  height: 200vh;
-  margin: -100px 0 0 0px;
-  padding: 50px;
-  padding-top: 125px;
-  background: #f9f9f9;
-  box-shadow: -5px 0 12px rgba(8, 41, 71, 0.12);
 
-  -webkit-font-smoothing: antialiased;
-  
-  transform-origin: 0% 0%;
-  transform: translate(100%, 0%);
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-}
-.burgerMenu li {
-  padding: 10px 0;
-  font-size: 1.75rem;
-  list-style-type: none;
-}
-.burgerMenu-toggle input:checked ~ ul {
-  transform: none;
-  position: absolute;
-}
-.burgerMenu-toggle input:checked {
-  scroll-behavior: none;
-}
-.navOpenOverlay {
-  position: absolute;
-  height: 200vh;
-  width: 100vw;
-  background-color: rgba(0, 0, 0, .7);
-  z-index: 2;
-}
-#navOverlay {
-  transition: 0.3s;
-}
-.noScroll {
-  overflow: hidden;
-}
-.fadeOut {
-  opacity: 0;
-}
-.clearOut {
-  background: transparent;
-  box-shadow: 0 5px 12px rgba(8, 41, 71, 0);
-}
-.iLeave {
-  display: none;
-}
 .signin {
   transition: 0.3s;
 }
+
 .signin .sign-in-link {
   display: inline-flex;
   text-decoration: none;
   color: #333;
   margin: 1.5em;
 }
+
 .signin .sign-in-link#homepage-login {
   color: #fff;
 }
+
 .signin .sign-in-icon {
   height: 2.125rem;
   width: 2.125rem;
   margin: 0;
 }
+
 .signin .sign-in-btntext {
   margin: auto 0 auto 0.5em;
 }
+
 
 main {
   display: block;
@@ -169,41 +61,49 @@ main {
   width: 100vw;
   text-align: center;
 }
+
 main.home-main {
   box-sizing: border-box;
   min-height: calc(100vh + 5.125rem);
   padding: 1em 0.5em 2em 0.5em;
   box-shadow: 0 -5px 12px rgba(8, 41, 71, 0.18);
 }
+
 main h1 {
   display: inline-block;
   margin: 0.5em auto 0.5em auto;
 }
+
 .content-container {
   box-sizing: border-box;
   width: 100%;
   height: 100%;
   padding: 0.5em;
 }
+
 .boxes-container {
   display: flex;
   flex-direction: column;
 }
+
 .boxes-mainbox {
   width: 100%;
   height: auto;
   margin-bottom: 2%;
   max-width: 84.375rem;
 }
+
 .mainbox-cover1 {
   background-image: url(../images/content-images/hiker.jpg);
   background-size: cover;
 }
+
 .mainbox-cover1 h1 {
   color: #fff;
   margin: 13% 4%;
   font-size: 2.5rem;
 }
+
 .gridbox-2x2 {
   width: 100%;
   box-sizing: border-box;
@@ -219,33 +119,41 @@ main h1 {
   margin: auto;
   margin-bottom: 2.5%;
 }
+
 .gridbox-2x2 h4, .post-card h4 {
   margin: 2% 0 1% 0;
 }
+
 .featured-post {
   grid-area: featured;
   box-sizing: border-box;
 }
+
 .secondary-post {
   grid-area: secondary;
 }
+
 .tertiary-post {
   grid-area: tertiary;
 }
+
 .article-image {
   width: 100%;
   padding-top: 60%;
   background-size: cover;
 }
+
 .side-post {
   box-sizing: border-box;
 }
+
 .linkbox-container {
   width: 100%;
   max-width: 84.375rem;
   display: flex;
   flex-direction: column;
 }
+
 .linkbox {
   position: relative;
   box-sizing: border-box;
@@ -258,10 +166,12 @@ main h1 {
   align-self: center;
   color: #fff;
 }
+
 .linkbox h1 {
   margin: 5% auto;
   font-size: 1.5rem;
 }
+
 .dimmer {
   width: 100%;
   height: 100%;
@@ -269,9 +179,11 @@ main h1 {
   opacity: 0.85;
   transition: 0.2s;
 }
+
 .dimmer:active {
   opacity: 0;
 }
+
 .photo-sub-banner {
   display: flex;
   flex-flow: row wrap;
@@ -280,6 +192,7 @@ main h1 {
   width: 102vw;
   max-width: 84.375rem;
 }
+
 .photo-sub-banner h2 {
   position: absolute;
   left: 12px;
@@ -288,11 +201,13 @@ main h1 {
   margin: auto auto auto 2%;
   text-align: left;
 }
+
 .photo-sub-banner img {
   right: 0;
   margin: 2% 0 2% auto;
   height: 8rem;
 }
+
 
 .blogpost-card {
   display: block;
@@ -301,6 +216,7 @@ main h1 {
   margin: 1% auto 2% auto;
   text-align: left;
 }
+
 .blogpost-image {
   display: block;
   background-size: cover;
@@ -310,11 +226,13 @@ main h1 {
   padding-top: 66%;
   box-shadow: 0 4px 6px rgba(8, 41, 71, 0.2);
 }
+
 img.bottomdot {
   height: 13px;
   width: 13px;
   margin: 10px auto 50px auto;
 }
+
 
 .filters {
   display: flex;
@@ -323,9 +241,11 @@ img.bottomdot {
   margin: 0 auto;
   border-bottom: 1px rgba(150, 150, 150, 0.12) solid;
 }
+
 .product-filter h1 {
   flex-grow: 1;
 }
+
 .grid-product-container {
   padding: 3.5% 2%;
   display: grid;
@@ -337,6 +257,7 @@ img.bottomdot {
   grid-auto-flow: row;
   margin: 0 auto;
 }
+
 .product-card {
   max-width: 100%;
   min-width: 0;
@@ -344,16 +265,20 @@ img.bottomdot {
   margin-bottom: 5%;
   transition: 0.3s;
 }
+
 .product-card:hover {
   opacity: 0.7;
   cursor: pointer;
 }
+
 .product-info {
   margin-top: auto;
 }
+
 .product-info h5, .product-info h6 {
   margin: 0.25rem;
 }
+
 .product-img {
   width: 100%;
   padding-top: 100%;
@@ -366,6 +291,7 @@ img.bottomdot {
   transition: 0.3s;
 }
 
+
 .gallery-container {
   box-sizing: border-box;
   display: flex;
@@ -375,6 +301,7 @@ img.bottomdot {
   align-items: center;
   margin-bottom: 1%;
 }
+
 .image-grid {
   box-sizing: border-box;
   display: flex;
@@ -384,6 +311,7 @@ img.bottomdot {
   justify-content: center;
   align-items: center;
 }
+
 .image-grid-content {
   box-sizing: border-box;
   width: 30%;
@@ -394,20 +322,24 @@ img.bottomdot {
   transition: 0.3s ;
   margin: 1%;
 }
+
 .image-grid-content:hover {
   cursor: pointer;
   transform: scale(1.1);
   box-shadow: 0 4px 6px rgba(8, 41, 71, 0.2);
 }
 
+
 .contact-container {
   width: 100%;
 }
+
 .contact-form {
   margin: 2% auto;
 }
 
-footer {
+
+footer.sts-footer {
   box-sizing: border-box;
   display: flex;
   flex-flow: row wrap;
@@ -422,30 +354,36 @@ footer {
   transition: 0.3s;
   color: #f9f9f9;
 }
+
 footer ul {
   padding: 0;
 }
+
 .footer-links {
   box-sizing: border-box;
   width: 50%;
   padding: 10px;
   height: 5.625rem;
 }
+
 .footer-email {
   box-sizing: border-box;
   width: 50%;
   padding: 10px;
   height: 5.625rem;
 }
+
 .footer-copyright {
   text-align: center;
   width: 100%;
   font-size: 0.75rem;
 }
 
+
 .whitebg {
   background-color: #fafafa;
 }
+
 .clearfix::after {
   content: "";
   clear: both;

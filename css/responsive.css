@@ -1,5 +1,6 @@
 /* ------ MEDIA QUERIES ------ */
 
+
 @media (min-width: 315px) {
   .grid-product-container {
     grid-template-columns: repeat(3, 1fr);
@@ -8,6 +9,7 @@
     max-width: 430px;
   }
 }
+
 @media (min-width: 560px) {
   .gridbox-2x2 {
     grid-template-areas: "featured secondary"
@@ -41,6 +43,7 @@
     height: 120px;
   }
 }
+
 @media (min-width: 625px) {
   .grid-product-container {
     grid-template-columns: repeat(4, 1fr);
@@ -71,6 +74,7 @@
     opacity: 0;
   }
 }
+
 @media (min-width: 760px) {
   .burgerMenu {
     width: 100px;
@@ -91,6 +95,7 @@
     display: block;
   }
 }
+
 @media (min-width: 800px) {
 
   .grid-product-container {
@@ -112,6 +117,7 @@
     height: 160px;
   }
 }
+
 @media (min-width: 1000px) {
   .photo-sub-banner h2 {
     font-size: 50px;
@@ -120,6 +126,7 @@
     height: 180px;
   }
 }
+
 @media (min-width: 1200px) {
   .image-grid {
     max-width: 1200px;
@@ -138,6 +145,7 @@
     height: 200px;
   }
 }
+
 @media only screen 
 and (min-device-width : 375px) 
 and (max-device-width : 667px) {

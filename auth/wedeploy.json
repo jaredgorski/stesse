@@ -1,0 +1,8 @@
+{
+  "id": "stsauth",
+  "image": "wedeploy/auth:2.0.0",
+  "env": {
+    "WEDEPLOY_AUTH_SECURE_FIELDS": "password",
+    "WEDEPLOY_AUTH_PASSWORD": "true"
+  }
+}
