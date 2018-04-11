@@ -1,4 +1,4 @@
-// Behavior when nav menu opened
+// Behavior when nav menu opened and closed
 window.onload = function() {
   const menuTog = document.getElementById("burgerTog");
   let weFade = document.getElementsByClassName("canFade");
@@ -62,3 +62,57 @@ window.onload = function() {
     }
   });
 };
+
+
+
+
+
+
+// Insert create user method below
+var auth = WeDeploy.auth('auth-stesse.wedeploy.io');
+
+function submitForm() {
+  auth.createUser({
+    email: user.email.value,
+    name: user.name.value,
+    password: user.password.value
+  })
+  .then(function() {
+    alert('Account successfully created!');
+    signIn();
+    user.reset();
+  })
+  .catch(function() {
+    alert('Sign-up failed. Try another email.');
+    user.reset();
+  });
+}
+// Insert create user method above
+
+
+// Insert sign-in method below
+function signIn() {
+  auth.signInWithEmailAndPassword(user.email.value, user.password.value)
+  .then(function() {
+    document.location.href = '../pages/index.html';
+  })
+  .catch(function() {
+    alert('Sign-in failed. Try another email/password.');
+  });
+}
+// Insert sign-in method above
+
+
+// Insert current user selector below
+if (auth.currentUser) {
+    document.querySelector('.username').innerHTML = auth.currentUser.name;
+}
+// Insert current user selector above
+
+
+function out() {
+  auth.signOut()
+  .then(() => {
+    location.href = '../pages/index.html';
+  });
+}

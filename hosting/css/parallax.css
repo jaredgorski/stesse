@@ -5,13 +5,16 @@ html.parallax {
   height: 100%;
   overflow: hidden;
 }
+
 body.parallax {
   transform-style: preserve-3d;
   perspective: 2px;
 }
+
 body.parallax-bodyscroll {
   overflow-y: scroll;
 }
+
 header.parallax {
   box-sizing: border-box;
   height: 90vh;
@@ -22,6 +25,7 @@ header.parallax {
   box-shadow: none;
   z-index: auto;
 }
+
 header.parallax::before {
   /*speeds up page-reload a bit right now, test later too*/
   will-change: transform;
@@ -40,6 +44,7 @@ header.parallax::before {
   z-index: -1;
   min-height: 100vh;
 }
+
 .stslogo-container {
   position: absolute;
   margin: auto;
@@ -50,6 +55,7 @@ header.parallax::before {
   width: 100%;
   height: 50%;
 }
+
 .stslogo {
   position: absolute;
   margin: auto;
@@ -62,6 +68,7 @@ header.parallax::before {
   max-height: 30vh;
   transition: 0.3s;
 }
+
 .arrow {
   width: 60px;
   height: 72px;
@@ -71,11 +78,17 @@ header.parallax::before {
   bottom: 5%;
   transition: 0.3s;
 }
+
 .arrow path {
   stroke: #fff;
   fill: transparent;
   stroke-width: 2px;
   animation: arrow 5s infinite;
 }
+
 @keyframes arrow {
-0% {opacity:0}40% {opacity:0.3}80% {opacity:0}100% {opacity:0}}
+0% {opacity:0}
+40% {opacity:0.3}
+80% {opacity:0}
+100% {opacity:0}
+}

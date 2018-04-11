@@ -3,18 +3,17 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>stesse | blog</title>
+    <title>stesse | sign in</title>
     <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
     <link href="../css/reset.css" rel="stylesheet">
     <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/burger.css" rel="stylesheet">
     <link href="../css/responsive.css" rel="stylesheet">
-    <script src="../js/main.js"></script>
   </head>
   <body>
     <div class="wrapper"> <!--wrapper div-->
-
       <div> <!-- wraps header -->
-        <header class="canClear">
+        <header class="nonfix-header canClear">
           <div class="topbar">
             <div class="signin canFade" role="button">
               <a class="sign-in-link" href="#">
@@ -30,10 +29,10 @@
                 <span></span>
                 <ul class="burgerMenu">
                   <a href="../pages/index.html"><li>home</li></a>
-                  <a href=""><li>blog</li></a>
+                  <a href="../pages/blog.html"><li>blog</li></a>
                   <a href="../pages/products.html"><li>products</li></a>
                   <a href="../pages/gallery.html"><li>gallery</li></a>
-                  <a href="../pages/contact.html"><li>contact</li></a>
+                  <a href=""><li>contact</li></a>
                 </ul>
               </div>
             </nav>
@@ -43,37 +42,29 @@
       </div> <!-- end header -->
 
       <main class="whitebg">
-        <div class="fixedheader-spacer"></div>
-        <h1>Blog</h1>
-        <div class="content-container">
-          <a href="#">
-            <div class="blogpost-card">
-              <div class="blogpost-image" style="background-image:url(../images/content-images/surfing-pic.jpg);"></div>
-              <h4>Adventure / Invention</h4>
-              <p>Outdoor activities such as surfing offer vast benefits to the creative process.</p>
-            </div>
-          </a>
-          <a href="#">
-            <div class="blogpost-card">
-              <div class="blogpost-image" style="background-image:url(../images/content-images/analog-pic.jpg);"></div>
-              <h4>Going Analog With Woodcase Pencils</h4>
-              <p>How to stay grounded amidst the new analog writing trends.</p>
-            </div>
-          </a>
-          <a href="#">
-            <div class="blogpost-card">
-              <div class="blogpost-image" style="background-image:url(../images/content-images/mechanical-pic.png);"></div>
-              <h4>Confident Shots: The Case For Mechanical Film Cameras</h4>
-              <p>Why mechanical film cameras are your best bet when all else fails.</p>
-            </div>
-          </a>
-        </div>
         <div>
-          <img class="bottomdot" src="../images/blogdot.png">
+          <h1>Sign In</h1>
+        </div>
+        <div class="signin-container">
+          <form class="signin-form" name="user" onsubmit="signIn(); return false;">
+            <p class="description">Enter your credentials below.</p>    
+            <div class="form-group">
+              <label>Email</label>
+              <input name="email" type="email" placeholder="Enter your email address" required>
+            </div>
+            <div class="form-group">
+              <label>Password</label>
+              <input name="password" type="password" placeholder="Enter your password" required>
+            </div>
+            <button class="btn submit" type="submit">Sign In</button>
+          </form>
+        </div>
+        <div class="signup-container">
+          <p>Need an account?</p><a class="link" href="../pages/sts-signup.html">&nbsp;Sign up today.</a>
         </div>
       </main>
         <div>
-          <footer>
+          <footer class="sts-footer">
           <div class="footer-links">
             <ul>
               <li><a href="amazon.com"><p>Amazon Marketplace</p></a></li>
@@ -88,5 +79,10 @@
         </footer>
         </div>
     </div> <!--closes wrapper div-->
+
+<script src="https://cdn.wedeploy.com/api/4.2.0/wedeploy.js"></script>
+<script src="../js/main.js"></script>
+<script>if (auth.currentUser) {document.location.href = '../pages/index.html';}</script>
+
   </body>
 </html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>stesse | contact</title>
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link href="../css/reset.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/burger.css" rel="stylesheet">
+    <link href="../css/responsive.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper"> <!--wrapper div-->
+      <div> <!-- wraps header -->
+        <header class="canClear">
+          <div class="topbar">
+            <div class="signin canFade" role="button">
+              <a class="sign-in-link" href="../pages/sts-signin.html">
+                <img class="sign-in-icon" src="../images/sign-in-t.png" alt="sign-in">
+                <span class="sign-in-btntext">login</span>
+              </a>
+            </div>
+            <nav>
+              <div class="burgerMenu-toggle">
+                <input id="burgerTog" type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul class="burgerMenu">
+                  <a href="../pages/index.html"><li>home</li></a>
+                  <a href="../pages/blog.html"><li>blog</li></a>
+                  <a href="../pages/products.html"><li>products</li></a>
+                  <a href="../pages/gallery.html"><li>gallery</li></a>
+                  <a href=""><li>contact</li></a>
+                </ul>
+              </div>
+            </nav>
+            <div id="navOverlay"></div>
+          </div>
+        </header>
+      </div> <!-- end header -->
+
+      <main class="whitebg">
+        <div class="fixedheader-spacer"></div>
+        <div>
+          <h1>Contact</h1>
+        </div>
+        <div class="contact-container">
+          <div class="contact-form">
+            <form class="stscontact" action="mailto:jared.gorski@liferay.com" method="post" enctype="text/plain">
+              First Name:<br>
+              <input type="text" name="first-name" size="20" placeholder="First Name"><br><br>
+              Last Name:<br>
+              <input type="text" name="last-name" size="20" placeholder="Last Name"><br><br>
+              Email Address:<br>
+              <input type="text" name="mail" size="30" placeholder="example@website.com"><br><br>
+              Message:<br>
+              <textarea name="body" rows="6" cols="30" maxlength="1000" placeholder="What's on your mind?"></textarea><br><br>
+              <input type="submit" value="Send">
+              <input type="reset" value="Reset">
+            </form>
+          </div>
+        </div>
+      </main>
+        <div>
+          <footer class="sts-footer">
+          <div class="footer-links">
+            <ul>
+              <li><a href="amazon.com"><p>Amazon Marketplace</p></a></li>
+              <li><a href="wedeploy.com"><p>WeDeploy</p></a></li>
+            </ul>
+          </div>
+          <div class="footer-email">
+            <p>Enter email below to subscribe to updates:</p>
+            <input type="email" size="15">
+          </div>
+          <p class="footer-copyright">&copy; Jared Gorski 2018</p>
+        </footer>
+        </div>
+    </div> <!--closes wrapper div-->
+<script src="../js/main.js"></script>
+  </body>
+</html>
