@@ -13,9 +13,14 @@ body {
   height: 100%;
   font-family: sans-serif;
   background-color: #f9f9f9;
+  overflow: hidden;
+}
+.wrapper {
+  position: relative;
 }
 p {
-  font-size: 0.875rem;
+  font-size: 0.875em;
+  margin: 0.6em 0;
 }
 a {
   text-decoration: none;
@@ -28,6 +33,18 @@ ul {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
+}
+h2 {
+  font-size: 1.5em;
+  margin: 0.65em 0;
+}
+h3 {
+  font-size: 1.125em;
+  margin: 0.62em 0;
+}
+h4 {
+  font-size: 1em;
+  margin: 0.6em 0;
 }
 img {
   border-style: none;

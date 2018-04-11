@@ -10,7 +10,6 @@ window.onload = function() {
   function navOpen() {
     if (menuTog.checked == true) {
       document.body.classList.remove("parallax-bodyscroll");
-      document.body.classList.add("noScroll");
       document.getElementById("navOverlay").classList.add("navOpenOverlay");
 
       for (x = 0; x < weFade.length; x++) {
@@ -24,7 +23,6 @@ window.onload = function() {
       }
     } else {
       document.body.classList.add("parallax-bodyscroll");
-      document.body.classList.remove("noScroll");
       document.getElementById("navOverlay").classList.remove("navOpenOverlay");
 
       for (x = 0; x < weFade.length; x++) {
@@ -45,7 +43,7 @@ window.onload = function() {
     if (menuTog.checked == true) {
       menuTog.checked = false;
 
-      document.body.classList.remove("noScroll");
+      document.body.classList.add("parallax-bodyscroll");
       document.getElementById("navOverlay").classList.remove("navOpenOverlay");
 
       for (x = 0; x < weFade.length; x++) {

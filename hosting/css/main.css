@@ -9,12 +9,16 @@ header {
   z-index: 1;
 }
 
-header.nonfix-header {
+header.generic-page {
   position: relative;
 }
 
 .fixedheader-spacer {
   height: 5.125rem;
+}
+
+.absolutefooter-spacer {
+  height: 6.875rem;
 }
 
 .topbar {
@@ -57,16 +61,21 @@ nav, .signin {
 
 main {
   display: block;
-  min-height: 100vh;
+  min-height: calc(100vh + 6.875rem - 5.125rem); /*to account for header and footer*/
   width: 100vw;
   text-align: center;
+  overflow: hidden;
 }
 
 main.home-main {
   box-sizing: border-box;
-  min-height: calc(100vh + 5.125rem);
+  min-height: 100vh;
   padding: 1em 0.5em 2em 0.5em;
   box-shadow: 0 -5px 12px rgba(8, 41, 71, 0.18);
+}
+
+main.generic-page {
+  min-height: calc(100vh - 5.125rem);
 }
 
 main h1 {
@@ -343,12 +352,11 @@ footer.sts-footer {
   box-sizing: border-box;
   display: flex;
   flex-flow: row wrap;
-  position: relative;
+  position: absolute;
   bottom: 0;
   left: 0;
-  right: 0;
   width: 100%;
-  height: 6.875;
+  height: 6.875rem;
   background-color: #333333;
   box-shadow: 0 -5px 12px rgba(8, 41, 71, 0.12);
   transition: 0.3s;
@@ -377,6 +385,7 @@ footer ul {
   text-align: center;
   width: 100%;
   font-size: 0.75rem;
+  margin-bottom: 0;
 }
 
 

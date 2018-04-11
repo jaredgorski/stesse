@@ -11,7 +11,6 @@
 .burgerMenu {
   margin: 0;
   padding: 0.3125rem;
-  overflow: hidden;
 }
 
 .burgerMenu a {
@@ -83,7 +82,7 @@
   position: absolute;
   right: -50px;
   width: 200px;
-  height: 200vh;
+  height: 110vh;
   margin: -100px 0 0 0px;
   padding: 50px;
   padding-top: 125px;
@@ -95,6 +94,10 @@
   transform-origin: 0% 0%;
   transform: translate(100%, 0%);
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+ul.burgerMenu {
+  overflow: hidden;
 }
 
 .burgerMenu li {
@@ -114,7 +117,7 @@
 
 .navOpenOverlay {
   position: absolute;
-  height: 200vh;
+  height: 110vh;
   width: 100vw;
   background-color: rgba(0, 0, 0, .7);
   z-index: 2;
@@ -122,10 +125,6 @@
 
 #navOverlay {
   transition: 0.3s;
-}
-
-.noScroll {
-  overflow: hidden;
 }
 
 .fadeOut {
