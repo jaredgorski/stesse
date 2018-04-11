@@ -78,6 +78,9 @@
     padding-top: 125px;
     background: #fff;
   }
+  .burgerMenu li {
+  font-size: 1.375rem;
+}
   .navOpenOverlay {
     background-color: transparent;
   }
