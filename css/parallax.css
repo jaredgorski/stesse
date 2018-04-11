@@ -8,6 +8,8 @@ html.parallax {
 body.parallax {
   transform-style: preserve-3d;
   perspective: 2px;
+}
+body.parallax-bodyscroll {
   overflow-y: scroll;
 }
 header.parallax {

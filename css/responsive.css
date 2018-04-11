@@ -99,7 +99,7 @@
     width: 15%;
     padding-top: 15%;
   }
-  header#homepage-header::before {
+  header.parallax::before {
     background-image: url(../images/sts-bg-medium.jpg);
   }
   .photo-sub-banner h2 {
@@ -125,7 +125,7 @@
     max-width: 900px;
   }  .filters {
     max-width: 900px;
-  }  header#homepage-header::before {
+  }  header.parallax::before {
     background-image: url(../images/sts-bg-large.jpg);
   }
   .photo-sub-banner h2 {
@@ -150,7 +150,7 @@ and (max-device-width : 667px) {
     transform-style: flat;
     perspective: none;
   }
-  header#homepage-header::before {
+  header.parallax::before {
     transform-origin: none;
     transform: none;
   }
