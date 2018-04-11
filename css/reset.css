@@ -7,7 +7,6 @@ html {
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
 }
-
 body {
   margin: 0;
   display: block;
@@ -15,26 +14,24 @@ body {
   font-family: sans-serif;
   background-color: #f9f9f9;
 }
-
 p {
   font-size: 0.875rem;
 }
-
 a {
   text-decoration: none;
   color: inherit;
   background-color: transparent;
 }
-
+ul {
+  list-style-type: none;
+}
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
-
 img {
   border-style: none;
 }
-
 button,
 input,
 select,
@@ -44,24 +41,20 @@ textarea {
   line-height: 1.15;
   margin: 0;
 }
-
 button,
 input {
   overflow: visible;
 }
-
 button,
 select {
   text-transform: none;
 }
-
 button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button;
 }
-
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
@@ -69,43 +62,35 @@ button::-moz-focus-inner,
   border-style: none;
   padding: 0;
 }
-
 button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
-
 textarea {
   overflow: auto;
 }
-
 [type="checkbox"],
 [type="radio"] {
   box-sizing: border-box;
   padding: 0;
 }
-
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
-
 [type="search"] {
   -webkit-appearance: textfield;
   outline-offset: -2px;
 }
-
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
-
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
   font: inherit;
 }
-
 [hidden] {
   display: none;
 }
