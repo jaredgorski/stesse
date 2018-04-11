@@ -109,7 +109,7 @@ nav, .signin {
 }
 .burgerMenu li {
   padding: 10px 0;
-  font-size: 2rem;
+  font-size: 1.75rem;
   list-style-type: none;
 }
 .burgerMenu-toggle input:checked ~ ul {
