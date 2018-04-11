@@ -9,7 +9,7 @@ header {
   z-index: 1;
 }
 
-header.generic-page {
+header.nonfix-header {
   position: absolute;
 }
 
