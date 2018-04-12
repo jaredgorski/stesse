@@ -163,6 +163,6 @@ and (max-device-width : 667px) {
   header.parallax::before {
     transform-origin: none;
     transform: none;
-    overflow: hidden;
+/*    overflow: hidden;*/
   }
 }
