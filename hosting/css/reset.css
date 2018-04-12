@@ -13,7 +13,6 @@ body {
   height: 100%;
   font-family: sans-serif;
   background-color: #f9f9f9;
-  overflow: hidden;
 }
 .wrapper {
   position: relative;
