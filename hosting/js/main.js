@@ -3,12 +3,12 @@ const menuTog = document.getElementById("burgerTog");
 let weFade = document.getElementsByClassName("canFade");
 let weClear = document.getElementsByClassName("canClear");
 let weLeave = document.getElementsByClassName("canLeave");
+let stopScroll = document.getElementsByClassName("stopScroll");
 let classInstance;
 
 document.getElementById("burgerTog").addEventListener("click",
 function navOpen() {
   if (menuTog.checked == true) {
-    document.body.classList.add("noScroll");
     document.getElementById("navOverlay").classList.add("navOpenOverlay");
 
     for (classInstance = 0; classInstance < weFade.length; classInstance++) {
@@ -19,6 +19,9 @@ function navOpen() {
     }
     for (classInstance = 0; classInstance < weLeave.length; classInstance++) {
       weLeave[classInstance].classList.add("iLeave");
+    }
+    for (classInstance = 0; classInstance < stopScroll.length; classInstance++) {
+      stopScroll[classInstance].classList.add("noScroll");
     }
   } else {
     document.body.classList.remove("noScroll");
@@ -35,6 +38,9 @@ function navOpen() {
         weLeave[classInstance].classList.remove("iLeave");
       };
     }, 240);
+    for (classInstance = 0; classInstance < stopScroll.length; classInstance++) {
+      stopScroll[classInstance].classList.remove("noScroll");
+    }
   };
 });
 document.getElementById("navOverlay").addEventListener("click",
@@ -56,6 +62,9 @@ function clickOut() {
         weLeave[classInstance].classList.remove("iLeave");
       };
     }, 240);
+    for (classInstance = 0; classInstance < stopScroll.length; classInstance++) {
+      stopScroll[classInstance].classList.remove("noScroll");
+    }
   }
 });
 
