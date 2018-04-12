@@ -164,8 +164,5 @@
   header.parallax::before {
     transform-origin: none;
     transform: none;
-    background-size: contain;
-    position: fixed;
-    overflow: hidden;
   }
 }
