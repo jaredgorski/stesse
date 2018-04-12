@@ -3,7 +3,6 @@ parallax effect */
 
 html.parallax {
   height: 100%;
-  overflow: hidden;
 }
 
 body.parallax {
@@ -12,7 +11,11 @@ body.parallax {
 }
 
 body.parallax-bodyscroll {
-  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.parallax-wrapper {
+  position: relative;
 }
 
 header.parallax {
@@ -21,7 +24,7 @@ header.parallax {
   position: relative;
   transform-style: inherit;
   width: 100vw;
-  background: transparent;
+  background: rgba(20, 20, 20, 0.75);
   box-shadow: none;
   z-index: auto;
 }
@@ -30,7 +33,6 @@ header.parallax::before {
   /*speeds up page-reload a bit right now, test later too*/
   will-change: transform;
 
-  bottom: 0;
   content: "";
   position: absolute;
   top: 0;
@@ -39,11 +41,17 @@ header.parallax::before {
   display: block;
   background-image: url(../images/sts-bg-mobile.jpg);
   background-size: cover;
-  background-position: center top;
+  background-position: center;
   transform-origin: center center 0;
   transform: translateZ(-1px) scale(2);
   z-index: -1;
-  min-height: 100vh;
+  height: 100%;
+}
+
+@-moz-document url-prefix() {
+  header.parallax::before {
+    position: fixed;
+  }
 }
 
 .stslogo-container {
