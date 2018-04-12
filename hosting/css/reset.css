@@ -10,11 +10,11 @@ html {
 body {
   margin: 0;
   display: block;
-/*  height: 100%;*/
   font-family: sans-serif;
   background-color: #f9f9f9;
 }
 .wrapper {
+  height: 100%;
   position: relative;
   overflow: hidden;
 }
