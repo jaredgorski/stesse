@@ -153,7 +153,7 @@
 and (min-device-width : 375px) 
 and (max-device-width : 667px) {
   html {
-/*    height: auto;*/
+    height: initial;
   }
   body {
     transform-style: flat;
@@ -163,6 +163,5 @@ and (max-device-width : 667px) {
   header.parallax::before {
     transform-origin: none;
     transform: none;
-/*    overflow: hidden;*/
   }
 }
