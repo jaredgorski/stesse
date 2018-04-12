@@ -79,6 +79,9 @@
   header.parallax {
     height: 70vh;
   }
+  header.parallax::before {
+    background-position: center top;
+  }
   .burgerMenu {
     width: 100px;
     padding: 20px;
@@ -167,7 +170,6 @@
   header.parallax::before {
     transform-origin: none;
     transform: none;
-    background-size: initial;
     position: fixed;
     overflow: hidden;
   }
