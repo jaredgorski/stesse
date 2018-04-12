@@ -158,7 +158,7 @@ and (max-device-width : 667px) {
     height: auto;
   }
   header {
-    overflow: hidden;
+    overflow-x: hidden;
   }
   body.parallax {
     overflow-x: initial;
