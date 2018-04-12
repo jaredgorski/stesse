@@ -150,16 +150,17 @@
 and (min-device-width : 375px) 
 and (max-device-width : 667px) {
   html {
-    height: 100%;
+    /*height: 100%;*/
     overflow: scroll;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
   }
   body {
-    overflow-x: hidden;
+    /*overflow-x: hidden;
     overflow-y: auto;
     transform-style: flat;
-    perspective: none;
+    perspective: none;*/
+    height: auto;
   }
   header.parallax::before {
     transform-origin: none;

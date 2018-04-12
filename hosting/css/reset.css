@@ -12,9 +12,9 @@ body {
   display: block;
   font-family: sans-serif;
   background-color: #f9f9f9;
+  height: 100%;
 }
 .wrapper {
-  height: 100%;
   position: relative;
   overflow: hidden;
 }
