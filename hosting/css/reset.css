@@ -1,6 +1,6 @@
 /*! REVISED FROM:  normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 
-html {
+/*html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   overflow-x: hidden;
@@ -17,7 +17,7 @@ body {
 .wrapper {
   position: relative;
   overflow: hidden;
-}
+}*/
 p {
   font-size: 0.875em;
   margin: 0.6em 0;
