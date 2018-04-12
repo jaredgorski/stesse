@@ -152,13 +152,17 @@
 @media only screen 
 and (min-device-width : 375px) 
 and (max-device-width : 667px) {
-  body {
-/*    transform-style: flat;
-    perspective: none;*/
+  html {
 /*    height: auto;*/
   }
+  body {
+    transform-style: flat;
+    perspective: none;
+    height: initial;
+  }
   header.parallax::before {
-/*    transform-origin: none;
-    transform: none;*/
+    transform-origin: none;
+    transform: none;
+    overflow: hidden;
   }
 }
