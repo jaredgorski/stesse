@@ -157,9 +157,12 @@ and (max-device-width : 667px) {
     perspective: none;
     height: auto;
   }
-/*  body.parallax {
+  .parallax-wrapper {
+    overflow: hidden;
+  }
+  body.parallax {
     overflow-x: initial;
-  }*/
+  }
   header.parallax::before {
     transform-origin: none;
     transform: none;
