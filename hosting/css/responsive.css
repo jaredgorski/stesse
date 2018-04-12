@@ -156,8 +156,12 @@ and (max-device-width : 667px) {
     transform-style: flat;
     perspective: none;
     height: auto;
-/*    overflow-x: auto;
-    overflow-y: scroll;*/
+  }
+  header {
+    overflow: hidden;
+  }
+  body.parallax {
+    overflow-x: initial;
   }
   header.parallax::before {
     transform-origin: none;
