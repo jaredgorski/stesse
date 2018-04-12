@@ -162,12 +162,13 @@
     overflow-x: initial;
   }
   header.parallax {
-    height: 300px;
+    /*height: 300px;*/
   }
   header.parallax::before {
     transform-origin: none;
     transform: none;
     background-size: initial;
     position: fixed;
+    overflow: hidden;
   }
 }
