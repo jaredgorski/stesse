@@ -3,6 +3,7 @@ parallax effect */
 
 html.parallax {
   height: 100%;
+  overflow-x: hidden;
 }
 
 body.parallax {
