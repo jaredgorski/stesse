@@ -153,12 +153,14 @@
 and (min-device-width : 375px) 
 and (max-device-width : 667px) {
   body {
-/*    transform-style: flat;
-    perspective: none;*/
+    transform-style: flat;
+    perspective: none;
     height: auto;
+/*    overflow-x: auto;
+    overflow-y: scroll;*/
   }
   header.parallax::before {
-/*    transform-origin: none;
-    transform: none;*/
+    transform-origin: none;
+    transform: none;
   }
 }

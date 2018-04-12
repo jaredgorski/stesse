@@ -9,6 +9,7 @@ body.parallax {
   transform-style: preserve-3d;
   perspective: 2px;
   overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .parallax-wrapper {
