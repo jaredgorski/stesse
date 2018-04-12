@@ -8,7 +8,6 @@ let classInstance;
 document.getElementById("burgerTog").addEventListener("click",
 function navOpen() {
   if (menuTog.checked == true) {
-    document.body.classList.remove("parallax-bodyscroll");
     document.body.classList.add("noScroll");
     document.getElementById("navOverlay").classList.add("navOpenOverlay");
 
@@ -22,7 +21,6 @@ function navOpen() {
       weLeave[classInstance].classList.add("iLeave");
     }
   } else {
-    document.body.classList.add("parallax-bodyscroll");
     document.body.classList.remove("noScroll");
     document.getElementById("navOverlay").classList.remove("navOpenOverlay");
 
@@ -44,7 +42,6 @@ function clickOut() {
   if (menuTog.checked == true) {
     menuTog.checked = false;
 
-    document.body.classList.add("parallax-bodyscroll");
     document.body.classList.remove("noScroll");
     document.getElementById("navOverlay").classList.remove("navOpenOverlay");
 
