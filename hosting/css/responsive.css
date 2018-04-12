@@ -155,7 +155,7 @@ and (max-device-width : 667px) {
   body {
     transform-style: flat;
     perspective: none;
-/*    height: auto;*/
+    height: auto;
   }
 /*  body.parallax {
     overflow-x: initial;
