@@ -3,7 +3,6 @@ parallax effect */
 
 html.parallax {
   height: 100%;
-  overflow-x: hidden;
 }
 
 body.parallax {
@@ -39,7 +38,7 @@ header.parallax::before {
   display: block;
   background-image: url(../images/sts-bg-mobile.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: center top;
   transform-origin: center center 0;
   transform: translateZ(-1px) scale(2);
   z-index: -1;
