@@ -158,7 +158,7 @@ and (max-device-width : 667px) {
     height: auto;
   }
   header.parallax::before {
-    transform-origin: none;
-    transform: none;
+/*    transform-origin: none;
+    transform: none;*/
   }
 }
