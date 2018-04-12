@@ -1,7 +1,6 @@
 /*! REVISED FROM:  normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 
 html {
-  position: relative;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   overflow-x: hidden;
@@ -9,7 +8,6 @@ html {
   -webkit-overflow-scrolling: touch;
 }
 body {
-  position: relative;
   margin: 0;
   display: block;
   height: 100%;
