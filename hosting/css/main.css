@@ -98,13 +98,36 @@ main h1 {
 .boxes-mainbox {
   width: 100%;
   height: auto;
-  margin-bottom: 2%;
+  margin: 2% 0;
   max-width: 84.375rem;
 }
 
-.mainbox-cover1 {
-  background-image: url(../images/content-images/hiker.jpg);
+.boxes-section-dark {
+  width: 100vw;
+  height: 300px;
+  margin: 2% -0.5em;
+  background-color: rgba(51, 51, 51, 0.8);
   background-size: cover;
+}
+
+.featproducts-grid {
+  width: 100%;
+  display: grid;
+  grid-template-areas: "product1 product2 product3";
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2%;
+}
+
+.featproduct-card {
+  width: 100%;
+}
+
+.featproduct-img {
+  padding-top: 100%;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .mainbox-cover1 h1 {
