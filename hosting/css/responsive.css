@@ -67,7 +67,6 @@
     padding: 0.5em;
   }
   .dimmer {
-    opacity: 0.65;
     transition: 0.2s;
   }
   .dimmer:hover {
