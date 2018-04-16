@@ -73,8 +73,8 @@ function clickOut() {
 
 
 
-// Insert create user method below
-var auth = WeDeploy.auth('auth-stesse.wedeploy.io');
+// Create user method
+var auth = WeDeploy.auth('stsauth-stesse.wedeploy.io');
 
 function submitForm() {
   auth.createUser({
@@ -88,33 +88,31 @@ function submitForm() {
     user.reset();
   })
   .catch(function() {
+    console.log(error);
     alert('Sign-up failed. Try another email.');
     user.reset();
   });
 }
-// Insert create user method above
 
 
-// Insert sign-in method below
+// Sign-in method
 function signIn() {
   auth.signInWithEmailAndPassword(user.email.value, user.password.value)
   .then(function() {
-    document.location.href = '../pages/index.html';
+    document.location.href = '../pages/welcome.html';
   })
   .catch(function() {
     alert('Sign-in failed. Try another email/password.');
   });
 }
-// Insert sign-in method above
 
 
-// Insert current user selector below
+// Current user selector
 if (auth.currentUser) {
     document.querySelector('.username').innerHTML = auth.currentUser.name;
 }
-// Insert current user selector above
 
-
+// Sign out function
 function out() {
   auth.signOut()
   .then(() => {

@@ -4,7 +4,6 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   overflow-x: hidden;
-  overflow-y: scroll;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
 }
