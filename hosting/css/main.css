@@ -3,7 +3,7 @@ header {
   position: fixed;
   top: 0;
   height: 5.125rem;
-  width: 100%;
+  width: 100vw;
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   z-index: 1;
@@ -31,9 +31,6 @@ header.nonfix-header {
 
 nav, .signin {
   width: 50%;
-}
-
-.signin {
   transition: 0.3s;
 }
 
@@ -364,12 +361,32 @@ img.bottomdot {
 }
 
 
-.contact-container {
-  width: 100%;
+.form-container {
+  max-width: 480px;
+  margin: 0 auto 0;
+  padding: 5vh 24px 0;
+  display: flex;
+  justify-content: center;
 }
 
-.contact-form {
-  margin: 2% auto;
+.form-description {
+  margin: 0 0 10%;
+}
+
+.form-suggestion {
+  margin: 5%;
+}
+
+.form-inputbox {
+  margin: 0 0 10%;
+}
+
+.input-label {
+  color: rgba(14, 20, 26, .8);
+  display: block;
+  margin: 0 0 5px;
+  text-align: left;
+  font-size: 14px;
 }
 
 
@@ -393,13 +410,6 @@ footer ul {
 }
 
 .footer-links {
-  box-sizing: border-box;
-  width: 50%;
-  padding: 10px;
-  height: 5.625rem;
-}
-
-.footer-email {
   box-sizing: border-box;
   width: 50%;
   padding: 10px;

@@ -22,7 +22,6 @@ header.parallax {
   height: 90vh;
   position: relative;
   transform-style: inherit;
-  width: 100vw;
   background: rgba(20, 20, 20, 0.75);
   box-shadow: none;
   z-index: auto;
