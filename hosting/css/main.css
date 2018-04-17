@@ -29,30 +29,26 @@ header.nonfix-header {
   color: #fff;
 }
 
-nav, .signin {
+nav, .topbar-left {
   width: 50%;
   transition: 0.3s;
 }
 
-.signin .sign-in-link {
+.topbar-left .topbar-left-link {
   display: inline-flex;
   text-decoration: none;
   color: #333;
-  margin: 1.5em;
+  margin: 1.2em;
 }
 
-.signin .sign-in-link#homepage-login {
+.topbar-left .topbar-left-link#homepage-topbar-left {
   color: #fff;
 }
 
-.signin .sign-in-icon {
-  height: 2.125rem;
-  width: 2.125rem;
+.topbar-left .topbar-left-logo {
+  width: 70px;
+  height: 48px;
   margin: 0;
-}
-
-.signin .sign-in-btntext {
-  margin: auto 0 auto 0.5em;
 }
 
 
