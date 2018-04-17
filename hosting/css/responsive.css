@@ -47,14 +47,10 @@
     grid-template-columns: repeat(4, 1fr);
     max-width: 600px;
     padding: 2%;
-  }  
-  .filters {
-    max-width: 600px;
-    border-bottom: none;
   }
   .image-grid-content {
-    width: 21%;
-    padding-top: 21%;
+  width: 30%;
+  padding-top: 30%;
   }
   .boxes-container {
     flex-flow: row wrap;
@@ -102,8 +98,8 @@
     max-width: 800px;
   }
   .image-grid-content {
-    width: 15%;
-    padding-top: 15%;
+    width: 21%;
+    padding-top: 21%;
   }
   header.parallax::before {
     background-image: url(../images/sts-bg-medium.jpg);
@@ -122,6 +118,10 @@
   }
   .photo-sub-banner img {
     height: 180px;
+  }
+  .image-grid-content {
+    width: 15%;
+    padding-top: 15%;
   }
 }
 

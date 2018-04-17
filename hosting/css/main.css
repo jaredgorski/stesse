@@ -329,8 +329,8 @@ img.bottomdot {
 
 .image-grid-content {
   box-sizing: border-box;
-  width: 30%;
-  padding-top: 30%;
+  width: 100%;
+  padding-top: 100%;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
