@@ -46,21 +46,21 @@
         <div>
           <h1>Sign In</h1>
         </div>
-        <div class="signin-container">
+        <div class="form-container">
           <form class="signin-form" name="user" onsubmit="signIn(); return false;">
-            <p class="description">Enter your credentials below.</p>    
-            <div class="form-group">
-              <label>Email</label>
+            <p class="form-description">Enter your credentials below.</p>   
+            <div class="form-inputbox">
+              <label class="input-label">Email</label>
               <input name="email" type="email" placeholder="Enter your email address" required>
             </div>
-            <div class="form-group">
-              <label>Password</label>
+            <div class="form-inputbox">
+              <label class="input-label">Password</label>
               <input name="password" type="password" placeholder="Enter your password" required>
             </div>
-            <button class="btn submit" type="submit">Sign In</button>
+            <button class="formbtn submit" type="submit">Sign In</button>
           </form>
         </div>
-        <div class="signup-container">
+        <div class="form-suggestion">
           <p>Need an account?</p><a class="link" href="../pages/sts-signup.html">&nbsp;Sign up today.</a>
         </div>
         <div class="absolutefooter-spacer"></div>
@@ -71,10 +71,6 @@
               <li><a href="amazon.com"><p>Amazon Marketplace</p></a></li>
               <li><a href="wedeploy.com"><p>WeDeploy</p></a></li>
             </ul>
-          </div>
-          <div class="footer-email">
-            <p>Enter email below to subscribe to updates:</p>
-            <input type="email" size="15">
           </div>
           <p class="footer-copyright">&copy; 2018 Jared Gorski</p>
         </footer>

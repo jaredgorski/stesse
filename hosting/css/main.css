@@ -405,8 +405,22 @@ footer.sts-footer {
   color: #f9f9f9;
 }
 
-footer ul {
-  padding: 0;
+footer p {
+  margin: 2px;
+  display: inline-block;
+}
+
+.footer-logo {
+  box-sizing: border-box;
+  width: 50%;
+  padding: 20px 0 0 10px;
+  height: 5.625rem;
+}
+
+.footer-logo img {
+  width: 3.125rem;
+  height: 3.125rem;
+  margin-left: 0.5em;
 }
 
 .footer-links {
@@ -416,11 +430,26 @@ footer ul {
   height: 5.625rem;
 }
 
+.footer-links-ul {
+  text-align: right;
+  margin: 8px 0;
+  padding: 0;
+}
+
+.footer-logo img, .footer-links-ul a {
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.footer-logo img:hover, .footer-links-ul a:hover {
+  opacity: 0.6;
+}
+
 .footer-copyright {
   text-align: center;
   width: 100%;
   font-size: 0.75rem;
-  margin-bottom: 0;
+  margin-bottom: 5px;
 }
 
 
