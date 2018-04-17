@@ -2,9 +2,6 @@
 
 
 @media (min-width: 315px) {
-  .grid-product-container {
-    grid-template-columns: repeat(3, 1fr);
-    max-width: 430px;
 }
 
 @media (min-width: 560px) {
@@ -38,6 +35,10 @@
   }
   .photo-sub-banner img {
     height: 120px;
+  }
+  .grid-product-container {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 430px;
   }
 }
 
