@@ -264,19 +264,6 @@ img.bottomdot {
   margin: 10px auto 50px auto;
 }
 
-
-.filters {
-  display: flex;
-  max-width: 37.5rem;
-  padding: 2%;
-  margin: 0 auto;
-  border-bottom: 1px rgba(150, 150, 150, 0.12) solid;
-}
-
-.product-filter h1 {
-  flex-grow: 1;
-}
-
 .grid-product-container {
   padding: 3.5% 2%;
   display: grid;
