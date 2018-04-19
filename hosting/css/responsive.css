@@ -66,6 +66,9 @@
   .dimmer:hover {
     opacity: 0;
   }
+  input, textarea {
+    max-width: 400px;
+  }
   .footer-logo img:hover, .footer-links-ul a:hover {
   opacity: 0.6;
   }
@@ -112,6 +115,9 @@
   }
   .photo-sub-banner img {
     height: 160px;
+  }
+  input, textarea {
+    margin: 15px;
   }
 }
 
