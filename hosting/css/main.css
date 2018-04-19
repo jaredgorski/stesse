@@ -425,10 +425,6 @@ footer p {
   cursor: pointer;
 }
 
-.footer-logo img:hover, .footer-links-ul a:hover {
-  opacity: 0.6;
-}
-
 .footer-copyright {
   text-align: center;
   width: 100%;
