@@ -19,7 +19,6 @@ body {
   overflow: hidden;
 }
 p {
-  font-size: 0.875em;
   margin: 0.6em 0;
 }
 a {
@@ -32,19 +31,15 @@ ul {
   list-style-type: none;
 }
 h1 {
-  font-size: 2em;
   margin: 0.67em 0;
 }
 h2 {
-  font-size: 1.5em;
   margin: 0.65em 0;
 }
 h3 {
-  font-size: 1.125em;
   margin: 0.62em 0;
 }
 h4 {
-  font-size: 1em;
   margin: 0.6em 0;
 }
 img {

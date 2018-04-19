@@ -345,72 +345,8 @@ img.bottomdot {
 }
 
 
-input, textarea {
-  border-radius: 10px;
-  outline: none;
-  border: none;
-  padding: 12px;
-  background-color: #eaeaea;
-  color: #333;
-  margin: 10px;
-  width: 80vw;
-  max-width: 300px;
-  transition: 0.2s;
-}
-
-input:focus, textarea:focus {
-  background-color: #dcdcdc;
-}
-
-textarea {
-  min-height: 13vh;
-  resize: none;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .contact-form {
   margin-bottom: 70px;
-}
-
-.form-container {
-  max-width: 480px;
-  max-height: 70vh;
-  min-height: 410px;
-  margin: 0 auto 0;
-  padding: 3vh 24px 10px;
-  display: flex;
-  justify-content: center;
-}
-
-.form-description {
-  margin: 0 0 10%;
-}
-
-.form-suggestion {
-  margin: 5%;
-}
-
-.form-inputbox {
-  margin: 0 0 10%;
-}
-
-.submit-btn {
-  max-width: 150px;
-  min-height: 38px;
-  transition: 0.3s ease-in-out;
-  cursor: pointer;
-  color: rgba(51, 51, 51, 0.8);
-  font-weight: 600;
-}
-
-.submit-btn:hover {
-  background-color: #d2d2d2;
-  color: rgba(51, 51, 51, 1);
 }
 
 
