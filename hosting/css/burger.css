@@ -24,6 +24,7 @@
 }
 
 .burgerMenu-toggle input {
+  margin: 0;
   display: block;
   width: 40px;
   height: 32px;
