@@ -125,12 +125,6 @@ main h1 {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.9;
-  transition: 0.3s;
-}
-
-.featproduct-img:hover {
-  opacity: 1;
 }
 
 .mainbox-cover1 h1 {
@@ -174,12 +168,7 @@ main h1 {
   width: 100%;
   padding-top: 60%;
   background-size: cover;
-  opacity: 0.9;
-  transition: 0.3s;
-}
-
-.article-image:hover {
-  opacity: 1;
+  opacity: 0.95;
 }
 
 .side-post {
@@ -217,8 +206,8 @@ main h1 {
   width: 100%;
   height: 100%;
   background-color: #333;
-  opacity: 0.95;
-  transition: 0.2s;
+  opacity: 0.99;
+  transition: 0.3s;
 }
 
 .photo-sub-banner {
@@ -227,7 +216,6 @@ main h1 {
   margin: 2% -8px;
   height: auto;
   width: 102vw;
-  max-width: 84.375rem;
   opacity: 0.7;
   transition: 0.2s;
 }
@@ -237,13 +225,14 @@ main h1 {
   left: 12px;
   width: 50%;
   font-size: 1.8rem;
+  letter-spacing: 0.65px;
   margin: auto auto auto 2%;
   text-align: left;
 }
 
 .photo-sub-banner img {
   right: 0;
-  margin: 2% 0 2% auto;
+  margin: 1% 0 1% auto;
   height: 8rem;
 }
 
@@ -264,7 +253,7 @@ main h1 {
   height: auto;
   padding-top: 66%;
   box-shadow: 0 4px 6px rgba(8, 41, 71, 0.2);
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 img.bottomdot {

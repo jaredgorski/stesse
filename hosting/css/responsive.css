@@ -23,21 +23,23 @@
     font-size: 2rem;
     }
   .photo-sub-banner {
-    width: 100%;
-    background: #f5f5f5;
-    box-shadow: 0 2px 2px rgba(8, 41, 71, 0.03);
-  }
-  .photo-sub-banner:hover {
-    box-shadow: 0 2px 2px rgba(8, 41, 71, 0.1);
-    opacity: 0.8;
+    margin: 2% -8px 0;
+    background: #ca5c62;
+    box-shadow: 0 -5px 12px rgba(8, 41, 71, 0.12);
+    opacity: 0.97;
   }
   .photo-sub-banner h2 {
+    text-align: center;
     position: relative;
-    margin: auto;
-    font-size: 30px;
+    margin: 10px auto;
+    color: #fff;
+    font-size: 1rem;
   }
   .photo-sub-banner img {
-    height: 120px;
+    display: none;
+  }
+  footer.home-footer {
+    box-shadow: none;
   }
   .grid-product-container {
     grid-template-columns: repeat(3, 1fr);
@@ -47,8 +49,8 @@
 
 @media (min-width: 625px) {
   .image-grid-content {
-  width: 30%;
-  padding-top: 30%;
+    width: 30%;
+    padding-top: 30%;
   }
   .boxes-container {
     flex-flow: row wrap;
@@ -57,12 +59,6 @@
   }
   .boxes-mainbox {
     padding: 0.5em;
-  }
-  .dimmer {
-    transition: 0.2s;
-  }
-  .dimmer:hover {
-    opacity: 0.6;
   }
   .form-container {
     max-width: 580px;
@@ -108,6 +104,12 @@
   .iLeave {
     display: block;
   }
+  .dimmer {
+    transition: 0.2s;
+  }
+  .dimmer:hover {
+    opacity: 0.6;
+  }
 }
 
 @media (min-width: 800px) {
@@ -152,9 +154,6 @@
   }
   header.parallax::before {
     background-image: url(../images/sts-bg-large.jpg);
-  }
-  .photo-sub-banner h2 {
-    font-size: 2rem;
   }
 }
 
