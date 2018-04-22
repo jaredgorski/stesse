@@ -13,6 +13,7 @@ body {
   font-family: sans-serif;
   background-color: #f9f9f9;
   height: 100%;
+  color: #333;
 }
 .wrapper {
   position: relative;
@@ -53,6 +54,14 @@ h3 {
 h4 {
   font-size: 1em;
   margin: 0.6em 0;
+}
+h5 {
+  font-size: 0.9em;
+  opacity: 0.9;
+}
+h6 {
+  font-size: 0.83em;
+  opacity: 0.8;
 }
 img {
   border-style: none;

@@ -24,9 +24,12 @@
     }
   .photo-sub-banner {
     width: 100%;
-    margin: auto;
     background: #f5f5f5;
-    box-shadow: 0 2px 2px rgba(8, 41, 71, 0.12);
+    box-shadow: 0 2px 2px rgba(8, 41, 71, 0.03);
+  }
+  .photo-sub-banner:hover {
+    box-shadow: 0 2px 2px rgba(8, 41, 71, 0.1);
+    opacity: 0.7;
   }
   .photo-sub-banner h2 {
     position: relative;
@@ -43,11 +46,6 @@
 }
 
 @media (min-width: 625px) {
-  .grid-product-container {
-    grid-template-columns: repeat(4, 1fr);
-    max-width: 600px;
-    padding: 2%;
-  }
   .image-grid-content {
   width: 30%;
   padding-top: 30%;
@@ -64,7 +62,7 @@
     transition: 0.2s;
   }
   .dimmer:hover {
-    opacity: 0;
+    opacity: 0.6;
   }
   .form-container {
     max-width: 580px;
@@ -77,6 +75,14 @@
 @media (min-height: 700px) {
   .contact-form .form-container, .photosubmit-form .form-container {
     min-height: 65vh;
+  }
+}
+
+@media (min-width: 700px) {
+  .grid-product-container {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 610px;
+    padding: 2%;
   }
 }
 
@@ -105,22 +111,12 @@
 }
 
 @media (min-width: 800px) {
-
-  .grid-product-container {
-    max-width: 800px;
-  }
   .image-grid-content {
     width: 21%;
     padding-top: 21%;
   }
   header.parallax::before {
     background-image: url(../images/sts-bg-medium.jpg);
-  }
-  .photo-sub-banner h2 {
-    font-size: 40px;
-  }
-  .photo-sub-banner img {
-    height: 160px;
   }
   input, textarea {
     margin: 15px 15px 22px;
@@ -134,13 +130,13 @@
   }
 }
 
+@media (min-width: 900px) {
+  .grid-product-container {
+    max-width: 800px;
+  }
+}
+
 @media (min-width: 1000px) {
-  .photo-sub-banner h2 {
-    font-size: 50px;
-  }
-  .photo-sub-banner img {
-    height: 180px;
-  }
   .image-grid-content {
     width: 15%;
     padding-top: 15%;
@@ -153,16 +149,12 @@
   }
   .grid-product-container {
     max-width: 900px;
-  }  .filters {
-    max-width: 900px;
-  }  header.parallax::before {
+  }
+  header.parallax::before {
     background-image: url(../images/sts-bg-large.jpg);
   }
   .photo-sub-banner h2 {
-    font-size: 60px;
-  }
-  .photo-sub-banner img {
-    height: 200px;
+    font-size: 2rem;
   }
 }
 
