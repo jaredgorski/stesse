@@ -18,7 +18,7 @@ form.addEventListener('submit', function(e) {
 //savedata
   WeDeploy
     .data('stsdata-stesse.wedeploy.io')
-    .create('stsdata', contactData)
+    .create('contact', contactData)
     .then(function(response) {
       form.reset();
       console.info('Saved:', response);
