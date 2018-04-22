@@ -1,3 +1,10 @@
+// Make sure nav menu is closed on page load
+window.onload = function() {
+  if (menuTog.checked == true) {
+    menuTog.checked = false;
+  }
+};
+
 // Behavior when nav menu opened and closed
 const menuTog = document.getElementById("burgerTog");
 let weFade = document.getElementsByClassName("canFade");
