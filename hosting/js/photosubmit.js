@@ -22,7 +22,7 @@ form.addEventListener('submit', function(e) {
       WeDeploy
         .email('stsemail-stesse.wedeploy.io')
         .auth('74550c77-dc21-4e9d-9908-75f2d960eb73')
-        .from('Stesse Photo Submissions')
+        .from('jared.gorski@wedeploy.com')
         .to('jared.gorski@liferay.com')
         .subject("Stesse - New Photo Submission")
         .message(photoSubmission)
