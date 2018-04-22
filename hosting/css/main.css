@@ -74,7 +74,7 @@ main.show-footer {
 
 main h1 {
   display: inline-block;
-  margin: 0.5em auto 0.5em auto;
+  margin: 0.7em auto 0.5em auto;
 }
 
 .content-container {
@@ -342,11 +342,6 @@ img.bottomdot {
   cursor: pointer;
   transform: scale(1.1);
   box-shadow: 0 4px 6px rgba(8, 41, 71, 0.2);
-}
-
-
-.contact-form {
-  margin-bottom: 70px;
 }
 
 

@@ -27,6 +27,14 @@ a {
   background-color: transparent;
   cursor: pointer;
 }
+a.inline-anchor {
+  font-style: italic;
+  color: #4e70b2;
+  transition: 0.2s;
+}
+a.inline-anchor:hover {
+  color: #70a1ff;
+}
 ul {
   list-style-type: none;
 }
