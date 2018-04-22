@@ -125,6 +125,12 @@ main h1 {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
+.featproduct-img:hover {
+  opacity: 1;
 }
 
 .mainbox-cover1 h1 {
@@ -168,6 +174,12 @@ main h1 {
   width: 100%;
   padding-top: 60%;
   background-size: cover;
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
+.article-image:hover {
+  opacity: 1;
 }
 
 .side-post {
@@ -193,6 +205,7 @@ main h1 {
   max-width: 28.1875rem;
   align-self: center;
   color: #fff;
+  opacity: 0.9;
 }
 
 .linkbox h1 {
@@ -215,7 +228,7 @@ main h1 {
   height: auto;
   width: 102vw;
   max-width: 84.375rem;
-  opacity: 0.6;
+  opacity: 0.7;
   transition: 0.2s;
 }
 
@@ -251,6 +264,7 @@ main h1 {
   height: auto;
   padding-top: 66%;
   box-shadow: 0 4px 6px rgba(8, 41, 71, 0.2);
+  opacity: 0.8;
 }
 
 img.bottomdot {
@@ -304,6 +318,7 @@ img.bottomdot {
   box-shadow: 0 4px 6px rgba(8, 41, 71, 0.1);
   margin-bottom: 0.75rem;
   transition: 0.3s;
+  opacity: 0.9;
 }
 
 
