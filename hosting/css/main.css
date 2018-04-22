@@ -64,7 +64,7 @@ main {
 main.home-main {
   box-sizing: border-box;
   min-height: 100vh;
-  padding: 1em 0.5em 2em 0.5em;
+  padding: 1em 0.5em 0;
   box-shadow: 0 -5px 12px rgba(8, 41, 71, 0.18);
 }
 
