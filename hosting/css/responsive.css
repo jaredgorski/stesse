@@ -72,6 +72,9 @@
   .footer-logo img:hover, .footer-links-ul a:hover {
   opacity: 0.6;
   }
+  .form-label {
+    margin-left: 6%;
+  }
 }
 
 @media (min-height: 700px) {
