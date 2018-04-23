@@ -378,7 +378,7 @@ footer p {
 
 .footer-logo {
   box-sizing: border-box;
-  width: 50%;
+  width: 40%;
   padding: 20px 0 0 10px;
   height: 5.625rem;
 }
@@ -392,7 +392,7 @@ footer p {
 
 .footer-links {
   box-sizing: border-box;
-  width: 50%;
+  width: 60%;
   padding: 10px;
   height: 5.625rem;
 }
