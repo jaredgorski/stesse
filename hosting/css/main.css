@@ -49,6 +49,7 @@ nav, .topbar-left {
   width: 70px;
   height: 48px;
   margin: 0;
+  user-select: none;
 }
 
 
@@ -230,10 +231,16 @@ main h1 {
   text-align: left;
 }
 
-.photo-sub-banner img {
+.photo-sub-banner .camhand-img {
+  user-select: none;
   right: 0;
   margin: 1% 0 1% auto;
   height: 8rem;
+}
+
+.photo-sub-banner .cam-icon {
+  user-select: none;
+  height: 1rem;
 }
 
 
@@ -380,6 +387,7 @@ footer p {
   width: 3.125rem;
   height: 3.125rem;
   margin-left: 0.5em;
+  user-select: none;
 }
 
 .footer-links {

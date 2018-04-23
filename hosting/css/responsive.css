@@ -29,14 +29,20 @@
     opacity: 0.97;
   }
   .photo-sub-banner h2 {
+    display: inline-block;
+    width: initial;
     text-align: center;
     position: relative;
-    margin: 10px auto;
+    margin: 11px auto 9px 3px;
     color: #fff;
     font-size: 1rem;
   }
-  .photo-sub-banner img {
+  .photo-sub-banner .camhand-img {
     display: none;
+  }
+  .photo-sub-banner .cam-icon {
+    display: inline-block;
+    margin: 10px 3px 10px auto;
   }
   footer.home-footer {
     box-shadow: none;
