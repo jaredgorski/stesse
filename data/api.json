@@ -7,7 +7,7 @@
     "description": "Populates a new gallery submission",
     "path": "/stsdataPhotos/*",
     "data": true
-  }
+  },
   {
     "description": "Populates a new gallery submission",
     "path": "/stsdataProducts/*",
