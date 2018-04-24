@@ -47,7 +47,7 @@
       <main>
         <div class="admin-container">
           <h2 class="stsadmin-subheader">Manage Gallery</h2>
-            <form>
+            <form onsubmit="out(); return false;">
               <label class="form-label">Gallery Manage Input</label>
               <input type="text" name="" id="" size="20" required>
             </form>
@@ -55,6 +55,7 @@
             <form>
               <label class="form-label">Products Manage Input</label>
               <input type="text" name="" id="" size="20" required>
+              <input type="submit" name="" id="" size="20" required>
             </form>
         </div>
         <div class="absolutefooter-spacer"></div>
@@ -79,5 +80,6 @@
 <script src="https://cdn.wedeploy.com/api/4.2.0/wedeploy.js"></script>
 <script src="../js/stsadmin.js"></script>
 <script src="../js/main.js"></script>
+<script>if (auth.currentUser == null) {location.href = '../pages/stsadmin-login.html';}</script>
   </body>
 </html>
