@@ -4,12 +4,10 @@
     "data": true
   },
   {
-    "description": "Populates a new gallery submission",
     "path": "/stsdataPhotos/*",
     "data": true
   },
   {
-    "description": "Populates a new product submission",
     "path": "/stsdataProducts/*",
     "data": true
   }
