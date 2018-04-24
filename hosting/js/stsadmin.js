@@ -1,4 +1,4 @@
-var auth = WeDeploy.auth('stsauth-ststest.wedeploy.io');
+var auth = WeDeploy.auth('stsauth-stesse.wedeploy.io');
 
 
 function signIn() {
@@ -22,12 +22,12 @@ function out() {
 
 function deleteGallery() {
   WeDeploy
-    .data('https://stsdata-ststest.wedeploy.io')
+    .data('https://stsdata-stesse.wedeploy.io')
     .delete('stsdataPhotos')
 }
 
 function deleteProducts() {
   WeDeploy
-    .data('https://stsdata-ststest.wedeploy.io')
+    .data('https://stsdata-stesse.wedeploy.io')
     .delete('stsdataProducts')
 }
