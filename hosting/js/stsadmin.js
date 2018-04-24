@@ -19,3 +19,9 @@ function out() {
 		location.href = '../pages/stsadmin-login.html';
 	});
 }
+
+function deleteGallery() {
+  WeDeploy
+    .data('https://stsdata-ststest.wedeploy.io')
+    .delete('stsdataPhotos')
+}
