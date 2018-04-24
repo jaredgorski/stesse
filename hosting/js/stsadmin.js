@@ -25,3 +25,9 @@ function deleteGallery() {
     .data('https://stsdata-ststest.wedeploy.io')
     .delete('stsdataPhotos')
 }
+
+function deleteProducts() {
+  WeDeploy
+    .data('https://stsdata-ststest.wedeploy.io')
+    .delete('stsdataProducts')
+}
