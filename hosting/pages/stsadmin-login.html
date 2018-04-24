@@ -52,7 +52,7 @@
               <label class="form-label">Email</label>
               <input type="text" name="email" type="email" size="20" placeholder="email@web.com" required>
               <label class="form-label">Password</label>
-              <input type="text" name="password" type="password" size="20" placeholder="Password" required>
+              <input type="password" name="password" type="password" size="20" placeholder="Password" required>
               <input type="submit" name="submit" class="submit-btn" id="login-submit" size="20" value="Submit" required>
             </form>
         </div>
@@ -78,5 +78,6 @@
 <script src="https://cdn.wedeploy.com/api/4.2.0/wedeploy.js"></script>
 <script src="../js/stsadmin.js"></script>
 <script src="../js/main.js"></script>
+<script>if (auth.currentUser) {document.location.href = '../pages/stsadmin.html';}</script>
   </body>
 </html>
