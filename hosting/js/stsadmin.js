@@ -1,4 +1,4 @@
-var auth = WeDeploy.auth('auth-stesse.wedeploy.io');
+var auth = WeDeploy.auth('stsauth-stesse.wedeploy.io');
 
 
 function signIn() {

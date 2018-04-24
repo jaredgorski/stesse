@@ -7,8 +7,9 @@ nav, .topbar-left {
   width: 100vw;
   height: 50vh;
   max-width: 550px;
-  margin: 0 auto;
-  padding: 3vh 5px 10px;
+  min-height: 500px;
+  margin: 0 auto 40px;
+  padding: 6vh 5px 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,7 +24,7 @@ nav, .topbar-left {
 
 .stsadmin-subheader {
   text-align: left;
-  padding-left: 10%;
+  padding-left: 5%;
 }
 
 .stsadmin-login-subheader {
@@ -32,6 +33,11 @@ nav, .topbar-left {
 }
 
 .admin-login-container {
+  padding: 2vh 5px 10px;
   min-height: 350px;
   margin-bottom: 50px;
+}
+
+.signOut-btn {
+  margin: auto auto 0;
 }
