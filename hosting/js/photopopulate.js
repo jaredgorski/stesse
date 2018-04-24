@@ -1,7 +1,7 @@
 var imgGridContent = document.getElementById('imageGrid');
 
 WeDeploy
-  .data('stsdata-ststest.wedeploy.io')
+  .data('stsdata-stesse.wedeploy.io')
   .orderBy()
   .get('stsdataPhotos')
   .then(function(response) {

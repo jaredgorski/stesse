@@ -13,7 +13,7 @@ form.addEventListener('submit', function(e) {
 
 //savedata
   WeDeploy
-    .data('stsdata-ststest.wedeploy.io')
+    .data('stsdata-stesse.wedeploy.io')
     .create('stsdataPhotos', photoData)
     .then(function(response) {
       form.reset();
