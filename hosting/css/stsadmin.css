@@ -1,0 +1,37 @@
+nav, .topbar-left {
+  width: 10%;
+}
+
+.admin-container {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 50vh;
+  max-width: 550px;
+  margin: 0 auto;
+  padding: 3vh 5px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.stsadmin-headertitle {
+  width: 80%;
+  text-align: center;
+  transition: 0.3s;
+  display: none;
+}
+
+.stsadmin-subheader {
+  text-align: left;
+  padding-left: 10%;
+}
+
+.stsadmin-login-subheader {
+  text-align: center;
+  margin: 1em 0;
+}
+
+.admin-login-container {
+  min-height: 350px;
+  margin-bottom: 50px;
+}

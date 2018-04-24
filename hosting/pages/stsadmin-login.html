@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>sts | Admin</title>
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link href="../css/reset.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/stsadmin.css" rel="stylesheet">
+    <link href="../css/burger.css" rel="stylesheet">
+    <link href="../css/form.css" rel="stylesheet">
+    <link href="../css/responsive.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper"> <!--wrapper div-->
+      <div> <!-- wraps header -->
+        <header class="">
+          <div class="topbar">
+            <div class="topbar-left canFade">
+              <a class="topbar-left-link" id="homepage-topbar-left" href="../pages">
+                <img class="topbar-left-logo" src="../images/topbar-stslogo-dark.png">
+              </a>
+            </div>
+            <h1 class="stsadmin-headertitle">Admin</h1>
+            <nav>
+              <div class="burgerMenu-toggle">
+                <input id="burgerTog" type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul class="burgerMenu">
+                  <a href="../pages"><li>home</li></a>
+                  <a href="../pages/blog.html"><li>blog</li></a>
+                  <a href="../pages/products.html"><li>products</li></a>
+                  <a href="../pages/gallery.html"><li>gallery</li></a>
+                  <a href=""><li>contact</li></a>
+                </ul>
+              </div>
+            </nav>
+            <div id="navOverlay"></div>
+          </div>
+        </header>
+        <div class="fixedheader-spacer" id="top"></div>
+      </div> <!-- end header -->
+
+      <main>
+        <h1 class="stsadmin-maintitle">Admin</h1>
+        <div class="admin-container admin-login-container">
+          <h2 class="stsadmin-login-subheader">Log In</h2>
+            <form class="stsadmin-login-form" name="user" onsubmit="signIn(); return false;">
+              <label class="form-label">Email</label>
+              <input type="text" name="email" type="email" size="20" placeholder="email@web.com" required>
+              <label class="form-label">Password</label>
+              <input type="password" name="password" type="password" size="20" placeholder="Password" required>
+              <input type="submit" name="submit" class="submit-btn" id="login-submit" size="20" value="Submit" required>
+            </form>
+        </div>
+        <div class="absolutefooter-spacer"></div>
+      </main>
+      <footer class="sts-footer">
+        <div class="footer-logo">
+          <a href="#top">
+            <img src="../images/scrolltop.png">
+          </a>
+        </div>
+        <div class="footer-links">
+          <ul class="footer-links-ul">
+            <li><a href="https://amazon.com" target="_blank"><p>Amazon Marketplace</p></a></li>
+            <li><a href="https://twitter.com/StesseUS" target="_blank"><p>Stesse on Twitter</p></a></li>
+            <li><a href="https://wedeploy.com" target="_blank"><p>WeDeploy</p></a></li>
+          </ul>
+        </div>
+        <p class="footer-copyright">&copy; 2018 Jared Gorski</p>
+      </footer>
+    </div> <!--closes wrapper div-->
+
+<script src="https://cdn.wedeploy.com/api/4.2.0/wedeploy.js"></script>
+<script src="../js/stsadmin.js"></script>
+<script src="../js/main.js"></script>
+<script>if (auth.currentUser) {document.location.href = '../pages/stsadmin.html';}</script>
+  </body>
+</html>

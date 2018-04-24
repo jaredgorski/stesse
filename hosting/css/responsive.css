@@ -51,6 +51,15 @@
     grid-template-columns: repeat(3, 1fr);
     max-width: 430px;
   }
+  .admin-container {
+    height: 75vh;
+  }
+  .stsadmin-headertitle {
+    display: block;
+  }
+  .stsadmin-maintitle {
+    display: none;
+  }
 }
 
 @media (min-width: 625px) {
