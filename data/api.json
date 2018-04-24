@@ -2,5 +2,9 @@
   {
     "path": "/contact/*",
     "data": true
+  },
+  {
+    "path": "/stsdata/*",
+    "data": true
   }
 ]

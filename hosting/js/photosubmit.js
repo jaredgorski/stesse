@@ -14,7 +14,7 @@ form.addEventListener('submit', function(e) {
 //savedata
   WeDeploy
     .data('stsdata-ststest.wedeploy.io')
-    .create('contact', photoData)
+    .create('stsdata', photoData)
     .then(function(response) {
       form.reset();
       console.info('Saved:', response);
@@ -40,3 +40,27 @@ form.addEventListener('submit', function(e) {
       console.log(error);
     });
 });
+
+
+var imgGridContent = document.querySelector('.image-grid-content');
+
+WeDeploy
+  .data('stsdata-ststest.wedeploy.io')
+  .orderBy()
+  .get('stsdata')
+  .then(function(response) {
+    populateImages(response);
+  })
+  .catch(function(error) {
+    console.error(error);
+  });
+
+function populateImages(imageContent) {
+  var imageGrid = '';
+
+  imageContent.forEach(function(image) {
+    imageGrid += `<div class="image-grid-content" style="background-image:url(${photoData});">`;
+  });
+
+  imgGridContent.innerHTML = imageGrid;
+}
