@@ -9,7 +9,7 @@
     "data": true
   },
   {
-    "description": "Populates a new gallery submission",
+    "description": "Populates a new product submission",
     "path": "/stsdataProducts/*",
     "data": true
   }
