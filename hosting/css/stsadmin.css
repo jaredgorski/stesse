@@ -2,17 +2,74 @@ nav, .topbar-left {
   width: 10%;
 }
 
-.admin-container {
+.login-topbar-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+main.login-main {
+  min-height: initial;
+  overflow: hidden;
+}
+
+main.admin-main {
+  background-color: #e2e2e2;
+}
+
+.login-main .admin-page {
+  margin: auto 0;
+  min-height: initial;
+  height: 70vh;
+  min-height: 380px;
+}
+
+.admin-page {
+  position: relative;
   box-sizing: border-box;
   width: 100vw;
-  height: 50vh;
-  max-width: 550px;
-  min-height: 500px;
-  margin: 0 auto 40px;
-  padding: 6vh 5px 10px;
+  min-height: calc(100vh - 5.125rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.manageGallery {
+  background-color: #fafafa;
+}
+
+.manageProducts {
+  background-color: #fafafa;
+}
+
+.admin-panel {
+  box-sizing: border-box;
+  margin: 5% auto;
+  max-width: 480px;
+}
+
+.admin-container {
+  box-sizing: border-box;
+  width: 100vw;
+  min-height: 100%;
+  max-width: 550px;
+  margin: 0 auto;
+  padding: 10px 5px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer.admin-footer {
+  width: 100vw;
+  height: 22px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.stsadmin-maintitle {
+  margin: 0.9em auto;
 }
 
 .stsadmin-headertitle {
@@ -22,14 +79,9 @@ nav, .topbar-left {
   display: none;
 }
 
-.stsadmin-subheader {
-  text-align: left;
-  padding-left: 5%;
-}
-
 .stsadmin-login-subheader {
   text-align: center;
-  margin: 1em 0;
+  margin: 1rem 0;
 }
 
 .admin-login-container {
@@ -38,6 +90,41 @@ nav, .topbar-left {
   margin-bottom: 50px;
 }
 
-.signOut-btn {
-  margin: auto auto 0;
+.admin-form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  width: 94vw;
+  max-width: 480px;
+  margin: 3% auto;
+  padding: 1% 0 3%;
+}
+
+.admin-form h3 {
+  margin: 1em auto 1em 0;
+  padding-left: 2%;
+}
+
+.admin-form input {
+  margin: 15px auto;
+}
+
+a.signOut li {
+  color: #ba4c52;
+  transition: 0.3s;
+}
+
+a.signOut li:hover {
+  color: #7a0c12;
+}
+
+.submit-btn.eraseAll {
+  color: #f2f2f2;
+  background-color: #ba4c52;
+}
+
+.submit-btn.eraseAll:hover {
+  color: #f2f2f2;
+  background-color: #9a2c32;
 }

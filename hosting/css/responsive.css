@@ -51,8 +51,8 @@
     grid-template-columns: repeat(3, 1fr);
     max-width: 430px;
   }
-  .admin-container {
-    height: 75vh;
+  .login-main .admin-page {
+    height: 83vh;
   }
   .stsadmin-headertitle {
     display: block;
@@ -102,7 +102,7 @@
 
 @media (min-width: 760px) {
   header.parallax {
-    height: 78vh;
+    height: 100vh;
   }
   .burgerMenu {
     width: 100px;
@@ -128,6 +128,23 @@
   .dimmer:hover {
     opacity: 0.6;
   }
+  .admin-form {
+    border-top: none;
+  }
+  .manageProducts,
+  .manageProducts h2,
+  .manageProducts h3,
+  .manageProducts .form-label {
+    background-color: #d2d2d2;
+    color: #333;
+    opacity: 0.97;
+  }
+  .triangle-down, .triangle-up {
+    display: block;
+  }
+  .admin-container {
+    background-color: transparent;
+  }
 }
 
 @media (min-width: 800px) {
@@ -140,6 +157,9 @@
   }
   input, textarea {
     margin: 15px 15px 22px;
+  }
+  .admin-form input {
+    margin: 15px auto 22px;
   }
   .back-to-blog p {
     opacity: 0.27;

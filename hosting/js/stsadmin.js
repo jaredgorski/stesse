@@ -21,13 +21,17 @@ function out() {
 }
 
 function deleteGallery() {
-  WeDeploy
-    .data('https://stsdata-stesse.wedeploy.io')
-    .delete('stsdataPhotos')
+  if (confirm("This will erase the entire gallery collection from the database. This cannot be undone. Continue?")) {
+    WeDeploy
+      .data('https://stsdata-stesse.wedeploy.io')
+      .delete('stsdataPhotos')
+    }
 }
 
 function deleteProducts() {
-  WeDeploy
-    .data('https://stsdata-stesse.wedeploy.io')
-    .delete('stsdataProducts')
+  if (confirm("This will erase all products from the database. This cannot be undone. Continue?")) {
+    WeDeploy
+      .data('https://stsdata-stesse.wedeploy.io')
+      .delete('stsdataProducts')
+  }
 }
