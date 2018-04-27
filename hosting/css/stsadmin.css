@@ -75,6 +75,7 @@ footer.admin-footer {
 
 .stsadmin-maintitle {
   margin: 0.9em auto;
+  opacity: 0.4;
 }
 
 .stsadmin-headertitle {
@@ -82,6 +83,7 @@ footer.admin-footer {
   text-align: center;
   transition: 0.3s;
   display: none;
+  opacity: 0.2;
 }
 
 .stsadmin-login-subheader {

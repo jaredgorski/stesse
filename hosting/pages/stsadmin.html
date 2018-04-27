@@ -53,15 +53,30 @@
               <h2 class="stsadmin-subheader">Manage Gallery</h2>
               <div class="admin-form-container">
                 <div class="admin-form">
-                  <h3>Edit Gallery</h3>
-                  <label class="form-label">Add Gallery Photo</label>
+                  <h3>Add Gallery Photo</h3>
+                  <label class="form-label">Image url</label>
                   <div class="inline-input">
                     <form class="inline-form stsphotosubmit" enctype="text/plain">
                       <input class="inline-inputInput" type="text" name="photosubmit-input" id="photosubmit-input" placeholder="Enter image url here" required>
                       <input class="submit submit-btn grn" type="submit" value="Submit">
                     </form>
                   </div>
-                  <label class="form-label">Delete Photo By ID</label>
+                </div>
+                <div class="admin-form">
+                  <h3>Update Gallery Photo</h3>
+                  <form class="" enctype="text/plain">
+                    <label class="form-label">Image ID</label>
+                    <input class="" type="text" name="photoupdate-id" id="photoupdate-id" placeholder="Enter image ID here" required>
+                    <label class="form-label">Image url</label>
+                    <div class="inline-input">
+                      <input class="inline-inputInput" type="text" name="photoupdate-url" id="photoupdate-url" placeholder="Enter new image url here" required>
+                      <input onclick="updatePhoto(); return false;" class="submit submit-btn grn" type="submit" value="Submit">
+                    </div>
+                  </form>
+                </div>
+                <div class="admin-form">
+                  <h3>Delete Photo By ID</h3>
+                  <label class="form-label">Image ID</label>
                   <div class="inline-input">
                     <form class="inline-form" enctype="text/plain">
                       <input class="inline-inputInput" type="text" name="photo-id" id="photo-id" placeholder="Enter image ID here" required>
@@ -70,8 +85,8 @@
                   </div>
                 </div>
               </div>
-              <input onclick="deleteGallery(); return false;" class="submit-btn eraseAll" type="button" value="Erase Gallery"></input>
             </div>
+            <input onclick="deleteGallery(); return false;" class="submit-btn eraseAll" type="button" value="Erase Gallery"></input>
           </div>
         </div>
         <div id="manage-products" class="manageProducts admin-page">
@@ -80,10 +95,12 @@
               <h2 class="stsadmin-subheader">Manage Products</h2>
               <div class="admin-form-container">
                 <div class="admin-form">
-                  <h3>Edit Products</h3>
-                  <label class="form-label">Create Products</label>
+                  <h3>Create Product</h3>
                   <input class="submit-btn" type="button" value="Go To Form" onclick="window.location='https://upload-stesse.wedeploy.io/';"></input>
-                  <label class="form-label">Delete Product By ID</label>
+                </div>
+                <div class="admin-form">
+                  <h3>Delete Product By ID</h3>
+                  <label class="form-label">Product ID</label>
                   <div class="inline-input">
                     <form class="inline-form" enctype="text/plain">
                       <input class="inline-inputInput" type="text" name="product-id" id="product-id" placeholder="Enter product ID here" required>

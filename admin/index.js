@@ -27,3 +27,18 @@ app.post('/upload', upload.single('productImage'), (req, res) => {
 app.use(express.static(__dirname + '/public'));
 app.use(serveIndex('public', {'icons': true}));
 app.listen(3000);
+
+
+
+// function updateProduct() {
+//   var prodUpdateId = document.getElementById('produpdate-id').value;
+//   var photoUpdateTitle = document.getElementById('produpdate-link').value;
+//   var photoUpdateLink = document.getElementById('produpdate-link').value;
+//     WeDeploy
+//       .data('https://stsdata-stesse.wedeploy.io')
+//       .update('stsdataPhotos/' + photoUpdateId, {
+//         "message": photoUpdateUrl
+//       }).then(function(success) {
+//         alert("Gallery updated!");
+//       });
+// }

@@ -12,12 +12,24 @@ function signIn() {
   });
 }
 
-
 function out() {
 	auth.signOut()
 	.then(() => {
 		location.href = '../pages/stsadmin-login.html';
 	});
+}
+
+
+function updatePhoto() {
+  var photoUpdateId = document.getElementById('photoupdate-id').value;
+  var photoUpdateUrl = document.getElementById('photoupdate-url').value;
+    WeDeploy
+      .data('https://stsdata-stesse.wedeploy.io')
+      .update('stsdataPhotos/' + photoUpdateId, {
+        "message": photoUpdateUrl
+      }).then(function(success) {
+        alert("Gallery updated!");
+      });
 }
 
 function deleteGallery() {

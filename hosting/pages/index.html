@@ -17,23 +17,24 @@
       <div id="navOverlay"></div>
       <div> <!-- wraps header -->
         <header class="parallax" id="top">
-          <div id="topbar-left" class="topbar-left canFade">
+          <div class="topbar">
+            <div id="topbar-left" class="topbar-left canFade"></div>
+            <nav>
+              <div class="burgerMenu-toggle homeBurger">
+                <input id="burgerTog" type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul class="burgerMenu" id="burgerMenu">
+                  <a href=""><li>home</li></a>
+                  <a href="../pages/blog.html"><li>blog</li></a>
+                  <a href="../pages/products.html"><li>products</li></a>
+                  <a href="../pages/gallery.html"><li>gallery</li></a>
+                  <a href="../pages/contact.html"><li>contact</li></a>
+                </ul>
+              </div>
+            </nav>
           </div>
-          <nav>
-            <div class="burgerMenu-toggle homeBurger">
-              <input id="burgerTog" type="checkbox">
-              <span></span>
-              <span></span>
-              <span></span>
-              <ul class="burgerMenu" id="burgerMenu">
-                <a href=""><li>home</li></a>
-                <a href="../pages/blog.html"><li>blog</li></a>
-                <a href="../pages/products.html"><li>products</li></a>
-                <a href="../pages/gallery.html"><li>gallery</li></a>
-                <a href="../pages/contact.html"><li>contact</li></a>
-              </ul>
-            </div>
-          </nav>
         </div>
           <div class="stslogo-container">
             <img class="stslogo canFade" src="../images/stslogo.svg" alt="sts logo">
@@ -100,27 +101,27 @@
             </div>
           </div>
           <div class="linkbox-container">
-              <div class="linkbox" style="background-image:url(../images/content-images/backpack-dim.jpg);">
-                <a href="../pages/blog.html">
-                  <div class="dimmer">
-                    <h1>blog</h1>
-                  </div>
-                </a>
-              </div>
-              <div class="linkbox" style="background-image:url(../images/content-images/packing-dim.jpg);">
-                <a href="../pages/products.html">
-                  <div class="dimmer">
-                    <h1>gear</h1>
-                  </div>
-                </a>
-              </div>
-              <div class="linkbox" style="background-image:url(../images/content-images/camera-dim.jpg);">
-                <a href="../pages/gallery.html">
-                  <div class="dimmer">
-                    <h1>photo</h1>
-                  </div>
-                </a>
-              </div>
+            <div class="linkbox" style="background-image:url(../images/content-images/backpack-dim.jpg);">
+              <a href="../pages/blog.html">
+                <div class="dimmer">
+                  <h1>blog</h1>
+                </div>
+              </a>
+            </div>
+            <div class="linkbox" style="background-image:url(../images/content-images/packing-dim.jpg);">
+              <a href="../pages/products.html">
+                <div class="dimmer">
+                  <h1>gear</h1>
+                </div>
+              </a>
+            </div>
+            <div class="linkbox" style="background-image:url(../images/content-images/camera-dim.jpg);">
+              <a href="../pages/gallery.html">
+                <div class="dimmer">
+                  <h1>photo</h1>
+                </div>
+              </a>
+            </div>
           </div>
           <a class=photo-sub-banner href="../pages/photosubmit.html">
             <img class="cam-icon" src="../images/camera-icon.png">
