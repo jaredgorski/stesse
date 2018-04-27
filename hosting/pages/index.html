@@ -10,7 +10,6 @@
     <link href="../css/burger.css" rel="stylesheet">
     <link href="../css/parallax.css" rel="stylesheet">
     <link href="../css/responsive.css" rel="stylesheet">
-    <script src="https://cdn.wedeploy.com/api/4.2.0/wedeploy.js"></script>
   </head>
   <body class="stopScroll parallax">
     <div class="parallax-wrapper"> <!--wrapper div-->
@@ -52,28 +51,6 @@
           <div class="boxes-mainbox mainbox-featuredproducts">
             <h1>featured products</h1>
             <div class="featproducts-grid" id="featproducts-grid">
-              <script type="text/javascript">
-                WeDeploy.data(`stsdata-stesse.wedeploy.io`)
-                  .get('stsdataProducts')
-                  .then(function(stsdataProducts) {
-                    populateProducts(stsdataProducts);
-                  });
-
-                    function populateProducts(productData) {
-                      var productGrid = '';
-                      var prodGridContent = document.getElementById('featproducts-grid');
-                      for(var i = (productData.length - 3); i < productData.length; i++) {
-                        productGrid += `<div class="featproduct-card">
-                                         <a href="${productData[i].link}" target="_blank">
-                                           <div class="featproduct-img" style="background-image:url(/images/uploads/${productData[i].image});"></div>
-                                           <h5>${productData[i].title}</h5>
-                                           <h6>$${productData[i].price}</h6>
-                                         </a>
-                                       </div>`;
-                      }
-                      prodGridContent.innerHTML = productGrid;
-                    }
-              </script>
             </div>
           </div>
           <div class="boxes-section-light">
@@ -146,8 +123,28 @@
         <p class="footer-copyright">&copy; 2018 Jared Gorski</p>
       </footer>
     </div> <!--closes wrapper div-->
+<script src="https://cdn.wedeploy.com/api/4.2.0/wedeploy.js"></script>
 <script src="../js/main.js"></script>
-<script>
+<script type="text/javascript">
+                WeDeploy.data(`stsdata-stesse.wedeploy.io`)
+                  .get('stsdataProducts')
+                  .then(function(stsdataProducts) {
+                    populateProducts(stsdataProducts);
+                  });
+                    function populateProducts(productData) {
+                      var productGrid = '';
+                      var prodGridContent = document.getElementById('featproducts-grid');
+                      for(var i = (productData.length - 3); i < productData.length; i++) {
+                        productGrid += `<div class="featproduct-card">
+                                         <a href="${productData[i].link}" target="_blank">
+                                           <div class="featproduct-img" style="background-image:url(/images/uploads/${productData[i].image});"></div>
+                                           <h5>${productData[i].title}</h5>
+                                           <h6>$${productData[i].price}</h6>
+                                         </a>
+                                       </div>`;
+                      }
+                      prodGridContent.innerHTML = productGrid;
+                    }
 var auth = WeDeploy.auth(`stsauth-stesse.wedeploy.io`)
 var adminGo = '';
 const adminLink = document.getElementById('topbar-left');

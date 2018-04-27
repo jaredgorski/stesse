@@ -173,7 +173,7 @@ main.admin-main {
   position: relative;
   box-sizing: border-box;
   width: 100vw;
-  min-height: calc(100vh - 5.125rem);
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -453,6 +453,14 @@ form {
   }
   .admin-container {
     background-color: transparent;
+  }
+  .manageProducts,
+  .manageProducts h2,
+  .manageProducts h3,
+  .manageProducts .form-label {
+    background-color: #d2d2d2;
+    color: #333;
+    opacity: 0.97;
   }
 }
 

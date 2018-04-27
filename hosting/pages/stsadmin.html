@@ -58,7 +58,7 @@
                   <div class="inline-input">
                     <form class="inline-form stsphotosubmit" enctype="text/plain">
                       <input class="inline-inputInput" type="text" name="photosubmit-input" id="photosubmit-input" placeholder="Enter image url here" required>
-                      <input class="submit submit-btn grn" type="submit" value="Submit">
+                      <input class="submit submit-btn grn" type="submit" value="Add">
                     </form>
                   </div>
                 </div>
@@ -70,7 +70,7 @@
                     <label class="form-label">Image url</label>
                     <div class="inline-input">
                       <input class="inline-inputInput" type="text" name="photoupdate-url" id="photoupdate-url" placeholder="Enter new image url here" required>
-                      <input onclick="updatePhoto(); return false;" class="submit submit-btn grn" type="submit" value="Submit">
+                      <input onclick="updatePhoto(); return false;" class="submit submit-btn grn" type="submit" value="Update">
                     </div>
                   </form>
                 </div>
@@ -95,8 +95,9 @@
               <h2 class="stsadmin-subheader">Manage Products</h2>
               <div class="admin-form-container">
                 <div class="admin-form">
-                  <h3>Create Product</h3>
-                  <input class="submit-btn" type="button" value="Go To Form" onclick="window.location='https://upload-stesse.wedeploy.io/';"></input>
+                  <h3>Create/Update Product</h3>
+                  <input class="submit-btn" type="button" value="Create Product" onclick="window.location='https://upload-stesse.wedeploy.io#createproduct';"></input>
+                  <input class="submit-btn" type="button" value="Update Product" onclick="window.location='https://upload-stesse.wedeploy.io#updateproduct';"></input>
                 </div>
                 <div class="admin-form">
                   <h3>Delete Product By ID</h3>
