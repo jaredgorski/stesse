@@ -20,16 +20,6 @@ p.blogpost-info {
   margin: 1.5rem 1rem 1rem;
 }
 
-.back-to-blog p {
-  font-size: 0.8rem;
-  font-style: italic;
-  opacity: 0.5;
-  margin: 0.8rem 0;
-  text-align: left;
-  width: 100px;
-  cursor: pointer;
-}
-
 .blogpost-container img {
   display: inline-block;
   align-self: center;
