@@ -1,4 +1,3 @@
-// DATA
 var form = document.querySelector('.stsphotosubmit');
 
 form.addEventListener('submit', function(e) {
@@ -8,10 +7,10 @@ form.addEventListener('submit', function(e) {
     message: document.getElementById('photosubmit-input').value,
   }
 
-  // EMAIL
+
   let photoSubmission = "Photo Link(s): " + photoData.message;
 
-//savedata
+
   var imageUrl = photoData.message;
   var goodImage = imageUrl.includes(".jpg") || imageUrl.includes(".jpeg");
   if (goodImage) {
@@ -21,7 +20,7 @@ form.addEventListener('submit', function(e) {
       .then(function(response) {
         form.reset();
         console.info('Saved:', response);
-        // EMAIL post method
+
         WeDeploy
           .email('stsemail-stesse.wedeploy.io')
           .auth('74550c77-dc21-4e9d-9908-75f2d960eb73')

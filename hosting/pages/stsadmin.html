@@ -34,7 +34,7 @@
                   <a href="../pages/blog.html"><li>blog</li></a>
                   <a href="../pages/products.html"><li>products</li></a>
                   <a href="../pages/gallery.html"><li>gallery</li></a>
-                  <a href=""><li>contact</li></a>
+                  <a href="../pages/contact.html"><li>contact</li></a>
                   <a class="signOut" onclick="out(); return false;"><li>sign out</li></a>
                 </ul>
               </div>
@@ -58,13 +58,13 @@
                   <div class="inline-input">
                     <form class="inline-form stsphotosubmit" enctype="text/plain">
                       <input class="inline-inputInput" type="text" name="photosubmit-input" id="photosubmit-input" placeholder="Enter image url here" required>
-                      <input class="submit submit-btn" type="submit" value="Submit">
+                      <input class="submit submit-btn grn" type="submit" value="Submit">
                     </form>
                   </div>
                   <label class="form-label">Delete Photo By ID</label>
                   <div class="inline-input">
                     <input class="inline-inputInput" type="text" name="" id="" placeholder="Enter image ID here" required>
-                    <input class="submit submit-btn" type="submit" value="Delete">
+                    <input class="submit submit-btn grn" type="submit" value="Delete">
                   </div>
                 </div>
               </div>
@@ -72,31 +72,19 @@
             </div>
           </div>
         </div>
-        <div class="manageProducts admin-page">
-          <div class="manageProducts admin-container">
+        <div id="manage-products" class="manageProducts admin-page">
+          <div class="admin-container">
             <div class="admin-panel">
               <h2 class="stsadmin-subheader">Manage Products</h2>
               <div class="admin-form-container">
                 <div class="admin-form">
-                  <form class="stsproductcreate">
-                    <h3>Create Product</h3>
-                    <label class="form-label">Title</label>
-                    <input type="text" name="productTitle" id="productTitle" placeholder="Cannot exceed 80 characters" size="20" required>
-                    <label class="form-label">Sales Price</label>
-                    <input type="text" name="productPrice" id="productPrice" placeholder="Product price in USD" size="20" required>
-                    <label class="form-label">Product Image</label>
-                    <input type="text" name="productImage" id="productImage" placeholder="Enter image url here" size="20" required>
-                    <label class="form-label">Link</label>
-                    <input type="text" name="productLink" id="productLink" placeholder="Enter product url here" size="20" required>
-                    <input onclick="" class="submit-btn" type="submit" value="Submit"></input>
-                  </form>
-                </div>
-                <div class="admin-form">
                   <h3>Edit Products</h3>
+                  <label class="form-label">Create Products</label>
+                  <input class="submit-btn" type="button" value="Go To Form" onclick="window.location='https://upload-stesse.wedeploy.io/';"></input>
                   <label class="form-label">Delete Product By ID</label>
                   <div class="inline-input">
                     <input class="inline-inputInput" type="text" name="" id="" placeholder="Enter product ID here" required>
-                    <input class="submit submit-btn" type="submit" value="Delete">
+                    <input class="submit submit-btn grn" type="submit" value="Delete">
                   </div>
                 </div>
               </div>
@@ -114,7 +102,6 @@
 <script src="../js/stsadmin.js"></script>
 <script src="../js/main.js"></script>
 <script src="../js/photosubmit.js"></script>
-<script src="../js/productcreate.js"></script>
 <script>if (auth.currentUser == null) {location.href = '../pages/stsadmin-login.html';}</script>
   </body>
 </html>

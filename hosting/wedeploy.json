@@ -3,5 +3,8 @@
   "image": "wedeploy/hosting:2.0.0",
   "env": {
     "WEDEPLOY_WEB_ERROR_PATH": "error"
+  },
+  "volumes": {
+    "uploads": "/wedeploy-container/images/uploads"
   }
 }

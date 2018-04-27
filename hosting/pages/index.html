@@ -10,37 +10,39 @@
     <link href="../css/burger.css" rel="stylesheet">
     <link href="../css/parallax.css" rel="stylesheet">
     <link href="../css/responsive.css" rel="stylesheet">
+    <script src="https://cdn.wedeploy.com/api/4.2.0/wedeploy.js"></script>
   </head>
   <body class="stopScroll parallax">
     <div class="parallax-wrapper"> <!--wrapper div-->
       <div id="navOverlay"></div>
       <div> <!-- wraps header -->
         <header class="parallax" id="top">
-          <div class="topbar">
-            <nav>
-              <div class="burgerMenu-toggle homeBurger">
-                <input id="burgerTog" type="checkbox">
-                <span></span>
-                <span></span>
-                <span></span>
-                <ul class="burgerMenu" id="burgerMenu">
-                  <a href=""><li>home</li></a>
-                  <a href="../pages/blog.html"><li>blog</li></a>
-                  <a href="../pages/products.html"><li>products</li></a>
-                  <a href="../pages/gallery.html"><li>gallery</li></a>
-                  <a href="../pages/contact.html"><li>contact</li></a>
-                </ul>
-              </div>
-            </nav>
+          <div id="topbar-left" class="topbar-left canFade">
           </div>
-            <div class="stslogo-container">
-              <img class="stslogo canFade" src="../images/stslogo.svg" alt="sts logo">
+          <nav>
+            <div class="burgerMenu-toggle homeBurger">
+              <input id="burgerTog" type="checkbox">
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul class="burgerMenu" id="burgerMenu">
+                <a href=""><li>home</li></a>
+                <a href="../pages/blog.html"><li>blog</li></a>
+                <a href="../pages/products.html"><li>products</li></a>
+                <a href="../pages/gallery.html"><li>gallery</li></a>
+                <a href="../pages/contact.html"><li>contact</li></a>
+              </ul>
             </div>
-            <div class="arrow-container">
-              <svg class="arrow canFade">
-                <path class="a3" d="M0 40 L30 72 L60 40"></path>
-              </svg>
-            </div>
+          </nav>
+        </div>
+          <div class="stslogo-container">
+            <img class="stslogo canFade" src="../images/stslogo.svg" alt="sts logo">
+          </div>
+          <div class="arrow-container">
+            <svg class="arrow canFade">
+              <path class="a3" d="M0 40 L30 72 L60 40"></path>
+            </svg>
+          </div>
         </header>
       </div> <!-- end header -->
 
@@ -48,28 +50,29 @@
         <div class="boxes-container">
           <div class="boxes-mainbox mainbox-featuredproducts">
             <h1>featured products</h1>
-            <div class="featproducts-grid">
-              <div class="featproduct-card" style="grid-area:product1;">
-                <a href="https://amzn.to/2JVSfHK" target="_blank">
-                  <div class="featproduct-img" style="background-image:url(../images/content-images/products/p1-t.png);"></div>
-                  <h5>Nikon F Kit</h5>
-                  <h6>$660</h6>
-                </a>
-              </div>
-              <div class="featproduct-card" style="grid-area:product2;">
-                <a href="https://amzn.to/2JVSfHK" target="_blank">
-                  <div class="featproduct-img" style="background-image:url(../images/content-images/products/p2-t.png);"></div>
-                  <h5>Nikkor 28mm</h5>
-                  <h6>$199</h6>
-                </a>
-              </div>
-              <div class="featproduct-card" style="grid-area:product3;">
-                <a href="https://amzn.to/2JVSfHK" target="_blank">
-                  <div class="featproduct-img" style="background-image:url(../images/content-images/products/p3-t.png);"></div>
-                  <h5>Nikon F4 Body</h5>
-                  <h6>$240</h6>
-                </a>
-              </div>
+            <div class="featproducts-grid" id="featproducts-grid">
+              <script type="text/javascript">
+                WeDeploy.data(`stsdata-stesse.wedeploy.io`)
+                  .get('stsdataProducts')
+                  .then(function(stsdataProducts) {
+                    populateProducts(stsdataProducts);
+                  });
+
+                    function populateProducts(productData) {
+                      var productGrid = '';
+                      var prodGridContent = document.getElementById('featproducts-grid');
+                      for(var i = (productData.length - 3); i < productData.length; i++) {
+                        productGrid += `<div class="featproduct-card">
+                                         <a href="${productData[i].link}" target="_blank">
+                                           <div class="featproduct-img" style="background-image:url(/images/uploads/${productData[i].image});"></div>
+                                           <h5>${productData[i].title}</h5>
+                                           <h6>$${productData[i].price}</h6>
+                                         </a>
+                                       </div>`;
+                      }
+                      prodGridContent.innerHTML = productGrid;
+                    }
+              </script>
             </div>
           </div>
           <div class="boxes-section-light">
@@ -125,7 +128,6 @@
             <img class="camhand-img" src="../images/content-images/cam-hand.png">
           </a>
         </div>
-        <div class="absolutefooter-spacer"></div>
       </main>
       <footer class="sts-footer home-footer">
         <div class="footer-logo">
@@ -144,5 +146,16 @@
       </footer>
     </div> <!--closes wrapper div-->
 <script src="../js/main.js"></script>
+<script>
+var auth = WeDeploy.auth(`stsauth-stesse.wedeploy.io`)
+var adminGo = '';
+const adminLink = document.getElementById('topbar-left');
+if (auth.currentUser) {
+  adminGo = `<a class="topbar-left-link" id="homepage-topbar-left" href="../pages/stsadmin.html">
+               <p>ADMIN</p>
+             </a>`;
+}
+adminLink.innerHTML = adminGo;
+</script>
   </body>
 </html>
