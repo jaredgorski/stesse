@@ -1,4 +1,3 @@
-// DATA
 var form = document.querySelector('.stscontact');
 
 form.addEventListener('submit', function(e) {
@@ -11,18 +10,17 @@ form.addEventListener('submit', function(e) {
     message: document.getElementById('message').value,
   }
 
-  // EMAIL
   let msg = "First Name: " + contactData.firstName + "<br>Last Name: " +
   contactData.lastName + "<br>Message: " + contactData.message;
 
-//savedata
+
   WeDeploy
     .data('stsdata-stesse.wedeploy.io')
     .create('contact', contactData)
     .then(function(response) {
       form.reset();
       console.info('Saved:', response);
-      // EMAIL post method
+
       WeDeploy
         .email('stsemail-stesse.wedeploy.io')
         .auth('74550c77-dc21-4e9d-9908-75f2d960eb73')

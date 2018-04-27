@@ -9,16 +9,8 @@ header {
   z-index: 1;
 }
 
-header.nonfix-header {
-  position: absolute;
-}
-
 .fixedheader-spacer {
   height: 5.125rem;
-}
-
-.absolutefooter-spacer {
-  height: 6.875rem;
 }
 
 .topbar {
@@ -110,7 +102,7 @@ main h1 {
 .featproducts-grid {
   width: 100%;
   display: grid;
-  grid-template-areas: "product1 product2 product3";
+  grid-auto-flow: row;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2%;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -214,7 +206,7 @@ main h1 {
 .photo-sub-banner {
   display: flex;
   flex-flow: row wrap;
-  margin: 2% -8px;
+  margin: 4% -8px 6%;
   height: auto;
   width: 102vw;
   opacity: 0.7;
@@ -261,6 +253,16 @@ main h1 {
   padding-top: 66%;
   box-shadow: 0 4px 6px rgba(8, 41, 71, 0.2);
   opacity: 0.9;
+}
+
+.back-to p {
+  font-size: 0.8rem;
+  font-style: italic;
+  opacity: 0.5;
+  margin: 0.8rem 0;
+  text-align: left;
+  width: 100px;
+  cursor: pointer;
 }
 
 img.bottomdot {
@@ -360,7 +362,7 @@ footer.sts-footer {
   box-sizing: border-box;
   display: flex;
   flex-flow: row wrap;
-  position: absolute;
+  position: relative;
   bottom: 0;
   left: 0;
   width: 100%;

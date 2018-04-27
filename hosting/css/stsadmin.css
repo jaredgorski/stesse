@@ -8,20 +8,12 @@ nav, .topbar-left {
   left: 0;
 }
 
-main.login-main {
+main.login-main, main.onepage-admin-main {
   min-height: initial;
-  overflow: hidden;
 }
 
 main.admin-main {
   background-color: #e2e2e2;
-}
-
-.login-main .admin-page {
-  margin: auto 0;
-  min-height: initial;
-  height: 70vh;
-  min-height: 380px;
 }
 
 .admin-page {
@@ -34,12 +26,25 @@ main.admin-main {
   justify-content: center;
 }
 
+.login-main .admin-page {
+  margin: auto 0;
+  min-height: initial;
+  height: 70vh;
+  min-height: 380px;
+}
+
 .manageGallery {
   background-color: #fafafa;
 }
 
 .manageProducts {
   background-color: #fafafa;
+}
+
+.image-fileupload {
+  text-rendering: auto;
+  font: 400 12px system-ui;
+  padding: 11px;
 }
 
 .admin-panel {
@@ -126,5 +131,11 @@ a.signOut li:hover {
 
 .submit-btn.eraseAll:hover {
   color: #f2f2f2;
-  background-color: #9a2c32;
+  background-color: #6b1e23;
+}
+
+#successAlert {
+  font-size: 12px;
+  opacity: 0;
+  margin: 0;
 }
