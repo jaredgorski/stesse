@@ -25,7 +25,18 @@ function deleteGallery() {
     WeDeploy
       .data('https://stsdata-stesse.wedeploy.io')
       .delete('stsdataPhotos')
-    }
+  }
+}
+
+function deleteGalleryById() {
+  var photoId = document.getElementById('photo-id').value;
+  if (photoId == '') {
+    alert("Please enter a photo ID.");
+  } else if (confirm("This will delete the specified photo from the database. This cannot be undone. Continue?")) {
+    WeDeploy
+      .data('https://stsdata-stesse.wedeploy.io')
+      .delete('stsdataPhotos/' + photoId)
+  }
 }
 
 function deleteProducts() {
@@ -33,5 +44,16 @@ function deleteProducts() {
     WeDeploy
       .data('https://stsdata-stesse.wedeploy.io')
       .delete('stsdataProducts')
+  }
+}
+
+function deleteProductsById() {
+  var productId = document.getElementById('product-id').value;
+  if (productId == '') {
+    alert("Please enter a product ID.");
+  } else if (confirm("This will delete the specified product from the database. This cannot be undone. Continue?")) {
+    WeDeploy
+      .data('https://stsdata-stesse.wedeploy.io')
+      .delete('stsdataProducts/' + productId)
   }
 }

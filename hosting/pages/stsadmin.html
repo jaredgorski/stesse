@@ -63,8 +63,10 @@
                   </div>
                   <label class="form-label">Delete Photo By ID</label>
                   <div class="inline-input">
-                    <input class="inline-inputInput" type="text" name="" id="" placeholder="Enter image ID here" required>
-                    <input class="submit submit-btn grn" type="submit" value="Delete">
+                    <form class="inline-form" enctype="text/plain">
+                      <input class="inline-inputInput" type="text" name="photo-id" id="photo-id" placeholder="Enter image ID here" required>
+                      <input onclick="deleteGalleryById(); return false;" class="submit submit-btn grn" type="submit" value="Delete">
+                    </form>
                   </div>
                 </div>
               </div>
@@ -83,8 +85,10 @@
                   <input class="submit-btn" type="button" value="Go To Form" onclick="window.location='https://upload-stesse.wedeploy.io/';"></input>
                   <label class="form-label">Delete Product By ID</label>
                   <div class="inline-input">
-                    <input class="inline-inputInput" type="text" name="" id="" placeholder="Enter product ID here" required>
-                    <input class="submit submit-btn grn" type="submit" value="Delete">
+                    <form class="inline-form" enctype="text/plain">
+                      <input class="inline-inputInput" type="text" name="product-id" id="product-id" placeholder="Enter product ID here" required>
+                      <input onclick="deleteProductsById(); return false;" class="submit submit-btn grn" type="submit" value="Delete">
+                    </form>
                   </div>
                 </div>
               </div>
