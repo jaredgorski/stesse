@@ -8,6 +8,7 @@ const storage = multer.diskStorage({
 })
 const upload = multer({storage});
 const app = express();
+
 app.post('/upload', upload.single('productImage'), (req, res) => {
   WeDeploy
     .data('stsdata-stesse.wedeploy.io')
@@ -24,6 +25,24 @@ app.post('/upload', upload.single('productImage'), (req, res) => {
       res.redirect(`${req.protocol}://${req.get('host')}?cmd=fail`);
     });
 });
+
+app.post('/update', upload.single('productImage'), (req, res) => {
+  WeDeploy
+    .data('stsdata-stesse.wedeploy.io')
+    .update('stsdataProducts', req.body.productId, {
+      "title": req.body.productTitle,
+      "price": req.body.productPrice,
+      "link": req.body.productLink,
+      "image": req.file.filename
+    })
+    .then(function(succ){
+      res.redirect(`${req.protocol}://${req.get('host')}?cmd=success`);
+    })
+    .catch(function(err){
+      res.redirect(`${req.protocol}://${req.get('host')}?cmd=fail`);
+    });
+});
+
 app.use(express.static(__dirname + '/public'));
 app.use(serveIndex('public', {'icons': true}));
 app.listen(3000);
