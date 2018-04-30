@@ -29,7 +29,7 @@ app.post('/upload', upload.single('productImage'), (req, res) => {
 app.post('/update', upload.single('productImage'), (req, res) => {
   WeDeploy
     .data('stsdata-stesse.wedeploy.io')
-    .update('stsdataProducts', req.body.productId, {
+    .update('stsdataProducts/' + req.body.productId, {
       "title": req.body.productTitle,
       "price": req.body.productPrice,
       "link": req.body.productLink,
