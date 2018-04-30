@@ -9,10 +9,10 @@
   </head>
   <body>
     <div class="wrapper"> <!--wrapper div-->
-      <div class="header-halfspacer" id="top"></div>
 
       <main class="onepage-admin-main">
         <div class="admin-page" id="createproduct">
+          <div class="header-halfspacer" id="top"></div>
           <div class="admin-container utility-container">
             <div class="admin-panel">
               <h2 class="stsadmin-subheader">Create Product</h2>
@@ -37,12 +37,13 @@
           </div>
         </div>
         <div class="admin-page manageProducts" id="updateproduct">
+          <div class="header-halfspacer" id="top"></div>
           <div class="admin-container utility-container">
             <div class="admin-panel">
               <h2 class="stsadmin-subheader">Update Product</h2>
               <div class="admin-form-container">
                 <div class="admin-form">
-                  <form class="stsproductcreate" action="/upload" id="productCreate" method="post" enctype="multipart/form-data">
+                  <form class="stsproductupdate" action="/update" id="productUpdate" method="post" enctype="multipart/form-data">
                     <label class="form-label">Product ID</label>
                     <input type="text" name="productId" id="productId" placeholder="Enter product ID here" size="20" required>
                     <label class="form-label">Title</label>
