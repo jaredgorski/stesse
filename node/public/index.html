@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html class="parallax">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>stesse | home</title>
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <link href="/assets/styles/reset.css" rel="stylesheet">
+    <link href="/assets/styles/main.css" rel="stylesheet">
+    <link href="/assets/styles/burger.css" rel="stylesheet">
+    <link href="/assets/styles/parallax.css" rel="stylesheet">
+    <link href="/assets/styles/responsive.css" rel="stylesheet">
+  </head>
+  <body class="stopScroll parallax">
+    <div class="parallax-wrapper"> <!--wrapper div-->
+      <div id="navOverlay"></div>
+      <div> <!-- wraps header -->
+        <header class="parallax" id="top">
+          <div class="topbar">
+            <div id="topbar-left" class="topbar-left canFade"></div>
+            <nav>
+              <div class="burgerMenu-toggle homeBurger">
+                <input id="burgerTog" type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul class="burgerMenu" id="burgerMenu">
+                  <a href=""><li>home</li></a>
+                  <a href="/blog"><li>blog</li></a>
+                  <a href="/products"><li>products</li></a>
+                  <a href="/gallery"><li>gallery</li></a>
+                  <a href="/contact"><li>contact</li></a>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+          <div class="stslogo-container">
+            <img class="stslogo canFade" src="/images/stslogo.svg" alt="sts logo">
+          </div>
+          <div class="arrow-container">
+            <svg class="arrow canFade">
+              <path class="a3" d="M0 40 L30 72 L60 40"></path>
+            </svg>
+          </div>
+        </header>
+      </div> <!-- end header -->
+
+      <main class="home-main">
+        <div class="boxes-container">
+          <div class="boxes-mainbox mainbox-featuredproducts">
+            <h1>featured products</h1>
+            <div class="featproducts-grid" id="featproducts-grid">
+            </div>
+          </div>
+          <div class="boxes-section-light">
+            <h1>recent posts</h1>
+            <div class="gridbox-2x2">
+              <div class="featured-post">
+                <a href="/blog/posts/default">
+                  <div class="article-image" style="background-image:url(/images/content-images/surfing-pic.jpg);"></div>
+                  <h4>Adventure / Invention</h4>
+                  <p>Outdoor activities such as surfing offer vast benefits to the creative process.</p>
+                </a>
+              </div>
+              <div class="side-post secondary-post">
+                <a href="/blog/posts/default">
+                  <div class="article-image" style="background-image:url(/images/content-images/analog-pic.jpg);"></div>
+                  <h4>Going Analog With Woodcase Pencils</h4>
+                </a>
+              </div>
+              <div class="side-post tertiary-post">
+                <a href="/blog/posts/default">
+                  <div class="article-image" style="background-image:url(/images/content-images/mechanical-pic.jpg);"></div>
+                  <h4>Confident Shots: The Case For Mechanical Film Cameras</h4>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="linkbox-container">
+            <div class="linkbox" style="background-image:url(/images/content-images/backpack-dim.jpg);">
+              <a href="/blog">
+                <div class="dimmer">
+                  <h1>blog</h1>
+                </div>
+              </a>
+            </div>
+            <div class="linkbox" style="background-image:url(/images/content-images/packing-dim.jpg);">
+              <a href="/products">
+                <div class="dimmer">
+                  <h1>gear</h1>
+                </div>
+              </a>
+            </div>
+            <div class="linkbox" style="background-image:url(/images/content-images/camera-dim.jpg);">
+              <a href="/gallery">
+                <div class="dimmer">
+                  <h1>photo</h1>
+                </div>
+              </a>
+            </div>
+          </div>
+          <a class=photo-sub-banner href="/photosubmit">
+            <img class="cam-icon" src="/images/camera-icon.png">
+            <h2>Submit photos to the gallery!</h2>
+            <img class="camhand-img" src="/images/content-images/cam-hand.png">
+          </a>
+        </div>
+      </main>
+      <footer class="sts-footer home-footer">
+        <div class="footer-logo">
+          <a href="#top">
+            <img src="/images/scrolltop.png">
+          </a>
+        </div>
+        <div class="footer-links">
+          <ul class="footer-links-ul">
+            <li><a href="https://amazon.com" target="_blank"><p>Amazon Marketplace</p></a></li>
+            <li><a href="https://twitter.com/StesseUS" target="_blank"><p>Stesse on Twitter</p></a></li>
+            <li><a href="https://wedeploy.com" target="_blank"><p>WeDeploy</p></a></li>
+          </ul>
+        </div>
+        <p class="footer-copyright">&copy; 2018 Jared Gorski</p>
+      </footer>
+    </div> <!--closes wrapper div-->
+<script src="https://cdn.wedeploy.com/api/4.2.0/wedeploy.js"></script>
+<script src="/assets/js/main.js"></script>
+<script type="text/javascript">
+                WeDeploy.data(`data-stesse.wedeploy.io`)
+                  .get('stsdataProducts')
+                  .then(function(stsdataProducts) {
+                    populateProducts(stsdataProducts);
+                  });
+                    function populateProducts(productData) {
+                      var productGrid = '';
+                      var prodGridContent = document.getElementById('featproducts-grid');
+                      for(var i = (productData.length - 3); i < productData.length; i++) {
+                        productGrid += `<div class="featproduct-card">
+                                         <a href="${productData[i].link}" target="_blank">
+                                           <div class="featproduct-img" style="background-image:url(/uploads/${productData[i].image});"></div>
+                                           <h5>${productData[i].title}</h5>
+                                           <h6>$${productData[i].price}</h6>
+                                         </a>
+                                       </div>`;
+                      }
+                      prodGridContent.innerHTML = productGrid;
+                    }
+var auth = WeDeploy.auth(`auth-stesse.wedeploy.io`)
+var adminGo = '';
+const adminLink = document.getElementById('topbar-left');
+if (auth.currentUser) {
+  adminGo = `<a class="topbar-left-link" id="homepage-topbar-left" href="/admin">
+               <p>ADMIN</p>
+             </a>`;
+}
+adminLink.innerHTML = adminGo;
+</script>
+  </body>
+</html>

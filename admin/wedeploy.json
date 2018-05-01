@@ -1,7 +1,0 @@
-{
-  "id": "upload",
-  "port": 3000,
-  "volumes": {
-    "uploads": "/wedeploy/app/public/uploads"
-  }
-}
