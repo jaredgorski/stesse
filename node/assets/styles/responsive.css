@@ -131,17 +131,6 @@
   .admin-form {
     border-top: none;
   }
-  .manageProducts,
-  .manageProducts h2,
-  .manageProducts h3,
-  .manageProducts .form-label {
-    background-color: #d2d2d2;
-    color: #333;
-    opacity: 0.97;
-  }
-  .triangle-down, .triangle-up {
-    display: block;
-  }
   .admin-container {
     background-color: transparent;
   }
