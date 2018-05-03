@@ -1,0 +1,147 @@
+.burgerMenu-toggle {
+  display: block;
+  position: absolute;
+  float: right;
+  top: 2em;
+  right: 2em;
+  z-index: 3;
+  user-select: none;
+}
+
+.burgerMenu {
+  margin: 0;
+  padding: 0.3125rem;
+}
+
+.burgerMenu a {
+  text-decoration: none;
+  color: #333333;
+  transition: color 0.3s ease;
+}
+
+.burgerMenu a:hover {
+  color: #70a1ff;
+}
+
+.burgerMenu-toggle input {
+  margin: 0;
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 4;
+  -webkit-touch-callout: none;
+}
+
+.burgerMenu-toggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #333333;
+  z-index: 3;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+              background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+              opacity 0.55s ease;
+}
+
+.homeBurger span {
+  background: #f9f9f9;
+}
+
+.burgerMenu-toggle span:first-child {
+  transform-origin: 0 0;
+}
+
+.burgerMenu-toggle span:nth-last-child(2) {
+  transform-origin: 0 100%;
+}
+
+.burgerMenu-toggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #333333;
+  border-radius: 3px;
+}
+
+.burgerMenu-toggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.burgerMenu-toggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+.burgerMenu {
+  position: absolute;
+  right: -50px;
+  width: 200px;
+  height: 110vh;
+  margin: -100px 0 0 0px;
+  padding: 50px;
+  padding-top: 125px;
+  background: #f9f9f9;
+  box-shadow: -5px 0 12px rgba(8, 41, 71, 0.12);
+
+  -webkit-font-smoothing: antialiased;
+  
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0%);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+ul.burgerMenu {
+  overflow: hidden;
+}
+
+.burgerMenu li {
+  padding: 10px 0;
+  font-size: 1.75rem;
+  list-style-type: none;
+}
+
+.burgerMenu-toggle input:checked ~ ul {
+  transform: none;
+  position: absolute;
+}
+
+.burgerMenu-toggle input:checked {
+  scroll-behavior: none;
+}
+
+.navOpenOverlay {
+  position: absolute;
+  height: 110vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, .7);
+  z-index: 2;
+}
+
+#navOverlay {
+  transition: 0.3s;
+}
+
+.noScroll {
+  overflow: hidden;
+  position: fixed;
+}
+
+.fadeOut {
+  opacity: 0;
+}
+
+.clearOut {
+  background: transparent;
+  box-shadow: 0 5px 12px rgba(8, 41, 71, 0);
+}
+
+.iLeave {
+  display: none;
+}
