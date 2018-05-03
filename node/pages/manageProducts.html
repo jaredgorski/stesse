@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>sts | Admin</title>
+    <title>sts | Admin - manage products</title>
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
     <link href="/styles/reset.css" rel="stylesheet">
     <link href="/styles/main.css" rel="stylesheet">
@@ -46,49 +46,7 @@
       </div> <!-- end header -->
 
       <main class="admin-main">
-        <h1 class="stsadmin-maintitle">Admin</h1>
-        <div class="manageGallery admin-page">
-          <div class="admin-container">
-            <div class="admin-panel">
-              <h2 class="stsadmin-subheader">Manage Gallery</h2>
-              <div class="admin-form-container">
-                <div class="admin-form">
-                  <h3>Add Gallery Photo</h3>
-                  <label class="form-label">Image url</label>
-                  <div class="inline-input">
-                    <form class="inline-form stsphotosubmit" enctype="text/plain">
-                      <input class="inline-inputInput" type="text" name="photosubmit-input" id="photosubmit-input" placeholder="Enter image url here" required>
-                      <input class="submit submit-btn grn" type="submit" value="Add">
-                    </form>
-                  </div>
-                </div>
-                <div class="admin-form">
-                  <h3>Update Gallery Photo</h3>
-                  <form class="" enctype="text/plain">
-                    <label class="form-label">Image ID</label>
-                    <input class="" type="text" name="photoupdate-id" id="photoupdate-id" placeholder="Enter image ID here" required>
-                    <label class="form-label">Image url</label>
-                    <div class="inline-input">
-                      <input class="inline-inputInput" type="text" name="photoupdate-url" id="photoupdate-url" placeholder="Enter new image url here" required>
-                      <input onclick="updatePhoto(); return false;" class="submit submit-btn grn" type="submit" value="Update">
-                    </div>
-                  </form>
-                </div>
-                <div class="admin-form">
-                  <h3>Delete Photo By ID</h3>
-                  <label class="form-label">Image ID</label>
-                  <div class="inline-input">
-                    <form class="inline-form" enctype="text/plain">
-                      <input class="inline-inputInput" type="text" name="photo-id" id="photo-id" placeholder="Enter image ID here" required>
-                      <input onclick="deleteGalleryById(); return false;" class="submit submit-btn grn" type="submit" value="Delete">
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <input onclick="deleteGallery(); return false;" class="submit-btn eraseAll" type="button" value="Erase Gallery"></input>
-          </div>
-        </div>
+        <h1 class="stsadmin-maintitle">Manage Products</h1>
         <div id="manage-products" class="manageProducts admin-page">
           <div class="admin-container">
             <div class="admin-panel">

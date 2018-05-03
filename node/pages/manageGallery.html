@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>sts | Admin</title>
+    <title>sts | Admin - manage gallery</title>
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
     <link href="/styles/reset.css" rel="stylesheet">
     <link href="/styles/main.css" rel="stylesheet">
@@ -46,7 +46,7 @@
       </div> <!-- end header -->
 
       <main class="admin-main">
-        <h1 class="stsadmin-maintitle">Admin</h1>
+        <h1 class="stsadmin-maintitle">Manage Gallery</h1>
         <div class="manageGallery admin-page">
           <div class="admin-container">
             <div class="admin-panel">
@@ -87,31 +87,6 @@
               </div>
             </div>
             <input onclick="deleteGallery(); return false;" class="submit-btn eraseAll" type="button" value="Erase Gallery"></input>
-          </div>
-        </div>
-        <div id="manage-products" class="manageProducts admin-page">
-          <div class="admin-container">
-            <div class="admin-panel">
-              <h2 class="stsadmin-subheader">Manage Products</h2>
-              <div class="admin-form-container">
-                <div class="admin-form">
-                  <h3>Create/Update Product</h3>
-                  <input class="submit-btn" type="button" value="Create Product" onclick="window.location='https://node-ststesting.wedeploy.io/admin-dash#createproduct';"></input>
-                  <input class="submit-btn" type="button" value="Update Product" onclick="window.location='https://node-ststesting.wedeploy.io/admin-dash#updateproduct';"></input>
-                </div>
-                <div class="admin-form">
-                  <h3>Delete Product By ID</h3>
-                  <label class="form-label">Product ID</label>
-                  <div class="inline-input">
-                    <form class="inline-form" enctype="text/plain">
-                      <input class="inline-inputInput" type="text" name="product-id" id="product-id" placeholder="Enter product ID here" required>
-                      <input onclick="deleteProductsById(); return false;" class="submit submit-btn grn" type="submit" value="Delete">
-                    </form>
-                  </div>
-                </div>
-              </div>
-              <input onclick="deleteProducts(); return false;" class="submit-btn eraseAll" type="button" value="Erase Products"></input>
-            </div>
           </div>
         </div>
       </main>

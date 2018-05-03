@@ -4,7 +4,9 @@ const fs = require('fs');
 module.exports.admin = function (req, res, next) {
   const source = fs.readFileSync('./pages/admin.html').toString();
   const template = handlebars.compile(source);
-
+  const html = template();
+  res.send(html);
+};
 
 
 
@@ -23,12 +25,23 @@ module.exports.admin = function (req, res, next) {
 //   });
 // }
 
+
+
+
 // function out() {
 // 	auth.signOut()
 // 	.then(() => {
 // 		location.href = '/admin-login';
 // 	});
 // }
+
+// app.get('/logout', (req, res, next) => {
+//   res.clearCookie('access_token');
+//   res.redirect('/');
+// });
+
+
+
 
 
 // function updatePhoto() {

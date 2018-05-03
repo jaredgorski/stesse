@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>sts | Admin</title>
+    <title>sts | Admin - update product</title>
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
     <link href="/styles/admin-dash.css" rel="stylesheet">
   </head>
@@ -11,31 +11,6 @@
     <div class="wrapper"> <!--wrapper div-->
 
       <main class="onepage-admin-main">
-        <div class="admin-page" id="createproduct">
-          <div class="header-halfspacer" id="top"></div>
-          <div class="admin-container utility-container">
-            <div class="admin-panel">
-              <h2 class="stsadmin-subheader">Create Product</h2>
-              <div class="admin-form-container">
-                <div class="admin-form">
-                  <form class="stsproductcreate" action="/upload" id="productCreate" method="post" enctype="multipart/form-data">
-                    <label class="form-label">Title</label>
-                    <input type="text" name="productTitle" id="productTitle" placeholder="Cannot exceed 80 characters" size="20" maxlength="80" required>
-                    <label class="form-label">Sales Price</label>
-                    <input type="text" name="productPrice" id="productPrice" placeholder="Product price in USD" size="20" value="" min="0" max="99999" step=".01" required>
-                    <label class="form-label">Link</label>
-                    <input type="text" name="productLink" id="productLink" placeholder="Enter product url here" size="20" required>
-                    <label class="form-label">Product Image</label>
-                    <input type="file" name="productImage" class="image-fileupload" id="productImage" placeholder="Enter image url here" size="20" accept="image/*" required>
-                    <input onclick="" class="submit-btn grn" type="submit" value="Submit"></input>
-                  </form>
-                  <p id="successAlert">Alert</p>
-                  <a class="back-to" href="/admin#manage-products"><p><-- back to main</p></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
         <div class="admin-page manageProducts" id="updateproduct">
           <div class="header-halfspacer" id="top"></div>
           <div class="admin-container utility-container">
@@ -43,7 +18,7 @@
               <h2 class="stsadmin-subheader">Update Product</h2>
               <div class="admin-form-container">
                 <div class="admin-form">
-                  <form class="stsproductupdate" action="/update" id="productUpdate" method="post" enctype="multipart/form-data">
+                  <form class="stsproductupdate" action="/admin/manageProducts/updateProduct/productUpdate" id="productUpdate" method="post" enctype="multipart/form-data">
                     <label class="form-label">Product ID</label>
                     <input type="text" name="productId" id="productId" placeholder="Enter product ID here" size="20" required>
                     <label class="form-label">Title</label>

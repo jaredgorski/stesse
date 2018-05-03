@@ -1,0 +1,3 @@
+module.exports.footer = function (req, res, next) {
+ return '<footer class="sts-footer home-footer"><div class="footer-logo"><a href="#top"><img src="/images/scrolltop.png"></a></div><div class="footer-links"><ul class="footer-links-ul"><li><a href="https://amazon.com" target="_blank"><p>Amazon Marketplace</p></a></li><li><a href="https://twitter.com/StesseUS" target="_blank"><p>Stesse on Twitter</p></a></li><li><a href="https://wedeploy.com" target="_blank"><p>WeDeploy</p></a></li></ul></div><p class="footer-copyright">&copy; 2018 Jared Gorski</p></footer>';
+}

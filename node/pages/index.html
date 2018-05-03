@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>stesse | home</title>
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
-    <link href="/assets/styles/reset.css" rel="stylesheet">
-    <link href="/assets/styles/main.css" rel="stylesheet">
-    <link href="/assets/styles/burger.css" rel="stylesheet">
-    <link href="/assets/styles/parallax.css" rel="stylesheet">
-    <link href="/assets/styles/responsive.css" rel="stylesheet">
+    <link href="/styles/reset.css" rel="stylesheet">
+    <link href="/styles/main.css" rel="stylesheet">
+    <link href="/styles/burger.css" rel="stylesheet">
+    <link href="/styles/parallax.css" rel="stylesheet">
+    <link href="/styles/responsive.css" rel="stylesheet">
   </head>
   <body class="stopScroll parallax">
     <div class="parallax-wrapper"> <!--wrapper div-->
@@ -107,24 +107,10 @@
           </a>
         </div>
       </main>
-      <footer class="sts-footer home-footer">
-        <div class="footer-logo">
-          <a href="#top">
-            <img src="/images/scrolltop.png">
-          </a>
-        </div>
-        <div class="footer-links">
-          <ul class="footer-links-ul">
-            <li><a href="https://amazon.com" target="_blank"><p>Amazon Marketplace</p></a></li>
-            <li><a href="https://twitter.com/StesseUS" target="_blank"><p>Stesse on Twitter</p></a></li>
-            <li><a href="https://wedeploy.com" target="_blank"><p>WeDeploy</p></a></li>
-          </ul>
-        </div>
-        <p class="footer-copyright">&copy; 2018 Jared Gorski</p>
-      </footer>
+      {{#footer}}{{/footer}}
     </div> <!--closes wrapper div-->
 <script src="https://cdn.wedeploy.com/api/4.2.0/wedeploy.js"></script>
-<script src="/assets/js/main.js"></script>
+<!-- <script src="/assets/js/main.js"></script> -->
 <script type="text/javascript">
                 WeDeploy.data(`data-ststesting.wedeploy.io`)
                   .get('stsdataProducts')

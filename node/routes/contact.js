@@ -17,4 +17,4 @@ module.exports.contact = function (req, res, next) {
   };
   const html = template({success: success, failure: failure});
   res.send(html);
-}
+};
