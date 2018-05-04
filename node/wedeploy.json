@@ -2,6 +2,6 @@
   "id": "node",
   "port": 3000,
   "volumes": {
-    "uploads": "/wedeploy/app/public/uploads"
+    "uploads": "/wedeploy/app/assets/uploads"
   }
 }

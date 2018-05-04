@@ -20,22 +20,8 @@
                 <img class="topbar-left-logo" src="/images/topbar-stslogo-dark.png">
               </a>
             </div>
-            <nav>
-              <div class="burgerMenu-toggle">
-                <input id="burgerTog" type="checkbox">
-                <span></span>
-                <span></span>
-                <span></span>
-                <ul class="burgerMenu">
-                  <a href="/"><li>home</li></a>
-                  <a href="/blog"><li>blog</li></a>
-                  <a href=""><li>products</li></a>
-                  <a href="/gallery"><li>gallery</li></a>
-                  <a href="/contact"><li>contact</li></a>
-                </ul>
-              </div>
-            </nav>
             <div id="navOverlay"></div>
+            {{#burger}}{{/burger}}
           </div>
         </header>
         <div class="fixedheader-spacer" id="top"></div>
@@ -51,25 +37,34 @@
           <img class="bottomdot" src="/images/blogdot.png">
         </div>
       </main>
-      <footer class="sts-footer">
-        <div class="footer-logo">
-          <a href="#top">
-            <img src="/images/scrolltop.png">
-          </a>
-        </div>
-        <div class="footer-links">
-          <ul class="footer-links-ul">
-            <li><a href="https://amazon.com" target="_blank"><p>Amazon Marketplace</p></a></li>
-            <li><a href="https://twitter.com/StesseUS" target="_blank"><p>Stesse on Twitter</p></a></li>
-            <li><a href="https://wedeploy.com" target="_blank"><p>WeDeploy</p></a></li>
-          </ul>
-        </div>
-        <p class="footer-copyright">&copy; 2018 Jared Gorski</p>
-      </footer>
+      {{#footer}}{{/footer}}
     </div> <!--closes wrapper div-->
 
 <script src="https://cdn.wedeploy.com/api/4.2.0/wedeploy.js"></script>
-<!-- <script src="/assets/js/main.js"></script>
-<script src="/assets/js/productpopulate.js"></script> -->
+<script>
+  WeDeploy.data(`data-stesse.wedeploy.io`)
+    .get('stsdataProducts')
+    .then(function(stsdataProducts) {
+      populateProducts(stsdataProducts);
+    });
+
+
+  function populateProducts(productData) {
+    var productGrid = '';
+    var prodGridContent = document.getElementById('productGrid');
+    for(var i = 0; i < productData.length; i++) {
+      productGrid += `<div class="product-card" id="gridProduct">
+                     <a href="${productData[i].link}" target="_blank">
+                       <div class="product-img" style="background-image:url(/uploads/${productData[i].image});"></div>
+                       <div class="product-info">
+                         <h5>${productData[i].title}</h5>
+                         <h6>$${productData[i].price}</h6>
+                       </div>
+                     </a>
+                   </div>`;
+    }
+    prodGridContent.innerHTML = productGrid;
+  }
+</script>
   </body>
 </html>

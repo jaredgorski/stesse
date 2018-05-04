@@ -1,4 +1,4 @@
-WeDeploy.data(`data-ststesting.wedeploy.io`)
+WeDeploy.data(`data-stesse.wedeploy.io`)
   .get('stsdataProducts')
   .then(function(stsdataProducts) {
     populateProducts(stsdataProducts);

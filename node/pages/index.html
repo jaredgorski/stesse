@@ -18,21 +18,7 @@
         <header class="parallax" id="top">
           <div class="topbar">
             <div id="topbar-left" class="topbar-left canFade"></div>
-            <nav>
-              <div class="burgerMenu-toggle homeBurger">
-                <input id="burgerTog" type="checkbox">
-                <span></span>
-                <span></span>
-                <span></span>
-                <ul class="burgerMenu" id="burgerMenu">
-                  <a href=""><li>home</li></a>
-                  <a href="/blog"><li>blog</li></a>
-                  <a href="/products"><li>products</li></a>
-                  <a href="/gallery"><li>gallery</li></a>
-                  <a href="/contact"><li>contact</li></a>
-                </ul>
-              </div>
-            </nav>
+            {{#lightburger}}{{/lightburger}}
           </div>
         </div>
           <div class="stslogo-container">
@@ -112,7 +98,7 @@
 <script src="https://cdn.wedeploy.com/api/4.2.0/wedeploy.js"></script>
 <!-- <script src="/assets/js/main.js"></script> -->
 <script type="text/javascript">
-                WeDeploy.data(`data-ststesting.wedeploy.io`)
+                WeDeploy.data(`data-stesse.wedeploy.io`)
                   .get('stsdataProducts')
                   .then(function(stsdataProducts) {
                     populateProducts(stsdataProducts);
@@ -131,7 +117,7 @@
                       }
                       prodGridContent.innerHTML = productGrid;
                     }
-var auth = WeDeploy.auth(`auth-ststesting.wedeploy.io`)
+var auth = WeDeploy.auth(`auth-stesse.wedeploy.io`)
 var adminGo = '';
 const adminLink = document.getElementById('topbar-left');
 if (auth.currentUser) {

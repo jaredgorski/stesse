@@ -230,12 +230,12 @@ footer.admin-footer {
   display: none;
 }
 
-.stsadmin-login-subheader {
+.stsadminLogin-subheader {
   text-align: center;
   margin: 1rem 0;
 }
 
-.admin-login-container {
+.adminLogin-container {
   padding: 2vh 5px 10px;
   min-height: 350px;
   margin-bottom: 50px;

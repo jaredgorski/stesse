@@ -54,6 +54,22 @@
   .login-main .admin-page {
     height: 83vh;
   }
+  .admin-page {
+    min-height: calc(100vh - 5.125rem);
+  }
+  .admin-landing-btncontainer {
+    flex-direction: row;
+  }
+  .admin-landing-btn1 {
+    align-items: flex-end;
+    width: 30%;
+    margin-right: 3%;
+  }
+  .admin-landing-btn2 {
+    align-items: flex-start;
+    width: 30%;
+    margin-left: 3%;
+  }
   .stsadmin-headertitle {
     display: block;
   }

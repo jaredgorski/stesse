@@ -32,8 +32,22 @@ const productUpdate = require('./routes/productUpdate.js');
 
 
 const footerHelper = require('./components/footer.js')
-handlebars.registerHelper('footer', footerHelper.footer);
+const burgerHelper = require('./components/burger.js')
+const lightBurgerHelper = require('./components/lightburger.js')
+const adminBurgerHelper = require('./components/adminburger.js')
+const submitPhotoHelper = require('./components/submitPhoto.js')
+const authPhotoHelper = require('./components/auth.js')
+const galleryManagerHelper = require('./components/galleryManager.js')
+const productManagerHelper = require('./components/productManager.js')
 
+handlebars.registerHelper('footer', footerHelper.footer);
+handlebars.registerHelper('burger', burgerHelper.burger);
+handlebars.registerHelper('lightburger', lightBurgerHelper.lightburger);
+handlebars.registerHelper('adminburger', adminBurgerHelper.adminburger);
+handlebars.registerHelper('submitPhoto', submitPhotoHelper.submitPhoto);
+handlebars.registerHelper('auth', authPhotoHelper.auth);
+handlebars.registerHelper('galleryManager', galleryManagerHelper.galleryManager);
+handlebars.registerHelper('productManager', productManagerHelper.productManager);
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + '/assets'));
@@ -58,7 +72,7 @@ const upload = multer({storage});
 
 app.get('/', home.home);
 app.get('/blog', blog.blog);
-app.get('/blog/posts/blogdefault', blogDefault.blogDefault);
+app.get('/blog/posts/default', blogDefault.blogDefault);
 app.get('/products', products.products);
 // app.get('/productPopulate', productPopulate.productPopulate);
 app.get('/gallery', gallery.gallery);

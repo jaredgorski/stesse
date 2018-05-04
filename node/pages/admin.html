@@ -23,94 +23,22 @@
               </a>
             </div>
             <h1 class="stsadmin-headertitle">Admin</h1>
-            <nav>
-              <div class="burgerMenu-toggle">
-                <input id="burgerTog" type="checkbox">
-                <span></span>
-                <span></span>
-                <span></span>
-                <ul class="burgerMenu">
-                  <a href="/"><li>home</li></a>
-                  <a href="/blog"><li>blog</li></a>
-                  <a href="/products"><li>products</li></a>
-                  <a href="/gallery"><li>gallery</li></a>
-                  <a href="/contact"><li>contact</li></a>
-                  <a class="signOut" onclick="out(); return false;"><li>sign out</li></a>
-                </ul>
-              </div>
-            </nav>
             <div id="navOverlay"></div>
+            {{#adminburger}}{{/adminburger}}
           </div>
         </header>
         <div class="fixedheader-spacer" id="top"></div>
       </div> <!-- end header -->
 
-      <main class="admin-main">
+      <main class="">
         <h1 class="stsadmin-maintitle">Admin</h1>
-        <div class="manageGallery admin-page">
-          <div class="admin-container">
-            <div class="admin-panel">
-              <h2 class="stsadmin-subheader">Manage Gallery</h2>
-              <div class="admin-form-container">
-                <div class="admin-form">
-                  <h3>Add Gallery Photo</h3>
-                  <label class="form-label">Image url</label>
-                  <div class="inline-input">
-                    <form class="inline-form stsphotosubmit" enctype="text/plain">
-                      <input class="inline-inputInput" type="text" name="photosubmit-input" id="photosubmit-input" placeholder="Enter image url here" required>
-                      <input class="submit submit-btn grn" type="submit" value="Add">
-                    </form>
-                  </div>
-                </div>
-                <div class="admin-form">
-                  <h3>Update Gallery Photo</h3>
-                  <form class="" enctype="text/plain">
-                    <label class="form-label">Image ID</label>
-                    <input class="" type="text" name="photoupdate-id" id="photoupdate-id" placeholder="Enter image ID here" required>
-                    <label class="form-label">Image url</label>
-                    <div class="inline-input">
-                      <input class="inline-inputInput" type="text" name="photoupdate-url" id="photoupdate-url" placeholder="Enter new image url here" required>
-                      <input onclick="updatePhoto(); return false;" class="submit submit-btn grn" type="submit" value="Update">
-                    </div>
-                  </form>
-                </div>
-                <div class="admin-form">
-                  <h3>Delete Photo By ID</h3>
-                  <label class="form-label">Image ID</label>
-                  <div class="inline-input">
-                    <form class="inline-form" enctype="text/plain">
-                      <input class="inline-inputInput" type="text" name="photo-id" id="photo-id" placeholder="Enter image ID here" required>
-                      <input onclick="deleteGalleryById(); return false;" class="submit submit-btn grn" type="submit" value="Delete">
-                    </form>
-                  </div>
-                </div>
-              </div>
+        <div class="admin-page">
+          <div class="admin-landing-btncontainer">
+            <div class=admin-landing-btn1>
+              <input class="submit-btn lrg-btn" type="button" value="Manage Gallery" onclick="window.location='/admin/manageGallery';"></input>
             </div>
-            <input onclick="deleteGallery(); return false;" class="submit-btn eraseAll" type="button" value="Erase Gallery"></input>
-          </div>
-        </div>
-        <div id="manage-products" class="manageProducts admin-page">
-          <div class="admin-container">
-            <div class="admin-panel">
-              <h2 class="stsadmin-subheader">Manage Products</h2>
-              <div class="admin-form-container">
-                <div class="admin-form">
-                  <h3>Create/Update Product</h3>
-                  <input class="submit-btn" type="button" value="Create Product" onclick="window.location='https://node-ststesting.wedeploy.io/admin-dash#createproduct';"></input>
-                  <input class="submit-btn" type="button" value="Update Product" onclick="window.location='https://node-ststesting.wedeploy.io/admin-dash#updateproduct';"></input>
-                </div>
-                <div class="admin-form">
-                  <h3>Delete Product By ID</h3>
-                  <label class="form-label">Product ID</label>
-                  <div class="inline-input">
-                    <form class="inline-form" enctype="text/plain">
-                      <input class="inline-inputInput" type="text" name="product-id" id="product-id" placeholder="Enter product ID here" required>
-                      <input onclick="deleteProductsById(); return false;" class="submit submit-btn grn" type="submit" value="Delete">
-                    </form>
-                  </div>
-                </div>
-              </div>
-              <input onclick="deleteProducts(); return false;" class="submit-btn eraseAll" type="button" value="Erase Products"></input>
+            <div class=admin-landing-btn2>
+              <input class="submit-btn lrg-btn" type="button" value="Manage Products" onclick="window.location='/admin/manageProducts';"></input>
             </div>
           </div>
         </div>
@@ -121,9 +49,18 @@
     </div> <!--closes wrapper div-->
 
 <script src="https://cdn.wedeploy.com/api/4.2.0/wedeploy.js"></script>
-<!-- <script src="/assets/js/stsadmin.js"></script>
-<script src="/assets/js/main.js"></script>
-<script src="/assets/js/photosubmit.js"></script> -->
-<script>if (auth.currentUser == null) {location.href = '/admin-login';}</script>
+<script>
+  var auth = WeDeploy.auth('auth-stesse.wedeploy.io');
+
+  function out() {
+   auth.signOut()
+   .then(() => {
+     location.href = '/adminLogin';
+   });
+  }
+
+  if (auth.currentUser == null) {location.href = '/adminLogin';}
+</script>
+<script>if (auth.currentUser == null) {location.href = '/adminLogin';}</script>
   </body>
 </html>

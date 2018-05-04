@@ -47,7 +47,7 @@ nav, .topbar-left {
 
 main {
   display: block;
-  min-height: calc(100vh + 6.875rem - 5.125rem); /*to account for header and footer*/
+  min-height: calc(100vh - 5.125rem); /*to account for header and footer*/
   width: 100vw;
   text-align: center;
   overflow: hidden;

@@ -12,15 +12,15 @@ module.exports.contactPost = function (req, res, next) {
   contactData.lastName + "<br>Message: " + contactData.message;
 
   WeDeploy
-    .data('data-ststesting.wedeploy.io')
+    .data('data-stesse.wedeploy.io')
     .create('contact', contactData)
     .then(function(dbresponse) {
 
       console.info('Saved:', dbresponse);
 
       WeDeploy
-        .email('email-ststesting.wedeploy.io')
-        .auth('b3707fa3-57f6-491a-8184-4a9d513f24c9')
+        .email('email-stesse.wedeploy.io')
+        .auth('74550c77-dc21-4e9d-9908-75f2d960eb73')
         .from(contactData.fromEmail)
         .to('jared.gorski@liferay.com')
         .subject("Stesse Contact - New Message")

@@ -23,31 +23,15 @@
               </a>
             </div>
             <h1 class="stsadmin-headertitle">Admin</h1>
-            <nav>
-              <div class="burgerMenu-toggle">
-                <input id="burgerTog" type="checkbox">
-                <span></span>
-                <span></span>
-                <span></span>
-                <ul class="burgerMenu">
-                  <a href="/"><li>home</li></a>
-                  <a href="/blog"><li>blog</li></a>
-                  <a href="/products"><li>products</li></a>
-                  <a href="/gallery"><li>gallery</li></a>
-                  <a href="/contact"><li>contact</li></a>
-                  <a class="signOut" onclick="out(); return false;"><li>sign out</li></a>
-                </ul>
-              </div>
-            </nav>
             <div id="navOverlay"></div>
+            {{#adminburger}}{{/adminburger}}
           </div>
         </header>
         <div class="fixedheader-spacer" id="top"></div>
       </div> <!-- end header -->
 
-      <main class="admin-main">
-        <h1 class="stsadmin-maintitle">Manage Gallery</h1>
-        <div class="manageGallery admin-page">
+      <main class="">
+        <div class="admin-page">
           <div class="admin-container">
             <div class="admin-panel">
               <h2 class="stsadmin-subheader">Manage Gallery</h2>
@@ -84,9 +68,10 @@
                     </form>
                   </div>
                 </div>
+                <input onclick="deleteGallery(); return false;" class="submit-btn eraseAll" type="button" value="Erase Gallery"></input>
+                <a class="back-to" href="/admin"><p><-- back to main</p></a>
               </div>
             </div>
-            <input onclick="deleteGallery(); return false;" class="submit-btn eraseAll" type="button" value="Erase Gallery"></input>
           </div>
         </div>
       </main>
@@ -95,10 +80,92 @@
       </footer>
     </div> <!--closes wrapper div-->
 
-<script src="https://cdn.wedeploy.com/api/4.2.0/wedeploy.js"></script>
-<!-- <script src="/assets/js/stsadmin.js"></script>
-<script src="/assets/js/main.js"></script>
-<script src="/assets/js/photosubmit.js"></script> -->
-<script>if (auth.currentUser == null) {location.href = '/admin-login';}</script>
+<script src="https://cdn.wedeploy.com/api/4.2.0/wedeploy.js">if (auth.currentUser == null) {location.href = '/adminLogin';}</script>
+<script>
+  var auth = WeDeploy.auth('auth-stesse.wedeploy.io');
+
+  function out() {
+   auth.signOut()
+   .then(() => {
+     location.href = '/adminLogin';
+   });
+  }
+
+  if (auth.currentUser == null) {location.href = '/adminLogin';}
+</script>
+<script>
+  var form = document.querySelector('.stsphotosubmit');
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    let photoData = {
+      message: document.getElementById('photosubmit-input').value,
+    }
+    let photoSubmission = "Photo Link(s): " + photoData.message;
+    var imageUrl = photoData.message; var goodImage = imageUrl.includes(".jpg") || imageUrl.includes(".jpeg");
+    if (goodImage) {
+      WeDeploy
+        .data('data-stesse.wedeploy.io')
+        .create('stsdataPhotos', photoData)
+        .then(function(response) {
+          form.reset();
+          console.info('Saved:', response);
+          WeDeploy 
+            .email('email-stesse.wedeploy.io')
+            .auth('74550c77-dc21-4e9d-9908-75f2d960eb73')
+            .from('jared.gorski@wedeploy.com')
+            .to('jared.gorski@liferay.com')
+            .subject("Stesse - New Photo Submission")
+            .message(photoSubmission)
+            .send()
+            .then(function(response) {
+              console.log(response);
+              alert('Thank you for your submission!');
+            })
+            .catch(function(error) {
+              console.log(error);
+              alert('There was an error. Please try again!');
+            });
+          })
+        .catch(function(error)
+          {
+            console.log(error);
+          });
+      } else {
+        alert('Only direct urls to .jpg images will be accepted. Please check your url and try again.')
+      }
+    });
+</script>
+<script>
+  function updatePhoto() {
+    var photoUpdateId = document.getElementById('photoupdate-id').value;
+    var photoUpdateUrl = document.getElementById('photoupdate-url').value;
+      WeDeploy
+        .data('https://data-stesse.wedeploy.io')
+        .update('stsdataPhotos/' + photoUpdateId, {
+          "message": photoUpdateUrl
+        }).then(function(success) {
+          alert("Gallery updated!");
+        });
+  }
+
+  function deleteGallery() {
+    if (confirm("This will erase the entire gallery collection from the database. This cannot be undone. Continue?")) {
+      WeDeploy
+        .data('https://data-stesse.wedeploy.io')
+        .delete('stsdataPhotos')
+    }
+  }
+
+  function deleteGalleryById() {
+    var photoId = document.getElementById('photo-id').value;
+    if (photoId == '') {
+      alert("Please enter a photo ID.");
+    } else if (confirm("This will delete the specified photo from the database. This cannot be undone. Continue?")) {
+      WeDeploy
+        .data('https://data-stesse.wedeploy.io')
+        .delete('stsdataPhotos/' + photoId)
+    }
+  }
+</script>
   </body>
 </html>

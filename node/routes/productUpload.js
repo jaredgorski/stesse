@@ -2,7 +2,7 @@ const WeDeploy = require('wedeploy');
 
 module.exports.productUpload = function (req, res, next) {
     WeDeploy
-      .data('data-ststesting.wedeploy.io')
+      .data('data-stesse.wedeploy.io')
       .create('stsdataProducts', {
         "title": req.body.productTitle,
         "price": req.body.productPrice,

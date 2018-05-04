@@ -11,7 +11,7 @@
     <div class="wrapper"> <!--wrapper div-->
 
       <main class="onepage-admin-main">
-        <div class="admin-page manageProducts" id="updateproduct">
+        <div class="admin-page" id="updateproduct">
           <div class="header-halfspacer" id="top"></div>
           <div class="admin-container utility-container">
             <div class="admin-panel">
@@ -32,7 +32,7 @@
                     <input onclick="" class="submit-btn grn" type="submit" value="Submit"></input>
                   </form>
                   <p id="successAlert">Alert</p>
-                  <a class="back-to" href="/admin#manage-products"><p><-- back to main</p></a>
+                  <a class="back-to" href="/admin/manageProducts"><p><-- back</p></a>
                 </div>
               </div>
             </div>
@@ -40,7 +40,7 @@
         </div>
       </main>
     </div> <!--closes wrapper div-->
-
+{{#auth}}{{/auth}}
 <script>
   const params = new URL(window.location.href).searchParams;
   const alert = document.getElementById('successAlert');

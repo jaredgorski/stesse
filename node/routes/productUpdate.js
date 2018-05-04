@@ -2,7 +2,7 @@ const WeDeploy = require('wedeploy');
 
 module.exports.productUpdate = function (req, res, next) {
     WeDeploy
-      .data('data-ststesting.wedeploy.io')
+      .data('data-stesse.wedeploy.io')
       .update('stsdataProducts/' + req.body.productId, {
         "title": req.body.productTitle,
         "price": req.body.productPrice,
